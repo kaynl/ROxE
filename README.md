@@ -1,2 +1,0 @@
-# ROxE
-Regolith Oxygen Extractor
