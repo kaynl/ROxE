@@ -2842,7 +2842,7 @@
               id="f8180ed0-a336-496a-85ac-c9c2ab9a9580" name="PureOxygen" target="#4cdbfc33-632b-4779-9c04-2730401b3c8e"
               source="#4b697ed6-45ca-4761-af6a-54b021a2b848"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="3ab9fc18-877e-4235-a134-9d8eb0e7cbba" name="LunarTemperature" target="#a26373ac-b05a-472a-94c7-1699c745ed65"
+              id="3ab9fc18-877e-4235-a134-9d8eb0e7cbba" name="LunarCold" target="#a26373ac-b05a-472a-94c7-1699c745ed65"
               source="#5f2ee814-6bd1-4ccb-aafd-92d5c330a741"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
@@ -4514,6 +4514,9 @@
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="42d5e627-06cf-4259-ad51-be730b34e86a" targetElement="#68acfce3-d146-471b-a8b6-ca88c491fcc2"
               sourceElement="#6e17b08e-dd45-45d3-b033-c3312d62baaa"/>
+          <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+              id="3e5becd0-88e6-4554-8014-20b4075813ec" targetElement="#3ab9fc18-877e-4235-a134-9d8eb0e7cbba"
+              sourceElement="#6e17b08e-dd45-45d3-b033-c3312d62baaa"/>
         </ownedComponentExchanges>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="160df392-f902-468f-a94e-0ac65aebc636" name="Oxygen Extraction Demonstrator">
@@ -4797,6 +4800,9 @@
                 sourceElement="#e5460cfb-0d8a-4504-aa05-fa4b0289dfb1"/>
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="dd639ff8-b055-4eeb-bf71-582c4e87ea64" targetElement="#c9ca6b28-365d-441b-a6b6-bb26a36cb9a6"
+                sourceElement="#e5460cfb-0d8a-4504-aa05-fa4b0289dfb1"/>
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="93dd0946-0968-4c0f-9c32-9c04000c5206" targetElement="#a26373ac-b05a-472a-94c7-1699c745ed65"
                 sourceElement="#e5460cfb-0d8a-4504-aa05-fa4b0289dfb1"/>
           </ownedFeatures>
           <ownedInterfaceUses xsi:type="org.polarsys.capella.core.data.cs:InterfaceUse"
@@ -5220,6 +5226,9 @@
                 sourceElement="#8e099349-a55b-41d3-af5d-5d4f1a6d1aac"/>
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="44635e98-3973-439c-8788-f724e0c314e1" targetElement="#f4677c5d-3266-456f-b042-48957d902051"
+                sourceElement="#8e099349-a55b-41d3-af5d-5d4f1a6d1aac"/>
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="b65b1971-ac92-42d2-93c6-fecf6047d31b" targetElement="#5f2ee814-6bd1-4ccb-aafd-92d5c330a741"
                 sourceElement="#8e099349-a55b-41d3-af5d-5d4f1a6d1aac"/>
           </ownedFeatures>
           <ownedInterfaceImplementations xsi:type="org.polarsys.capella.core.data.cs:InterfaceImplementation"
@@ -8378,7 +8387,7 @@
                 sourceElement="#60f1e622-8fbe-4f3d-b283-df1edff8cff9"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="ec05e05d-bf00-47c8-b7c0-f2d1f1c05a01" name="LunarTemperature" target="#51ab4536-cb58-4b15-8928-9229c425e422"
+              id="ec05e05d-bf00-47c8-b7c0-f2d1f1c05a01" name="LunarCold" target="#51ab4536-cb58-4b15-8928-9229c425e422"
               source="#6a8c7719-5e78-4b9b-a1fd-a89038a53ea0">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="4745d74b-800e-4470-bda6-5caedc6ea0a8" targetElement="#3ab9fc18-877e-4235-a134-9d8eb0e7cbba"
@@ -9409,6 +9418,9 @@
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="7000a780-3d92-4b67-8236-4649381e633b" targetElement="#7263542e-af88-427b-80e3-34a8710e6523"
               sourceElement="#1aa4d8b2-c7a0-4dac-b134-3bed8bac0372"/>
+          <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+              id="4ab79b7f-7452-4a78-bb34-698aef5360d4" targetElement="#ec05e05d-bf00-47c8-b7c0-f2d1f1c05a01"
+              sourceElement="#1aa4d8b2-c7a0-4dac-b134-3bed8bac0372"/>
           <ownedComponentExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeRealization"
               id="609ba186-4e09-4e0e-a6fe-be70512871c4" targetElement="#6e17b08e-dd45-45d3-b033-c3312d62baaa"
               sourceElement="#1aa4d8b2-c7a0-4dac-b134-3bed8bac0372"/>
@@ -9586,6 +9598,9 @@
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="8d451c6a-407d-4d38-b79b-d6394119c369" targetElement="#a26969ed-07c3-4115-936a-80abc0dea30b"
                 sourceElement="#193eb39f-6455-43a0-85e2-ca9f581a884b"/>
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="17ede5e3-e533-4477-aa71-a6e8d4ff0a7c" targetElement="#51ab4536-cb58-4b15-8928-9229c425e422"
+                sourceElement="#193eb39f-6455-43a0-85e2-ca9f581a884b"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e01e3e1c-3b51-48c1-8bf5-7c29203f28ba"
               name="Oxygen Extraction Reactor" abstractType="#28c9bc8a-5a4a-434d-bc3c-36f7ce5e12f7"/>
@@ -9609,7 +9624,17 @@
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="9520f7c3-3b68-4d03-b4f3-1f7c0fd49018" name="Control System"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="9e06e033-bfc5-4e6f-b018-df8ff611938c" name="Monitoring System"/>
+              id="9e06e033-bfc5-4e6f-b018-df8ff611938c" name="Monitoring System">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="2ab848d0-8e3f-42dc-a5ef-f9896c6884f4" targetElement="#48d53587-b7cf-42b1-b943-8cd477821727"
+                sourceElement="#9e06e033-bfc5-4e6f-b018-df8ff611938c"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="12a5fecd-1cc3-4c69-ae3b-8e5abe80fef2" targetElement="#3d8f776b-ffb0-4217-b5af-4933abe6be26"
+                sourceElement="#9e06e033-bfc5-4e6f-b018-df8ff611938c"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="9bd36081-ac1d-4cb9-933c-9aa13ccfb63a" targetElement="#52d9d2c6-ee5d-43e0-a9d6-0c7649569a19"
+                sourceElement="#9e06e033-bfc5-4e6f-b018-df8ff611938c"/>
+          </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="0d378b09-3152-45a1-88c7-084ba3a94fb6" name="Oxygen Storage System"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -10325,6 +10350,9 @@
                 sourceElement="#cac25615-782b-4109-809f-9ff81bc79b6c"/>
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="00389fc3-59e0-40a3-8e7d-60df1a0e3172" targetElement="#2a3d618a-74b5-4395-8394-3525ad0ac25b"
+                sourceElement="#cac25615-782b-4109-809f-9ff81bc79b6c"/>
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="7079d4f1-a693-4e13-968c-d0e2dc5325c4" targetElement="#6a8c7719-5e78-4b9b-a1fd-a89038a53ea0"
                 sourceElement="#cac25615-782b-4109-809f-9ff81bc79b6c"/>
           </ownedFeatures>
           <ownedInterfaceImplementations xsi:type="org.polarsys.capella.core.data.cs:InterfaceImplementation"
