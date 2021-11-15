@@ -76,8 +76,6 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="30546876-bbb2-477e-bc34-789bac59ac57" name="Monitor Spacecraft">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-                id="b5d30b74-f89d-45d7-801a-a1aab9434a9f" name="Monitor Spacecraft Telemetry"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
                 id="c436dcd2-cec3-4a7f-a805-6b6085f13286" name="Monitor Spacecraft Status"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
@@ -142,9 +140,6 @@
               id="9dba5ec4-9a2f-4b16-868d-3558f6e04aec" name="DrillingOrder" target="#13bb8b2b-14f7-43d9-90a2-97d6cea8a8e8"
               source="#0b020156-0dd8-4243-8a9f-c9e80abcd1da"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="1311f456-a4d3-4c74-aeca-cf44d212403b" name="SpacecraftTelemetry"
-              target="#b5d30b74-f89d-45d7-801a-a1aab9434a9f" source="#217f1ccd-9ea6-4254-bce0-2542d3425a63"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7e5a852d-af83-4df2-a971-cf1913e65935" name="ProvidePowerToDrill"
               target="#8db4fd72-8951-49e6-838e-65b88ed84bf8" source="#d6bf87ec-d87f-4310-865c-8a93ccacbf87"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -154,17 +149,14 @@
               id="0356c5d4-aca8-464a-a3fc-a7a3d99e591d" name="Shadow" target="#8971dfaa-dd04-4de5-ad5a-d3824f4c20f5"
               source="#dcbc798d-2c41-4b68-89e3-3541e2e954fa"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="0942b552-d3a2-46dc-8089-c8a5253dd51c" name="TravellingStatus" target="#c436dcd2-cec3-4a7f-a805-6b6085f13286"
+              id="0942b552-d3a2-46dc-8089-c8a5253dd51c" name="SpacecraftData" target="#c436dcd2-cec3-4a7f-a805-6b6085f13286"
               source="#217f1ccd-9ea6-4254-bce0-2542d3425a63"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="02bd0609-8839-46d7-a6a5-505b351f47e1" name="DrillingData" target="#828145d7-3170-4057-9e75-490d634fdfa0"
               source="#6996e208-fcaf-4212-83be-ed9d6d72cf8e"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="f3682beb-61af-4270-a03d-924ee9f2e556" name="SpacecraftStatus" target="#828145d7-3170-4057-9e75-490d634fdfa0"
+              id="f3682beb-61af-4270-a03d-924ee9f2e556" name="SpacecraftData" target="#828145d7-3170-4057-9e75-490d634fdfa0"
               source="#c436dcd2-cec3-4a7f-a805-6b6085f13286"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="f9a765a5-7ff0-49e2-82e2-675ac5e0f111" name="SpacecraftTelemetry"
-              target="#828145d7-3170-4057-9e75-490d634fdfa0" source="#b5d30b74-f89d-45d7-801a-a1aab9434a9f"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="e77b863e-9aa5-4300-ae5a-9ff0586148e6" name="SpacecraftData" target="#4074317a-bb53-49cb-be58-6ee47cd6c457"
               source="#828145d7-3170-4057-9e75-490d634fdfa0"/>
@@ -752,8 +744,6 @@
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="a810a4b7-26bf-4416-8ff7-b4f24f3b31c5" involved="#4074317a-bb53-49cb-be58-6ee47cd6c457"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="277bbfc6-050a-4eab-998c-605e4176f517" involved="#b5d30b74-f89d-45d7-801a-a1aab9434a9f"/>
-          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="e7b89999-ab34-4cc5-9780-7e04511ab2dd" involved="#6996e208-fcaf-4212-83be-ed9d6d72cf8e"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="2df354a2-7a41-4bcc-b6ac-2a9292f1957c" involved="#b6a1aa2d-acd9-4695-93e9-693d44f0f004"/>
@@ -1059,17 +1049,17 @@
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                 id="30688ee7-3b18-4788-a52c-00fe2f50a1dc" name="Default Region" involvedStates="#3f3c97ac-05de-4224-bac5-5d2f52f9c817 #538df529-98db-434f-a433-fa482aed4859 #ef7387f1-1818-41ae-9c7a-9145f332cdc5 #82779629-2c9d-4d5a-99f9-e82695caa70e #d536bd36-24c8-420f-906c-8eb150848782 #01a623e7-234f-4507-92f0-d7d06dbbc0c1">
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="3f3c97ac-05de-4224-bac5-5d2f52f9c817" name="Launcher Mode" doActivity="#c436dcd2-cec3-4a7f-a805-6b6085f13286 #b5d30b74-f89d-45d7-801a-a1aab9434a9f #1f152bd3-89ad-4c7c-90b0-95096488a994 #83e95ee0-a95b-47ce-ad43-8e6749902c2d #08f0b3f3-04d4-4f8d-a899-2bab209621e3">
+                  id="3f3c97ac-05de-4224-bac5-5d2f52f9c817" name="Launcher Mode" doActivity="#c436dcd2-cec3-4a7f-a805-6b6085f13286 #1f152bd3-89ad-4c7c-90b0-95096488a994 #83e95ee0-a95b-47ce-ad43-8e6749902c2d #08f0b3f3-04d4-4f8d-a899-2bab209621e3">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="d8ffd27b-3600-4e13-99ac-1189606f1bac" name="region"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="538df529-98db-434f-a433-fa482aed4859" name="Space Mode" doActivity="#a6bd7216-890e-4b0b-b977-462ea5b2efa2 #217f1ccd-9ea6-4254-bce0-2542d3425a63 #c436dcd2-cec3-4a7f-a805-6b6085f13286 #b5d30b74-f89d-45d7-801a-a1aab9434a9f #83e95ee0-a95b-47ce-ad43-8e6749902c2d #08f0b3f3-04d4-4f8d-a899-2bab209621e3 #1f152bd3-89ad-4c7c-90b0-95096488a994 #828145d7-3170-4057-9e75-490d634fdfa0">
+                  id="538df529-98db-434f-a433-fa482aed4859" name="Space Mode" doActivity="#a6bd7216-890e-4b0b-b977-462ea5b2efa2 #217f1ccd-9ea6-4254-bce0-2542d3425a63 #c436dcd2-cec3-4a7f-a805-6b6085f13286 #83e95ee0-a95b-47ce-ad43-8e6749902c2d #08f0b3f3-04d4-4f8d-a899-2bab209621e3 #1f152bd3-89ad-4c7c-90b0-95096488a994 #828145d7-3170-4057-9e75-490d634fdfa0">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="099e783d-8dd5-43de-9d50-5f5522548e98" name="region"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="ef7387f1-1818-41ae-9c7a-9145f332cdc5" name="Landing Mode" doActivity="#b5d30b74-f89d-45d7-801a-a1aab9434a9f #c436dcd2-cec3-4a7f-a805-6b6085f13286 #1f152bd3-89ad-4c7c-90b0-95096488a994 #828145d7-3170-4057-9e75-490d634fdfa0 #83e95ee0-a95b-47ce-ad43-8e6749902c2d #08f0b3f3-04d4-4f8d-a899-2bab209621e3">
+                  id="ef7387f1-1818-41ae-9c7a-9145f332cdc5" name="Landing Mode" doActivity="#c436dcd2-cec3-4a7f-a805-6b6085f13286 #1f152bd3-89ad-4c7c-90b0-95096488a994 #828145d7-3170-4057-9e75-490d634fdfa0 #83e95ee0-a95b-47ce-ad43-8e6749902c2d #08f0b3f3-04d4-4f8d-a899-2bab209621e3">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="91521406-be07-4037-a8d5-0e9120715fcd" name="region"/>
               </ownedStates>
@@ -1130,9 +1120,6 @@
               name="OBC">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="e71795ee-db55-477a-99f7-33293062d287" targetElement="#c436dcd2-cec3-4a7f-a805-6b6085f13286"
-                sourceElement="#b0500ef3-bf12-44e5-8149-3a85d62ac1df"/>
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="7711bbf5-0a15-41c2-8a76-178368121e9c" targetElement="#b5d30b74-f89d-45d7-801a-a1aab9434a9f"
                 sourceElement="#b0500ef3-bf12-44e5-8149-3a85d62ac1df"/>
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="7dbd70b5-2c53-43f3-83b2-0eacfca6065e" targetElement="#6996e208-fcaf-4212-83be-ed9d6d72cf8e"
@@ -2243,9 +2230,6 @@
                 id="d6d96454-1562-49fc-b410-bacccb2576f1" name="Monitor Spacecraft Telemetry">
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="4dfee998-9453-4873-a296-97a5200e29f0" name="outSpacecraftTelemetry"/>
-              <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                  id="cc55d288-2280-4032-905d-69b563095cfd" targetElement="#b5d30b74-f89d-45d7-801a-a1aab9434a9f"
-                  sourceElement="#d6d96454-1562-49fc-b410-bacccb2576f1"/>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
                 id="cf77ce15-39c1-4c0c-a3c3-a5f2fc26b0cd" name="Monitor Spacecraft Status">
@@ -2684,11 +2668,7 @@
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="da092dda-6b1a-415e-b5cd-335ef700199e" name="SpacecraftTelemetry"
-              target="#4fe6b226-6a95-430b-bfc5-25732ed344f1" source="#4dfee998-9453-4873-a296-97a5200e29f0">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="5d674dd5-ae26-4c8f-b25b-96fdfd6850c2" targetElement="#f9a765a5-7ff0-49e2-82e2-675ac5e0f111"
-                sourceElement="#da092dda-6b1a-415e-b5cd-335ef700199e"/>
-          </ownedFunctionalExchanges>
+              target="#4fe6b226-6a95-430b-bfc5-25732ed344f1" source="#4dfee998-9453-4873-a296-97a5200e29f0"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="4971d5d8-b2f5-44ee-abe9-e4bd78044280" name="SpacecraftData" target="#97f03787-88dc-4444-8ea9-9517d66a3b50"
               source="#3222c927-7eaa-4b50-a329-b8f8b06a469c">
@@ -3229,7 +3209,7 @@
               id="38006bd0-408b-4b44-9cf3-c9db75df965e" involved="#37fe2c56-9435-422a-a85c-c87fe36eef62"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="748d5362-c33b-43e9-a37b-1a132af69f28" name="Extract Oxygen">
+            id="748d5362-c33b-43e9-a37b-1a132af69f28" name="Extract Oxygen From Regolith">
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
               id="fb37450a-f1cd-4cf8-9242-953953656871" name="Regolith Processing Chain">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
@@ -3358,6 +3338,8 @@
               id="fbf8a5db-7d59-4323-a90b-1861a86816b2" involved="#b0688ea5-cbd0-4683-8636-d466a2e18265"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="148b04b1-c6b8-497f-8e21-1bc997fcd7fa" involved="#7a2b1047-9413-4154-9171-74d6794568fa"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="44c4ff40-3ea9-42be-8646-44cc92ea44ca" involved="#37fe2c56-9435-422a-a85c-c87fe36eef62"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="92cbba6e-04ab-46e4-84c4-0cf6acd9c09a" name="Monitor System">
@@ -3376,9 +3358,6 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="93e57ef3-d6c7-4565-ad6e-46e8126c1a3f" targetElement="#a810a4b7-26bf-4416-8ff7-b4f24f3b31c5"
               sourceElement="#d867d65b-9823-468d-91ff-20cbef73769c"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="9da066be-0f36-4d6e-947e-f6a56ba91786" targetElement="#277bbfc6-050a-4eab-998c-605e4176f517"
-              sourceElement="#d6a5f2ef-b1e9-4a27-acb5-946220ab93f9"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="4f7d4c0a-223e-4ecc-a164-2f2940a9b943" targetElement="#e7b89999-ab34-4cc5-9780-7e04511ab2dd"
               sourceElement="#38cf2a40-2639-4fd3-b3b2-2bcf6deeb9b9"/>
@@ -5056,9 +5035,6 @@
                 id="07d052b6-7890-48cb-96a4-3b05e756b597" targetElement="#e71795ee-db55-477a-99f7-33293062d287"
                 sourceElement="#9b87eb0e-055a-4189-9eb8-752a2b43898c"/>
             <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-                id="c61ad44e-0c88-4fbf-b64a-fcdac7e0cb90" targetElement="#7711bbf5-0a15-41c2-8a76-178368121e9c"
-                sourceElement="#bfa492fd-b4a2-46e8-a0e3-ab99c2dff99b"/>
-            <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
                 id="1e644353-a87c-4fbe-b3fa-114c64720637" targetElement="#7dbd70b5-2c53-43f3-83b2-0eacfca6065e"
                 sourceElement="#6fff0a2a-4f33-44df-b8e3-34ce92246372"/>
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -5311,7 +5287,7 @@
       <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="cb677eba-a825-4fcd-ad23-db9e999d89c9"
           name="Missions">
         <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="24a188d0-7e9e-4b8b-9892-8a740d396422"
-            name="Extract Oxygen From Regolith">
+            name="Extract Oxygen on the Moon">
           <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
               id="d2470da5-6197-4429-8b13-510104b358fd" involved="#160df392-f902-468f-a94e-0ac65aebc636"/>
           <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
