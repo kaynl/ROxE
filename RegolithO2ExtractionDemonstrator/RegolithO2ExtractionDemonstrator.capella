@@ -1326,6 +1326,10 @@
                 summary="Survive conditions imposed by extraction process">
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="b649d097-fd39-42c1-8b00-22174d59cb49" name="FOP 1"/>
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+                  id="31b5c367-e357-4f8c-a7f3-ab1ba4484811" name="Survive Vapourisation Heat"/>
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+                  id="fac6ccdb-b82d-445d-bb0f-5053aba7771b" name="SystemFunction 2"/>
             </ownedFunctions>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
@@ -2826,6 +2830,10 @@
               id="9216acda-7e21-47a6-80d7-457ba581c38d" involved="#dcdac295-456b-4f6d-a22c-580d4787b6b5"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="a34eede8-814a-47c7-ab8f-0dd0b421570f" involved="#791cb2b9-f54a-4d17-afae-8c2cc7f9b12b"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="71b1af3d-91a3-460a-bb80-88276f91ac26" involved="#31b5c367-e357-4f8c-a7f3-ab1ba4484811"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="88fbdc51-1f3a-43ea-8114-4e1b756961a7" involved="#fac6ccdb-b82d-445d-bb0f-5053aba7771b"/>
           <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
               id="862611c9-a216-4075-affb-790f1b14d8b6" targetElement="#079ed3ff-8ad4-4b54-bd9a-a5cb3285114c"
               sourceElement="#3b625210-08d4-4e4b-b993-b866add677f9"/>
@@ -9214,6 +9222,12 @@
                 name="Regolith Intake Controller" abstractType="#9681e1ab-e57e-4e51-974e-b66744d69ec2"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f3ee9bff-822b-41a3-82b4-302b8141566d"
                 name="Vapourisation Controller" abstractType="#de68cf6b-4d48-430d-8e0f-5cede121e4d0"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9d28ea44-fc9b-4035-a63c-51b68bfb2e90"
+                name="Condensation Controller" abstractType="#c1478194-1da4-4241-b32f-d0909c187bf6"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c70ad0e3-c97a-4d64-b331-4f95f5fb5815"
+                name="Storage Controller" abstractType="#0a3c1ead-f2b2-44f6-8efc-c70a5075c83e"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="98a851fa-1c77-45a9-a5d9-191e21514d05"
+                name="Oxygen Trap Controller" abstractType="#2a885685-d213-472e-a5e7-3ed4203f3a73"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="9681e1ab-e57e-4e51-974e-b66744d69ec2" name="Regolith Intake Controller">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -9231,6 +9245,36 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="ad044334-26d2-420d-8b8b-a71193d005dc" targetElement="#8acfdb3a-a0ee-4e23-b8d7-ec4b3d4bbaf9"
                   sourceElement="#de68cf6b-4d48-430d-8e0f-5cede121e4d0"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="3c29776d-b900-4c4b-80b6-7601af1a6af6" targetElement="#d848ea57-ff72-4830-be16-f7a1d3b2242a"
+                  sourceElement="#de68cf6b-4d48-430d-8e0f-5cede121e4d0"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="c1478194-1da4-4241-b32f-d0909c187bf6" name="Condensation Controller">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="c7a21f4f-3e3e-45b4-85c0-9e7f5363613c" targetElement="#4637047f-42c2-445f-b509-dfc104016fc0"
+                  sourceElement="#c1478194-1da4-4241-b32f-d0909c187bf6"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="1d818b92-6643-4687-8603-d13256611954" targetElement="#a5a9fdf8-c7d4-4876-8529-06ee75b53fb1"
+                  sourceElement="#c1478194-1da4-4241-b32f-d0909c187bf6"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="0a3c1ead-f2b2-44f6-8efc-c70a5075c83e" name="Storage Controller">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="748e6153-fe0d-47b4-b639-abde49f1c42a" targetElement="#8a4fae3e-d883-42a4-ba85-4dd712e9395a"
+                  sourceElement="#0a3c1ead-f2b2-44f6-8efc-c70a5075c83e"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="6cda2356-6b50-43a6-bdc6-7348d3139be2" targetElement="#7253ffec-8c21-4b41-b8df-805d50ed71af"
+                  sourceElement="#0a3c1ead-f2b2-44f6-8efc-c70a5075c83e"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="c4adaee5-5024-4692-8a1b-8d5c146baf6c" targetElement="#ebe524c0-e6a9-4484-8bf0-8753d33fdfdd"
+                  sourceElement="#0a3c1ead-f2b2-44f6-8efc-c70a5075c83e"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="2a885685-d213-472e-a5e7-3ed4203f3a73" name="Oxygen Trap Controller">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="440195a5-7b15-4b87-acbd-c482faa9d3d5" targetElement="#6592e2cd-7607-413c-abcb-a0f7ea314dee"
+                  sourceElement="#2a885685-d213-472e-a5e7-3ed4203f3a73"/>
             </ownedLogicalComponents>
           </ownedLogicalComponents>
         </ownedLogicalComponents>
