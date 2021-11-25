@@ -34,7 +34,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.information:DataPkg" href="RegolithProcessingLib.capella#dcb3f743-c702-4f5e-be15-3204ac1d8a63"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ELq08j2MEeyOEM5m6N40-g" name="[CDB] Environment Types" repPath="#_ELq08D2MEeyOEM5m6N40-g" changeId="33b68203-21fc-4ee3-b08d-ca0e60141ed2">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ELq08j2MEeyOEM5m6N40-g" name="[CDB] Launcher Environment Types" repPath="#_ELq08D2MEeyOEM5m6N40-g" changeId="33b68203-21fc-4ee3-b08d-ca0e60141ed2">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.information:DataPkg" href="RegolithProcessingLib.capella#e13dd8c8-1a29-4bcd-ba55-abfe19d46b4e"/>
       </ownedRepresentationDescriptors>
