@@ -190,3 +190,13 @@
 2021-12-01 15:52:28,651;Capella;5.1.0.202106150755;Open+Representation;;OK;
 2021-12-01 15:52:51,711;Capella;5.1.0.202106150755;Open+Representation;;;
 2021-12-01 15:52:52,293;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2021-12-02 15:30:05,605;Capella;5.1.0.202106150755;Open+Representation;;;
+2021-12-02 15:30:07,064;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2021-12-02 15:33:07,562;Capella;5.1.0.202106150755;Open+Session;RegolithO2ExtractionDemonstrator.aird;;
+2021-12-02 15:33:10,393;Capella;5.1.0.202106150755;Open+Session;RegolithO2ExtractionDemonstrator.aird;OK;
+2021-12-02 15:33:54,320;Capella;5.1.0.202106150755;Close+Session;RegolithO2ExtractionDemonstrator.aird;;
+2021-12-02 15:33:54,684;Capella;5.1.0.202106150755;Close+Session;RegolithO2ExtractionDemonstrator.aird;OK;
+2021-12-02 15:39:45,138;Capella;5.1.0.202106150755;Open+Session;RegolithO2ExtractionDemonstrator.aird;;
+2021-12-02 15:39:50,233;Capella;5.1.0.202106150755;Open+Session;RegolithO2ExtractionDemonstrator.aird;OK;
+2021-12-02 15:40:27,856;Capella;5.1.0.202106150755;Open+Representation;;;
+2021-12-02 15:40:32,541;Capella;5.1.0.202106150755;Open+Representation;;OK;

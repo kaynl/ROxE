@@ -44,13 +44,15 @@
   <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
       id="6e838d78-1c30-46a8-888b-94857bc7d4ff" name="RegolithO2ExtractionDemonstrator">
     <ownedExtensions xsi:type="CapellaRequirements:CapellaModule" id="05933a32-7c58-4242-9b89-f5668dfb1257"
-        ReqIFLongName="High-Level Requirements" ReqIFName="Requirements">
+        ReqIFLongName="High-Level Requirements" ReqIFName="HL Requirements">
+      <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="5ba80def-8ad0-4601-b2ad-fef6c5811710"/>
+      <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="67ee7779-cdb9-481b-8521-c57c011322b8"/>
       <ownedRequirements xsi:type="Requirements:Folder" id="88b08b4c-1035-4d32-8e81-6755fb1a4e56"
           ReqIFIdentifier="MOR-1" ReqIFName="Mission Objective Requirements">
         <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation" id="e0bb3a93-4b04-4c18-8d4d-7374a55a67f5"/>
         <ownedRequirements xsi:type="Requirements:Requirement" id="c4479e97-ccfe-46fc-b777-a15a1de4c827"
-            ReqIFLongName="The System should be able to extract 1kg of Oxygen per day from Lunar Regolith"
-            ReqIFName="" ReqIFPrefix="MOR" ReqIFChapterName="" ReqIFText="">
+            ReqIFIdentifier="MOR-PROD01" ReqIFDescription="" ReqIFLongName="" ReqIFName="The System should be able to extract 1kg of Oxygen per day from Lunar Regolith"
+            ReqIFPrefix="MOR" ReqIFChapterName="MOR-01" ReqIFText="" requirementTypeProxy="">
           <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation" id="9a3ac6e8-b6c5-4c38-a083-0aba946b9082"/>
           <ownedRelations xsi:type="CapellaRequirements:CapellaOutgoingRelation" id="1c2133b8-a206-483d-9676-343a83c9f805"/>
           <ownedRelations xsi:type="Requirements:InternalRelation" id="573878ff-098f-4efd-bfef-db4898bb8c77"/>
@@ -64,7 +66,8 @@
       <ownedRequirements xsi:type="Requirements:Folder" id="8252cd61-f9ad-45e2-aa17-3f6c654a1c5e"
           ReqIFName="Interface Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="c80bb6e5-f256-481d-8c53-c5705891ea81"
-            ReqIFName="The System should be designed to be mounted on EL3"/>
+            ReqIFName="The System should be designed to be mounted on EL3" ReqIFPrefix="IR"
+            ReqIFChapterName="IR-01"/>
       </ownedRequirements>
       <ownedRequirements xsi:type="Requirements:Folder" id="81e49080-02a0-438a-85e0-7c272aec6d2b"
           ReqIFName="Environmental Requirements">
@@ -89,8 +92,8 @@
             ReqIFName="The System shall have a vapourisation temperature of 800°C"
             ReqIFPrefix="CR"/>
         <ownedRequirements xsi:type="Requirements:Requirement" id="93f76157-d064-4994-94b1-0bab921aa6ec"
-            ReqIFIdentifier="CR-VAP-PRESS01" ReqIFLongName="The System shall vapourise regolith at 10^-15 atm pressure"
-            ReqIFPrefix="CR"/>
+            ReqIFIdentifier="CR-VAP-PRESS01" ReqIFLongName="" ReqIFName="The System shall vapourise regolith at 10^-15 atm pressure"
+            ReqIFPrefix="CR" ReqIFChapterName="CR-01"/>
       </ownedRequirements>
     </ownedExtensions>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
@@ -5158,6 +5161,26 @@
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="4cd67546-eaa8-4cde-8e75-fb1681768970"/>
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="69c77dec-2043-4bf1-b0a7-1928955b4bf1"/>
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="08a3ebb8-d89a-4688-9105-44f967bc866b"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaModule" id="bee6802e-1fd8-464b-8d01-b66080660428"
+          ReqIFLongName="Logical System Requirements" ReqIFName="Logical System Requirements">
+        <ownedRequirements xsi:type="Requirements:Folder" id="b57d66e8-d135-4b44-8682-bca5f318cb96"
+            ReqIFName="Regolith Intake Logical System Requirements"/>
+        <ownedRequirements xsi:type="Requirements:Folder" id="d60a16ad-0074-4a45-b685-3ac0e6bb47b5"
+            ReqIFName="Vapourisation Logical Subsystem">
+          <ownedRequirements xsi:type="Requirements:Folder" id="fffb4f69-0ed2-4572-8555-fd1e0bcf4a52"
+              ReqIFName="Configuration Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0bb2b6bb-f4c0-40af-ace6-bcda05a19fe2"
+                ReqIFName="The System Shall heat the regolith surface between 800°C and 1000°C"
+                ReqIFChapterName="LSR-VLS-CR01"/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="5648714d-09e4-4e0b-acf7-04ae04d72534"
+              ReqIFName="Environmental Requirements" ReqIFPrefix="ER" ReqIFChapterName="ER">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f3d9606c-9aaa-4618-9577-be6110370ae7"
+                ReqIFName="Vapourisation Monitoring Subsystem shall operate nominally despite lunar dust deposits"
+                ReqIFChapterName="LSR-VLS-OR01"/>
+          </ownedRequirements>
+        </ownedRequirements>
+      </ownedExtensions>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
           id="8dbecd13-cb81-41ff-af72-964c0118910f" name="Logical Functions">
         <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -8904,7 +8927,7 @@
             id="ca03f770-d27f-4f44-9a24-5f4015e76cb6" name="WasteFromExtraction" source="#e45190e4-2993-44b8-927d-b20ebdc4d1a9"
             target="#e809dd99-9777-4952-9e3b-393d7b30bb22" kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
-              id="69eda65d-1968-4fec-845c-b243ea1016b1" targetElement="#c57a488d-16d8-4835-a3f7-7ed1501ae2ea"
+              id="f73516f5-2acc-488c-ac9f-226ce6ba289e" targetElement="#c57a488d-16d8-4835-a3f7-7ed1501ae2ea"
               sourceElement="#ca03f770-d27f-4f44-9a24-5f4015e76cb6"/>
         </ownedComponentExchanges>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -9088,7 +9111,7 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="02adf713-17c7-49f5-9123-14018f252d7b"
               name="External Structure" abstractType="#b1d8e5bd-026d-4566-aea0-3dd484c29187"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e9f44d9f-9190-4bbb-a9ff-9c5b7be2ce9a"
-              name="Vapourisation Logical System" abstractType="#9bb54655-11f8-4008-892c-757b05e8f353"/>
+              name="Vapourisation Logical Subsystem" abstractType="#9bb54655-11f8-4008-892c-757b05e8f353"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f80d4168-081d-4111-8200-ed0f3c4c4c1a"
               name="Condensation Logical System" abstractType="#66fc7c57-fdcd-428d-a540-c8fe9fec3074"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
@@ -9590,9 +9613,13 @@
             </ownedLogicalComponents>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="9bb54655-11f8-4008-892c-757b05e8f353" name="Vapourisation Logical System">
+              id="9bb54655-11f8-4008-892c-757b05e8f353" name="Vapourisation Logical Subsystem">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6464039f-5683-45f4-835a-3fb4758ed5af"
-                name="Vapourisation Monitoring" abstractType="#ef686c9a-5114-4782-ae7c-a59ab453b0db"/>
+                name="Vapourisation Monitoring" abstractType="#ef686c9a-5114-4782-ae7c-a59ab453b0db">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="6b42b6e9-6cf2-489f-886a-25519fadc684" ReqIFLongName="satisfies"
+                  source="#ef686c9a-5114-4782-ae7c-a59ab453b0db" target="#f3d9606c-9aaa-4618-9577-be6110370ae7"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c8bbddfe-6d7e-417f-b6dd-b8402e6020d1"
                 name="Vapourisation Chamber" abstractType="#eeda4b74-d231-42c6-9454-cfc7dbe06196"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5278174d-58fe-4be7-81b2-df666a584e6e"
@@ -9600,21 +9627,15 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="eaf9c9ee-6923-4304-bc57-dda1c807d2e2"
                 name="Vapourisation Chamber Cooling System" abstractType="#24adc7f8-fa65-4960-b824-fc760b21275d"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2097d968-2158-4dbf-891e-f28f08203d3a"
-                name="Solar Concentrator for Vapourisation" abstractType="#69807bb6-efec-4e57-828a-b878e4892252"/>
+                name="Solar Concentrator for Vapourisation" abstractType="#69807bb6-efec-4e57-828a-b878e4892252">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="1240767a-e809-45a1-9ab8-9e1f57777ab4" ReqIFLongName="satisfies"
+                  source="#69807bb6-efec-4e57-828a-b878e4892252" target="#0bb2b6bb-f4c0-40af-ace6-bcda05a19fe2"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="04c0a269-eb2b-412b-8691-f7990475ccb8"
                 name="Vapourisation Chamber Vacuum Provider" abstractType="#9d60ea2d-f14e-43a6-9113-1e66d576d1db"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f3ee9bff-822b-41a3-82b4-302b8141566d"
                 name="Vapourisation Controller" abstractType="#de68cf6b-4d48-430d-8e0f-5cede121e4d0"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="e809dd99-9777-4952-9e3b-393d7b30bb22" name="CP 8" orientation="OUT"
-                kind="FLOW">
-              <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                  id="91b35690-7c8a-47e4-b55e-2d956dab1d1c" targetElement="#1401ccc9-3112-4398-b9bf-dfcabb2be863"
-                  sourceElement="#e809dd99-9777-4952-9e3b-393d7b30bb22"/>
-              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                  id="a6c3dc8d-eaa1-4a7b-ba49-5eb7e9f85fa6" targetElement="#8e214929-2172-479e-bee9-a80fc747e492"
-                  sourceElement="#e809dd99-9777-4952-9e3b-393d7b30bb22"/>
-            </ownedFeatures>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="ef686c9a-5114-4782-ae7c-a59ab453b0db" name="Vapourisation Monitoring">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -9675,6 +9696,16 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="df7609bd-0c86-48c4-ab3b-7203ee9489c6" targetElement="#86f3646d-fea6-4b43-9db5-1ea303ccb40a"
                   sourceElement="#98985c03-a42f-4da8-8938-2e6471342c4f"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="e809dd99-9777-4952-9e3b-393d7b30bb22" name="CP 8" orientation="OUT"
+                  kind="FLOW">
+                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                    id="91b35690-7c8a-47e4-b55e-2d956dab1d1c" targetElement="#1401ccc9-3112-4398-b9bf-dfcabb2be863"
+                    sourceElement="#e809dd99-9777-4952-9e3b-393d7b30bb22"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="64e23283-0d2f-460b-8d14-7711e954d599" targetElement="#8e214929-2172-479e-bee9-a80fc747e492"
+                    sourceElement="#e809dd99-9777-4952-9e3b-393d7b30bb22"/>
+              </ownedFeatures>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="24adc7f8-fa65-4960-b824-fc760b21275d" name="Vapourisation Chamber Cooling System">
@@ -10499,7 +10530,7 @@
                     id="766b0c6b-00e7-4180-b67f-51a60f9009ba" targetElement="#8e8cafb0-82b8-42d1-8625-b10bbb9a6e61"
                     sourceElement="#e45190e4-2993-44b8-927d-b20ebdc4d1a9"/>
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="4385da1b-31f9-45ed-8298-29c34a7d36ad" targetElement="#ad87f669-77bc-4d88-a9cd-ed01c67fa89b"
+                    id="e9f81b19-c5ca-4027-b2be-92bd7a3515f5" targetElement="#ad87f669-77bc-4d88-a9cd-ed01c67fa89b"
                     sourceElement="#e45190e4-2993-44b8-927d-b20ebdc4d1a9"/>
               </ownedFeatures>
               <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
