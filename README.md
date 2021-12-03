@@ -12,3 +12,6 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 ## Capella add-ons
 
 * Requirements Viewpoint add-on (not used for now)
+
+## Logical Architecture Blank Preview 
+<img src="./LAB-Logical System.svg">
