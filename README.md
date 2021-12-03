@@ -1,4 +1,4 @@
-# ROxE
+# ROxE - Dum Spiro, Spero
 Regolith Oxygen Extractor Model by Kim Lamboley
 
 ## Capella Model
@@ -12,5 +12,18 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 
 * Requirements Viewpoint add-on
 
-## Logical Architecture Blank Preview 
+## Model Diagrams
+
+### Operational Analysis
+#### Operational Context
+
+### Functional Analysis
+#### Functional Breakdown
+
+### Logical Architecture
+#### Whole System - Logical Architecture Blank
 <img src="./LAB-Logical System.svg">
+
+
+### Physical Architecture
+#### Physical Architecture Blank
