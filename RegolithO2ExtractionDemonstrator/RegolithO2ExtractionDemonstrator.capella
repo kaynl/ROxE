@@ -52,7 +52,7 @@
         <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation" id="e0bb3a93-4b04-4c18-8d4d-7374a55a67f5"/>
         <ownedRequirements xsi:type="Requirements:Requirement" id="c4479e97-ccfe-46fc-b777-a15a1de4c827"
             ReqIFIdentifier="MOR-PROD01" ReqIFDescription="" ReqIFLongName="" ReqIFName="The System should be able to extract 1kg of Oxygen per day from Lunar Regolith"
-            ReqIFPrefix="MOR" ReqIFChapterName="MOR-01" ReqIFText="" requirementTypeProxy="">
+            ReqIFPrefix="" ReqIFChapterName="HLR-MOR01" ReqIFText="" requirementTypeProxy="">
           <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation" id="9a3ac6e8-b6c5-4c38-a083-0aba946b9082"/>
           <ownedRelations xsi:type="CapellaRequirements:CapellaOutgoingRelation" id="1c2133b8-a206-483d-9676-343a83c9f805"/>
           <ownedRelations xsi:type="Requirements:InternalRelation" id="573878ff-098f-4efd-bfef-db4898bb8c77"/>
@@ -61,44 +61,56 @@
       <ownedRequirements xsi:type="Requirements:Folder" id="30b7e90c-0aa4-4d95-8efd-7ab6d9d11f48"
           ReqIFName="Mission Constraints Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="5c91ddfa-4973-4139-b437-7828409687c4"
-            ReqIFName="The System should be capable of operating during 1year" ReqIFPrefix="MCR"/>
+            ReqIFName="The System should be capable of operating during 1year" ReqIFPrefix=""
+            ReqIFChapterName="HLR-MCR01"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="c1cc3367-ae7c-414a-9445-e20e1386e88b"
+            ReqIFName="The System shall be placed in the Lunar South Pole" ReqIFChapterName="HLR-MCR02"/>
       </ownedRequirements>
       <ownedRequirements xsi:type="Requirements:Folder" id="8252cd61-f9ad-45e2-aa17-3f6c654a1c5e"
           ReqIFName="Interface Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="c80bb6e5-f256-481d-8c53-c5705891ea81"
-            ReqIFName="The System should be designed to be mounted on EL3" ReqIFPrefix="IR"
-            ReqIFChapterName="IR-01"/>
+            ReqIFName="The System should be designed to be mounted on EL3" ReqIFPrefix=""
+            ReqIFChapterName="HLR-IR01"/>
       </ownedRequirements>
       <ownedRequirements xsi:type="Requirements:Folder" id="81e49080-02a0-438a-85e0-7c272aec6d2b"
           ReqIFName="Environmental Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="97b76509-e360-46ca-b927-33219bc14152"
             ReqIFName="The System shall be capable of mitigating the lunar dust effects"
-            ReqIFPrefix="ER"/>
+            ReqIFPrefix="" ReqIFChapterName="HLR-ER01"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="900319e5-9e2f-4140-bb1f-7e401f352a5e"
+            ReqIFName="The System shall be capable of withstanding the temperature difference on the Lunar South Pole"
+            ReqIFPrefix="" ReqIFChapterName="HLR-ER02"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="206c11db-d70c-4aa2-9db9-f322e9d2ca87"
+            ReqIFName="The System shall be capable of withstanding the lunar vacuum"
+            ReqIFPrefix="" ReqIFChapterName="HLR-ER03"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="7c5a7c10-ea5e-43a8-8b99-d237783acef1"
+            ReqIFName="The System shall withstand the vibration and acceleration environment of the launch vehicle"
+            ReqIFPrefix="" ReqIFChapterName="HLR-ER04"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="100efad4-e16e-492e-909d-e9c4e64d1bcb"
+            ReqIFName="The System shall withstand the vibration and acceleration environment of the lunar lander"
+            ReqIFPrefix="" ReqIFChapterName="HLR-ER05"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="6dc055d1-3a37-4f6d-9a13-7f9c17661dd9"
+            ReqIFName="The System shall withstand the radiation presesnt in the lunar south pole (Sun and GCR)"
+            ReqIFPrefix="" ReqIFChapterName="HLR-ER05"/>
       </ownedRequirements>
       <ownedRequirements xsi:type="Requirements:Folder" id="397bdb21-381e-4cf9-b5da-b53c58e27c2f"
           ReqIFLongName="Operational Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="4a79a09c-ec8b-4c22-8bfc-6c8a54be4f5a"
             ReqIFName="The System shall be given the necessary electrical power from the Lander"
-            ReqIFPrefix="OR"/>
+            ReqIFPrefix="" ReqIFChapterName="HLR-OR01"/>
+        <ownedRequirements xsi:type="Requirements:Requirement" id="89dd91eb-c56e-4ae5-9ac0-1de6474ccd46"
+            ReqIFName="The System shall process the regolith in batches" ReqIFChapterName="HLR-OR02"/>
       </ownedRequirements>
       <ownedRequirements xsi:type="Requirements:Folder" id="2f2a75d8-0837-4da5-8a48-80bb1755fc8c"
           ReqIFName="Physical Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="1b556e25-c296-4e6e-a7a9-eb505583db03"
-            ReqIFName="The System shall be have a mass of no more than 1.3t "/>
-      </ownedRequirements>
-      <ownedRequirements xsi:type="Requirements:Folder" id="610d4c07-a3c6-47ca-883c-1408e348c473"
-          ReqIFName="Configuration Requirements">
-        <ownedRequirements xsi:type="Requirements:Requirement" id="1b5c2a57-8026-4fc0-b976-e0f070ab45bd"
-            ReqIFName="The System shall have a vapourisation temperature of 800°C"
-            ReqIFPrefix="CR"/>
-        <ownedRequirements xsi:type="Requirements:Requirement" id="93f76157-d064-4994-94b1-0bab921aa6ec"
-            ReqIFIdentifier="CR-VAP-PRESS01" ReqIFLongName="" ReqIFName="The System shall vapourise regolith at 10^-15 atm pressure"
-            ReqIFPrefix="CR" ReqIFChapterName="CR-01"/>
+            ReqIFName="The System shall be have a mass of no more than 1.3t " ReqIFChapterName="HLR-PR05"/>
       </ownedRequirements>
     </ownedExtensions>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
         id="8be79980-e27f-4158-8743-740ba6e1cb40" name="Operational Analysis">
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="d00e7860-b1f9-4b3c-bc4a-806c3ea3c215"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="148817a9-485a-4782-9924-56b47e552bdf"/>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
           id="9f82a13d-826b-45cc-9119-8e3c8e8897d1" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
@@ -1243,6 +1255,8 @@
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
         id="9170d6f9-4e0b-4f46-8fb3-0c583901f0d6" name="System Analysis">
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="e1b85fac-374b-4b3b-ae85-395de4f729d6"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="cec0c43a-b7e6-4325-b0b5-f64f152e670e"/>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
           id="89211925-083d-493c-bd36-deeba68ee5fa" name="System Functions">
         <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
@@ -5163,24 +5177,201 @@
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="08a3ebb8-d89a-4688-9105-44f967bc866b"/>
       <ownedExtensions xsi:type="CapellaRequirements:CapellaModule" id="bee6802e-1fd8-464b-8d01-b66080660428"
           ReqIFLongName="Logical System Requirements" ReqIFName="Logical System Requirements">
+        <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="e7cfc342-8854-44db-a797-23f0955d27ba"/>
+        <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="fa094429-6a48-475c-8a96-dbf2644b24e8"/>
         <ownedRequirements xsi:type="Requirements:Folder" id="b57d66e8-d135-4b44-8682-bca5f318cb96"
-            ReqIFName="Regolith Intake Logical System Requirements"/>
+            ReqIFName="Regolith Intake Logical System Requirements">
+          <ownedRequirements xsi:type="Requirements:Folder" id="c5df95f9-819e-4887-a8ce-0a380bb05808"
+              ReqIFName="Configuration Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="3e44258d-cb6f-45e4-a559-31f9e37f3f35"
+                ReqIFName="The System shall be capable of hosting 1 kg of scooped lunar soil"
+                ReqIFChapterName="LSR-RILS-CR01"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="dfb564ec-be8d-43cb-85fc-a297f99cff5a"
+                ReqIFLongName="" ReqIFName="The System shall remove regolith grains larger than 1cm"
+                ReqIFChapterName="LSR-RILS-CR02"/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="3d887985-7af6-496a-a7aa-94ad05ca37cf"
+              ReqIFName="Environemental Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c1c31f1d-f3e3-4154-9352-aa223dab5e83"
+                ReqIFIdentifier="LSR-VLS-ER01" ReqIFLongName="The Regolith Intake Monitoring Subsystem shall operate nominally despite lunar dust deposits"
+                ReqIFName="The RIMS shall operate nominally despite lunar dust deposits"
+                ReqIFChapterName="LSR-RILS-ER01">
+              <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="ce845caf-5888-4a7c-ba80-4d79bded2a97"/>
+              <ownedRelations xsi:type="Requirements:InternalRelation" id="7bac9959-bad7-4881-8072-c25237d44c54"
+                  source="#c1c31f1d-f3e3-4154-9352-aa223dab5e83" target="#97b76509-e360-46ca-b927-33219bc14152"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="71a47f31-60a6-4f97-bda0-8bb5a876f65b"
+                ReqIFIdentifier="LSR-VLS-ER02" ReqIFLongName="The Regolith Intake Transportation subsystem shall operate despite lunar dust abrasion"
+                ReqIFName="The RITS shall operate despite lunar dust abrasion" ReqIFChapterName="LSR-RILS-ER02">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="08824986-b72a-48e1-bbba-af7a39efb2b0" ReqIFLongName="is allocated to"
+                  source="#71a47f31-60a6-4f97-bda0-8bb5a876f65b" target="#bae0e43f-8570-4ad4-917d-39ecc0b41336"/>
+            </ownedRequirements>
+          </ownedRequirements>
+        </ownedRequirements>
         <ownedRequirements xsi:type="Requirements:Folder" id="d60a16ad-0074-4a45-b685-3ac0e6bb47b5"
-            ReqIFName="Vapourisation Logical Subsystem">
+            ReqIFName="Vapourisation Logical System Requirements">
           <ownedRequirements xsi:type="Requirements:Folder" id="fffb4f69-0ed2-4572-8555-fd1e0bcf4a52"
               ReqIFName="Configuration Requirements">
             <ownedRequirements xsi:type="Requirements:Requirement" id="0bb2b6bb-f4c0-40af-ace6-bcda05a19fe2"
-                ReqIFName="The System Shall heat the regolith surface between 800°C and 1000°C"
+                ReqIFName="The System shall heat the regolith surface between 800°C and 1000°C"
                 ReqIFChapterName="LSR-VLS-CR01"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="7853acc4-a17a-455c-b3bd-9600354c5a84"
+                ReqIFLongName="The System shall vaporise the regolith under ultra-high vacuum of 10^-15 atm"
+                ReqIFName="The System shall vaporise the regolith under UHV of 10^-15 atm"
+                ReqIFChapterName="LSR-VLS-CR02"/>
           </ownedRequirements>
           <ownedRequirements xsi:type="Requirements:Folder" id="5648714d-09e4-4e0b-acf7-04ae04d72534"
               ReqIFName="Environmental Requirements" ReqIFPrefix="ER" ReqIFChapterName="ER">
             <ownedRequirements xsi:type="Requirements:Requirement" id="f3d9606c-9aaa-4618-9577-be6110370ae7"
-                ReqIFName="Vapourisation Monitoring Subsystem shall operate nominally despite lunar dust deposits"
-                ReqIFChapterName="LSR-VLS-OR01"/>
+                ReqIFIdentifier="LSR-VLS-ER01" ReqIFLongName="The Vapourisation Monitoring Subsystem shall operate nominally despite lunar dust deposits"
+                ReqIFName="The VMS shall operate nominally despite lunar dust deposits"
+                ReqIFChapterName="LSR-VLS-ER01">
+              <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="feb4ce7c-029c-43ba-b2cd-8e52e4cb176c"/>
+              <ownedRelations xsi:type="Requirements:InternalRelation" id="a096f4de-a96f-4505-9732-731c149ffa1e"
+                  source="#f3d9606c-9aaa-4618-9577-be6110370ae7" target="#97b76509-e360-46ca-b927-33219bc14152"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="cdebef80-d285-43ef-aeda-a6bf0ddefe55"
+                ReqIFIdentifier="LSR-VLS-ER02" ReqIFLongName="The solar concentrator subsystem shall be able to prevent dust deposits"
+                ReqIFName="The SCS shall be able to prevent dust deposits" ReqIFChapterName="LSR-VLS-ER02">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="ff2a4970-7492-43dc-a38b-66e41b433509" ReqIFLongName="is allocated to"
+                  source="#cdebef80-d285-43ef-aeda-a6bf0ddefe55" target="#bae0e43f-8570-4ad4-917d-39ecc0b41336"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ebd1db08-568c-47a9-99c1-9ff144ba1c14"
+                ReqIFIdentifier="LSR-VLS-ER03" ReqIFLongName="The Vapourisation Chamber Subsystem shall withstand the regolith vapourisation process in terms of temperature and pressure"
+                ReqIFName="The VCS shall withstand the regolith vapourisation process in terms of temperature and pressure"
+                ReqIFChapterName="LSR-VLS-ER03"/>
+          </ownedRequirements>
+        </ownedRequirements>
+        <ownedRequirements xsi:type="Requirements:Folder" id="2a200911-a0ec-48ee-8dc8-c2f6d1eaf1ec"
+            ReqIFName="Condensation Logical System Requirements">
+          <ownedAttributes xsi:type="Requirements:EnumerationValueAttribute" id="25b68588-3c56-4a1e-8bbe-475d87e2fc08"/>
+          <ownedRequirements xsi:type="Requirements:Folder" id="cfba066f-8f5b-4cfc-904f-cf4c25442ef8"
+              ReqIFName="Configuration Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="a6df2c8b-28ec-4fe5-a25d-af364f60832c"
+                ReqIFName="The System shall condense the regolith vapour on a surface between 500 and 800°C"
+                ReqIFChapterName="LSR-CLS-CR01"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="b6945741-0887-4a70-80ca-6296369d237b"
+                ReqIFLongName="The System shall condense the regolith under ultra-high vacuum of 10^-15 atm"
+                ReqIFName="The System shall condense the regolith vapor under UHV of 10^-15 atm"
+                ReqIFChapterName="LSR-CLS-CR02"/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="b206aadd-c747-443d-a2b1-174730e5128e"
+              ReqIFName="Environemental Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="9f34d6ec-892b-4498-a57e-b983edf73e67"
+                ReqIFIdentifier="LSR-VLS-ER01" ReqIFLongName="The Condensation Monitoring Subsystem shall operate nominally despite lunar dust deposits"
+                ReqIFName="The CMS shall operate nominally despite lunar dust deposits"
+                ReqIFChapterName="LSR-CLS-ER01">
+              <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="877249ef-6dbc-4db5-b993-c0c4dab6dca6"/>
+              <ownedRelations xsi:type="Requirements:InternalRelation" id="8566f07d-9ee3-469d-831b-6cf629357bf5"
+                  source="#9f34d6ec-892b-4498-a57e-b983edf73e67" target="#97b76509-e360-46ca-b927-33219bc14152"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6a3a131c-eb91-4293-a2d9-03106b443036"
+                ReqIFIdentifier="LSR-VLS-ER02" ReqIFLongName="The condensation plates subsystem shall be able to operate despite lunar dust deposits"
+                ReqIFName="The CPS shall be able to prevent dust deposits" ReqIFChapterName="LSR-CLS-ER02">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="943aded2-608f-415d-8d3c-fc47923c82d7" ReqIFLongName="is allocated to"
+                  source="#6a3a131c-eb91-4293-a2d9-03106b443036" target="#bae0e43f-8570-4ad4-917d-39ecc0b41336"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="d76fe341-ce3f-4f9b-87b6-de619db56944"
+                ReqIFIdentifier="LSR-VLS-ER03" ReqIFLongName="The Condensation Chamber Subsystem shall withstand the regolith condensation process in terms of temperature and pressure"
+                ReqIFName="The CCS shall withstand the regolith condensation process in terms of temperature and pressure"
+                ReqIFChapterName="LSR-CLS-ER03"/>
+          </ownedRequirements>
+        </ownedRequirements>
+        <ownedRequirements xsi:type="Requirements:Folder" id="c2cb25aa-0c81-4580-a7c0-a6f751da88cb"
+            ReqIFName="Oxygen Recovery Logical System Requirements">
+          <ownedRequirements xsi:type="Requirements:Folder" id="55b8ad95-c32f-4e33-9f0f-d6a12256e84c"
+              ReqIFName="Configuration Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="55d5093f-2ced-40a4-b8a6-926158f752da"
+                ReqIFName="The System shall compress the extracted oxygen to a pressure of 1atm"
+                ReqIFChapterName="LSR-ORLS-CR01"/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="c81eed84-e865-436b-b205-eeeba700615f"
+              ReqIFName="Environemental Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="fdebd78d-9b54-4110-b87c-3594b430997c"
+                ReqIFIdentifier="LSR-VLS-ER01" ReqIFLongName="The Oxygen Recovery Monitoring Subsystem shall operate nominally despite lunar dust deposits"
+                ReqIFName="The ORMS shall operate nominally despite lunar dust deposits"
+                ReqIFChapterName="LSR-ORLS-ER01">
+              <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="d7b6e167-3dc8-49c9-8419-486af2ead2ea"/>
+              <ownedRelations xsi:type="Requirements:InternalRelation" id="5081faa2-1a42-4c20-b8d3-e03160dd55a1"
+                  source="#fdebd78d-9b54-4110-b87c-3594b430997c" target="#97b76509-e360-46ca-b927-33219bc14152"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="3afffdf9-3dc2-41a2-b99c-cc16256871eb"
+                ReqIFIdentifier="LSR-VLS-ER02" ReqIFLongName="The Oxygen Purification Subsystem shall mitigate lunar dust sandblast"
+                ReqIFName="The OPS shall mitigate lunar dust sandblast in pipes" ReqIFChapterName="LSR-ORLS-ER02">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="31dbec69-c35e-4c55-ae8a-9a43bf93c13c" ReqIFLongName="is allocated to"
+                  source="#3afffdf9-3dc2-41a2-b99c-cc16256871eb" target="#bae0e43f-8570-4ad4-917d-39ecc0b41336"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f14229fa-a330-4ddb-a809-1ec36b2b1c72"
+                ReqIFIdentifier="LSR-VLS-ER02" ReqIFLongName="The Oxygen Purification Subsystem shall get rid of lunar dust in Extracted Oxygen"
+                ReqIFName="The OPS shall get rid of lunar dust in Extracted Oxygen"
+                ReqIFChapterName="LSR-ORLS-ER03">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="d895c684-4094-4ab2-b11d-2c7d42e0b6f7" ReqIFLongName="is allocated to"
+                  source="#f14229fa-a330-4ddb-a809-1ec36b2b1c72" target="#bae0e43f-8570-4ad4-917d-39ecc0b41336"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="df583112-5426-4d55-9c4c-0216af74671d"
+              ReqIFName="Performance Requirement">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="67f40b02-1e9d-4adf-8704-e6704dd0f253"
+                ReqIFLongName="The Oxygen Recovery System shall produce oxygen at 99.9% purity"
+                ReqIFName="The ORS shall produce oxygen at 99.9% purity" ReqIFPrefix=""
+                ReqIFChapterName="LSR-ORLS-PR01"/>
+          </ownedRequirements>
+        </ownedRequirements>
+        <ownedRequirements xsi:type="Requirements:Folder" id="b7ee78b8-60d7-46e5-94b3-113fb6f753f0"
+            ReqIFName="Oxygen Storage System Requirements">
+          <ownedRequirements xsi:type="Requirements:Folder" id="5114c5a6-6ec7-4f8a-817c-d37569e82c5e"
+              ReqIFName="Configuration Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c773905f-39b8-464a-92a7-9e2bdedaa3ad"
+                ReqIFName="The System shall store the extracted oxygen to a pressure of 3 bars"
+                ReqIFChapterName="LSR-OSLS-CR01"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="e7feafa0-2cd2-46b0-a1e1-23b3dce760c1"
+                ReqIFName="The System shall store the extracted oxygen to a temperature of 90K"
+                ReqIFChapterName="LSR-OSLS-CR02"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="811c6aa9-80ac-44b2-b2b2-8915a2a16fa7"
+                ReqIFName="The System shall store liquid oxygen" ReqIFChapterName="LSR-OSLS-CR03"/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="1c2181cc-535f-4c97-a39c-73c057d2096e"
+              ReqIFName="Environemental Requirements">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="be183d88-d1fa-4fd6-a027-38dfbdce91ec"
+                ReqIFIdentifier="LSR-VLS-ER01" ReqIFLongName="The Oxygen Recovery Monitoring Subsystem shall operate nominally despite lunar dust deposits"
+                ReqIFName="The OSMS shall operate nominally despite lunar dust deposits"
+                ReqIFChapterName="LSR-OSLS-ER01">
+              <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="d11f0832-631c-4b4f-88bc-a7d57ce95e70"/>
+              <ownedRelations xsi:type="Requirements:InternalRelation" id="c81ecc94-1980-4390-ad35-4f00b4e0f234"
+                  source="#be183d88-d1fa-4fd6-a027-38dfbdce91ec" target="#97b76509-e360-46ca-b927-33219bc14152"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="3582b285-07f2-473b-84f3-76e98cfa6405"
+                ReqIFIdentifier="LSR-VLS-ER02" ReqIFLongName="The Oxygen Storage System shall withstand sunlight and shadow conditions"
+                ReqIFName="The OSS shall withstand sunlight and shadow conditions"
+                ReqIFChapterName="LSR-OSLS-ER02">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="a2f530cb-dde4-4333-9416-783245da0f14" ReqIFLongName="is allocated to"
+                  source="#3582b285-07f2-473b-84f3-76e98cfa6405" target="#bae0e43f-8570-4ad4-917d-39ecc0b41336"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="9cc9bc13-7b31-44e5-af88-d4175c87660d"
+              ReqIFName="Performance Requirement">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="b769b1d0-9347-42bc-a9b1-080650c97cee"
+                ReqIFLongName="The Oxygen Storage System shall limit leaks to 1kg per year"
+                ReqIFName="The OSS shall limit leaks to 1kg per year" ReqIFPrefix=""
+                ReqIFChapterName="LSR-OSLS-PR01"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="9295f44e-886e-406e-89f2-7700a6b94b0d"
+                ReqIFLongName="The Oxygen Storage System shall be capable of storing 300kg of oxygen"
+                ReqIFName="The OSS shall be capable of storing 300kg of oxygen" ReqIFChapterName="LSR-OSLS-PR02"/>
           </ownedRequirements>
         </ownedRequirements>
       </ownedExtensions>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="825bd52f-444a-46c2-8259-af753b12f613"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="f52b13e9-d411-4b12-88db-932403029289"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="2048f27f-c832-4340-8c7d-ca92c14ac7d1"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="0e5119cc-55a8-42f1-ba64-48d9e7d0741a"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="b57286e2-fcc9-4007-b808-099e98eb72db"/>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="002675f6-6c37-4423-9460-ec58c8b4f162"/>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
           id="8dbecd13-cb81-41ff-af72-964c0118910f" name="Logical Functions">
         <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -6127,6 +6318,8 @@
               </inputs>
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="e64ee49a-1df5-4ed6-875a-3c63b97153ce" name="FIP 17"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="baa8d065-4fdf-4beb-9017-a27e49c56347" name="FIP 18"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="639a3e2b-0ca4-4400-98bd-840309a5a3ff" name="FOP 1">
                 <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -6246,7 +6439,7 @@
                     sourceElement="#be81f354-0592-4e04-80f9-dbd6af09f999"/>
               </ownedFunctions>
               <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="93d5efa5-0d9f-422d-9e5d-1e1f67909f85" name="Measure System Temperature">
+                  id="93d5efa5-0d9f-422d-9e5d-1e1f67909f85" name="Measure Vapourisation Chamber Temperature">
                 <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                     id="45aae8f9-01d8-49d8-9c34-b8dba6744bbb" name="FIP 1">
                   <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -7802,6 +7995,11 @@
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="fb349790-0119-4be8-8876-fd33b72a6762" name="FOP 1"/>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="297f9723-65fa-41a3-9aaf-8bba378096b6" name="Measure Condensation Chamber Temperature">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="70bc785f-1758-4ebd-a6b0-033710524393" name="FOP 1"/>
+          </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="bb52b298-a05e-4205-aac6-2836e4cd919c" targetElement="#cd70852e-b771-469a-91c7-346d9f9bf3a6"
               sourceElement="#dfd33c2e-e671-49b9-b5ff-0ba4db0afa2e"/>
@@ -8736,6 +8934,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="9756ba58-7271-4d0c-984a-d73dc0c2151b" name="SurviveVapourisationHeat"
               target="#95b7515d-e7f0-48ad-9d89-bb244b17c579" source="#11e89d23-5d99-479a-81aa-108c8dad9cc0"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="14601d37-3fe4-43d2-8d1f-f74ca5ce182f" name="CondensationChamberTemperatureMonitoringData"
+              target="#baa8d065-4fdf-4beb-9017-a27e49c56347" source="#70bc785f-1758-4ebd-a6b0-033710524393"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -9052,6 +9253,9 @@
             <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
                 id="edf832b3-b644-4585-b753-a36f49eec34d" targetElement="#82554729-56dc-479f-bd7f-84654cfaaa78"
                 sourceElement="#ec11f240-d8e6-4bd8-948d-f40224d19107"/>
+            <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+                id="2531f453-36e7-44cb-a487-f04dfa43cb8c" targetElement="#14601d37-3fe4-43d2-8d1f-f74ca5ce182f"
+                sourceElement="#ec11f240-d8e6-4bd8-948d-f40224d19107"/>
           </ownedComponentExchanges>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
               id="ff1f0164-6eba-4a5b-85d8-2b971e5b29f4" name="Oxygen Recovery Data"
@@ -9101,11 +9305,34 @@
                 sourceElement="#c55fc13c-2a17-4a57-8521-84f5716e14b1"/>
           </ownedComponentExchanges>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e01e3e1c-3b51-48c1-8bf5-7c29203f28ba"
-              name="Oxygen Recovery Logical System" abstractType="#28c9bc8a-5a4a-434d-bc3c-36f7ce5e12f7"/>
+              name="Oxygen Recovery Logical System" abstractType="#28c9bc8a-5a4a-434d-bc3c-36f7ce5e12f7">
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="2b6962a9-82c4-406c-8bf6-790feefaa08f" ReqIFLongName="satisfies"
+                source="#28c9bc8a-5a4a-434d-bc3c-36f7ce5e12f7" target="#55d5093f-2ced-40a4-b8a6-926158f752da"/>
+          </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8301c4d0-cba7-4660-8c25-27fe99dde5ab"
               name="Computer Logical System" abstractType="#9520f7c3-3b68-4d03-b4f3-1f7c0fd49018"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3a25397d-c15b-48b4-b76a-bf31022f7dc7"
-              name="Oxygen Storage Logical System" abstractType="#0d378b09-3152-45a1-88c7-084ba3a94fb6"/>
+              name="Oxygen Storage Logical System" abstractType="#0d378b09-3152-45a1-88c7-084ba3a94fb6">
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="dd92ab1e-9244-4495-a0a1-b7b632faf9a9" ReqIFLongName="satisfies"
+                source="#0d378b09-3152-45a1-88c7-084ba3a94fb6" target="#3582b285-07f2-473b-84f3-76e98cfa6405"/>
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="fa137623-f94f-43e5-ad39-0dc7f1759ec4" ReqIFLongName="satisfies"
+                source="#0d378b09-3152-45a1-88c7-084ba3a94fb6" target="#e7feafa0-2cd2-46b0-a1e1-23b3dce760c1"/>
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="7ca13e90-2ff2-442a-8ac5-2d922646f2df" ReqIFLongName="satisfies"
+                source="#0d378b09-3152-45a1-88c7-084ba3a94fb6" target="#c773905f-39b8-464a-92a7-9e2bdedaa3ad"/>
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="433cd8e5-17e3-4f45-8371-76625dee8b22" ReqIFLongName="satisfies"
+                source="#0d378b09-3152-45a1-88c7-084ba3a94fb6" target="#811c6aa9-80ac-44b2-b2b2-8915a2a16fa7"/>
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="ea59737f-3198-43ff-991a-189da24c96fa" ReqIFLongName="satisfies"
+                source="#0d378b09-3152-45a1-88c7-084ba3a94fb6" target="#9295f44e-886e-406e-89f2-7700a6b94b0d"/>
+            <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                id="c3bdb095-a43d-4398-86e1-b5889cd3eb00" ReqIFLongName="satisfies"
+                source="#0d378b09-3152-45a1-88c7-084ba3a94fb6" target="#b769b1d0-9347-42bc-a9b1-080650c97cee"/>
+          </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0b4b5922-c9e7-46de-867a-3a5effe2c38b"
               name="Regolith Inlet Logical System" abstractType="#cfda642c-2676-482b-abf4-b0dc115d2dcb"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="02adf713-17c7-49f5-9123-14018f252d7b"
@@ -9122,11 +9349,25 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="413c7135-ba6f-4237-9a2e-0c4456d52822"
                 name="Oxygen Trap System" abstractType="#9bc11460-96e4-444c-90b9-fe31b9e0814f"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7a2ccaf1-2435-4069-9878-02741a73adcc"
-                name="Oxygen Purification System" abstractType="#d63b02ea-401f-40d3-ab9f-593b08f3fbeb"/>
+                name="Oxygen Purification System" abstractType="#d63b02ea-401f-40d3-ab9f-593b08f3fbeb">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="1e9fbe6c-8f12-47a7-abd1-c77f601e271f" ReqIFLongName="satisfies"
+                  source="#d63b02ea-401f-40d3-ab9f-593b08f3fbeb" target="#3afffdf9-3dc2-41a2-b99c-cc16256871eb"/>
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="efba5dba-628d-4bd4-a9f5-9c014fd64384" ReqIFLongName="satisfies"
+                  source="#d63b02ea-401f-40d3-ab9f-593b08f3fbeb" target="#f14229fa-a330-4ddb-a809-1ec36b2b1c72"/>
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="5284128a-9766-483e-a6f2-ebc5d73ece7a" ReqIFLongName="Satisfies"
+                  source="#d63b02ea-401f-40d3-ab9f-593b08f3fbeb" target="#67f40b02-1e9d-4adf-8704-e6704dd0f253"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="98a851fa-1c77-45a9-a5d9-191e21514d05"
                 name="Oxygen Trap Controller" abstractType="#2a885685-d213-472e-a5e7-3ed4203f3a73"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4ac5c239-2237-428d-bf64-02974808a29a"
-                name="Oxygen Trap and Purity Monitoring" abstractType="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878"/>
+                name="Oxygen Trap and Purity Monitoring" abstractType="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="2b80c523-87d2-4b32-a9af-79864065ff54" ReqIFLongName="satisfies"
+                  source="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878" target="#fdebd78d-9b54-4110-b87c-3594b430997c"/>
+            </ownedFeatures>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="9bc11460-96e4-444c-90b9-fe31b9e0814f" name="Oxygen Trap System">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -9276,6 +9517,9 @@
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="365f0072-0121-4b8e-b390-9327c55d84ca" targetElement="#5feeadef-da08-4d65-b2eb-bf18e4dfc518"
                     sourceElement="#09d25fca-bccb-4b6c-9713-722bc49bc42e"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="08e6c976-320a-4f28-88d1-7612c6a8b58f" targetElement="#baa8d065-4fdf-4beb-9017-a27e49c56347"
+                    sourceElement="#09d25fca-bccb-4b6c-9713-722bc49bc42e"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="c1da6369-09ac-4b95-afa6-6a18a608058b" name="CP 3" orientation="IN"
@@ -9390,7 +9634,11 @@
                 id="fe2689ce-485b-4333-8943-b8ab6278e918" targetElement="#9187c395-fe80-401e-9158-104aabe4ae66"
                 sourceElement="#0d378b09-3152-45a1-88c7-084ba3a94fb6"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e7c7da06-e2ed-4e74-96c8-81364d14510b"
-                name="Oxygen Storage Monitoring System" abstractType="#4a8c2278-8475-4f0d-add7-8ebac3d3a5a7"/>
+                name="Oxygen Storage Monitoring System" abstractType="#4a8c2278-8475-4f0d-add7-8ebac3d3a5a7">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="d0808a7e-864d-410c-800c-6c5f4bc852dc" ReqIFLongName="satisfies"
+                  source="#4a8c2278-8475-4f0d-add7-8ebac3d3a5a7" target="#be183d88-d1fa-4fd6-a027-38dfbdce91ec"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c70ad0e3-c97a-4d64-b331-4f95f5fb5815"
                 name="Storage Controller" abstractType="#0a3c1ead-f2b2-44f6-8efc-c70a5075c83e"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -9431,12 +9679,27 @@
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="cfda642c-2676-482b-abf4-b0dc115d2dcb" name="Regolith Inlet Logical System">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5c5b7330-da1c-4f7c-a201-97769d7849f1"
-                name="Sifting System" abstractType="#1c1e7138-e125-4884-917f-b96aa305f0bd"/>
+                name="Sifting System" abstractType="#1c1e7138-e125-4884-917f-b96aa305f0bd">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="43c8668a-da6e-48fe-ad13-e8577117b11a" ReqIFLongName="satisfies"
+                  source="#1c1e7138-e125-4884-917f-b96aa305f0bd" target="#3e44258d-cb6f-45e4-a559-31f9e37f3f35"/>
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="0c27b9d6-2f18-4803-9675-633c10d7d5a4" ReqIFLongName="satisfies"
+                  source="#1c1e7138-e125-4884-917f-b96aa305f0bd" target="#dfb564ec-be8d-43cb-85fc-a297f99cff5a"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="89e708c1-1e9a-414a-b891-ed9a1df42e96"
                 name="Regolith Powder Transportation System to Vapourisation Chamber"
-                abstractType="#26b7bb04-0418-4313-80ea-504d5353d613"/>
+                abstractType="#26b7bb04-0418-4313-80ea-504d5353d613">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="1f94b2e3-dbf9-4e45-984b-bb41d355af8a" ReqIFLongName="satisfies"
+                  source="#26b7bb04-0418-4313-80ea-504d5353d613" target="#71a47f31-60a6-4f97-bda0-8bb5a876f65b"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5dd0e64e-0ca2-4e27-aff8-6d1742300636"
-                name="Regolith Feed Monitoring System" abstractType="#d5f06f11-2cfa-41e5-bc89-1fa08c9dcb12"/>
+                name="Regolith Feed Monitoring System" abstractType="#d5f06f11-2cfa-41e5-bc89-1fa08c9dcb12">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="e6d8d6ce-ad0f-4afb-91c1-d0c36086f922" ReqIFLongName="satisfies"
+                  source="#d5f06f11-2cfa-41e5-bc89-1fa08c9dcb12" target="#c1c31f1d-f3e3-4154-9352-aa223dab5e83"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ad366d27-89ae-48ec-b2b0-8b14856a4f86"
                 name="Regolith Intake Controller" abstractType="#9681e1ab-e57e-4e51-974e-b66744d69ec2"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -9621,7 +9884,11 @@
                   source="#ef686c9a-5114-4782-ae7c-a59ab453b0db" target="#f3d9606c-9aaa-4618-9577-be6110370ae7"/>
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c8bbddfe-6d7e-417f-b6dd-b8402e6020d1"
-                name="Vapourisation Chamber" abstractType="#eeda4b74-d231-42c6-9454-cfc7dbe06196"/>
+                name="Vapourisation Chamber" abstractType="#eeda4b74-d231-42c6-9454-cfc7dbe06196">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="9517db51-5cb0-4ef2-858a-7f456936a42b" ReqIFLongName="satisfies"
+                  source="#eeda4b74-d231-42c6-9454-cfc7dbe06196" target="#ebd1db08-568c-47a9-99c1-9ff144ba1c14"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5278174d-58fe-4be7-81b2-df666a584e6e"
                 name="Vapourisation Waste Transportation System" abstractType="#98985c03-a42f-4da8-8938-2e6471342c4f"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="eaf9c9ee-6923-4304-bc57-dda1c807d2e2"
@@ -9631,9 +9898,16 @@
               <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
                   id="1240767a-e809-45a1-9ab8-9e1f57777ab4" ReqIFLongName="satisfies"
                   source="#69807bb6-efec-4e57-828a-b878e4892252" target="#0bb2b6bb-f4c0-40af-ace6-bcda05a19fe2"/>
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="1c37d8f7-c4d1-4f00-86f9-b64262df3b14" ReqIFLongName="satisfies"
+                  source="#69807bb6-efec-4e57-828a-b878e4892252" target="#cdebef80-d285-43ef-aeda-a6bf0ddefe55"/>
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="04c0a269-eb2b-412b-8691-f7990475ccb8"
-                name="Vapourisation Chamber Vacuum Provider" abstractType="#9d60ea2d-f14e-43a6-9113-1e66d576d1db"/>
+                name="Vapourisation Chamber Vacuum Provider" abstractType="#9d60ea2d-f14e-43a6-9113-1e66d576d1db">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="2318e0d0-ea80-457e-b531-0c17a1ae170c" ReqIFLongName="satisfies"
+                  source="#9d60ea2d-f14e-43a6-9113-1e66d576d1db" target="#7853acc4-a17a-455c-b3bd-9600354c5a84"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f3ee9bff-822b-41a3-82b4-302b8141566d"
                 name="Vapourisation Controller" abstractType="#de68cf6b-4d48-430d-8e0f-5cede121e4d0"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -9782,13 +10056,32 @@
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="66fc7c57-fdcd-428d-a540-c8fe9fec3074" name="Condensation Logical System">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="54e6112e-fcd2-4757-b7ce-7ddbcd22d74d"
-                name="Condensation Monitoring" abstractType="#9596e0fc-60f3-4713-82f8-f4c0128bfa21"/>
+                name="Condensation Monitoring" abstractType="#9596e0fc-60f3-4713-82f8-f4c0128bfa21">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="1beb8dba-bc16-49b0-958b-cd0d46255741" ReqIFLongName="satisfies"
+                  source="#9596e0fc-60f3-4713-82f8-f4c0128bfa21" target="#9f34d6ec-892b-4498-a57e-b983edf73e67"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b8a305b5-593f-4705-ae6b-0313042ed3eb"
-                name="Condensation Chamber" abstractType="#739df9ee-0e0a-4508-b1d7-78a7d6e8a6ca"/>
+                name="Condensation Chamber" abstractType="#739df9ee-0e0a-4508-b1d7-78a7d6e8a6ca">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="b1665c8b-4e25-4df5-849d-d174924a5cea" ReqIFLongName="satisfies"
+                  source="#739df9ee-0e0a-4508-b1d7-78a7d6e8a6ca" target="#d76fe341-ce3f-4f9b-87b6-de619db56944"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fa961952-4833-42f0-aff5-61d60ba3ed06"
-                name="Cold plates" abstractType="#70b49977-f6ad-4a87-a84a-61d0a5cc07e4"/>
+                name="Cold plates" abstractType="#70b49977-f6ad-4a87-a84a-61d0a5cc07e4">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="aeebd92b-4a39-402d-bf6e-7944d9da0a74" ReqIFLongName="verifies"
+                  source="#70b49977-f6ad-4a87-a84a-61d0a5cc07e4" target="#a6df2c8b-28ec-4fe5-a25d-af364f60832c"/>
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="c0923acc-5a06-419b-a9c1-1c2b3076a765" ReqIFLongName="satisfies"
+                  source="#70b49977-f6ad-4a87-a84a-61d0a5cc07e4" target="#6a3a131c-eb91-4293-a2d9-03106b443036"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="399eefd7-9416-4c0f-babf-f60a7d8a6f80"
-                name="Condensation Chamber Vacuum Provider" abstractType="#d9f394ab-27ff-422d-8776-ff0e2235c914"/>
+                name="Condensation Chamber Vacuum Provider" abstractType="#d9f394ab-27ff-422d-8776-ff0e2235c914">
+              <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
+                  id="46e3daf7-5748-4021-86d9-6963472dca17" ReqIFLongName="verifies"
+                  source="#d9f394ab-27ff-422d-8776-ff0e2235c914" target="#b6945741-0887-4a70-80ca-6296369d237b"/>
+            </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b8613dee-c467-4472-9153-448f3788fa0d"
                 name="Condensation Waste Transportation System" abstractType="#fda32b98-9d0e-4f48-a12e-8808b4c76a31"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9d28ea44-fc9b-4035-a63c-51b68bfb2e90"
@@ -9809,6 +10102,9 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="bb5f3fcb-f866-45b5-a024-302d99e80396" targetElement="#5a093c13-d22b-498c-ac36-73083c1c7e1b"
                   sourceElement="#9596e0fc-60f3-4713-82f8-f4c0128bfa21"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="61582428-1d7f-4aac-8c1c-c64a01be8ece" targetElement="#297f9723-65fa-41a3-9aaf-8bba378096b6"
+                  sourceElement="#9596e0fc-60f3-4713-82f8-f4c0128bfa21"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="7ce7fc74-3c28-45f3-b1f7-e2618466f876" name="CP 1" orientation="OUT"
                   kind="FLOW">
@@ -9820,6 +10116,9 @@
                     sourceElement="#7ce7fc74-3c28-45f3-b1f7-e2618466f876"/>
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="aadff177-d309-4463-bb32-32deba93a2db" targetElement="#856a2b7b-cbb1-4076-925e-4959f158fe58"
+                    sourceElement="#7ce7fc74-3c28-45f3-b1f7-e2618466f876"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="48f4fab4-7ff5-43ea-8e4f-d61a9b3bb3df" targetElement="#70bc785f-1758-4ebd-a6b0-033710524393"
                     sourceElement="#7ce7fc74-3c28-45f3-b1f7-e2618466f876"/>
               </ownedFeatures>
             </ownedLogicalComponents>
@@ -10586,6 +10885,7 @@
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
         id="4c55b6a2-6ebc-4fe1-9a28-583581f73e69" name="Physical Architecture">
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="d336a900-4088-4847-9063-16177ad52659"/>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
           id="6337bc84-5fb0-42e3-bc77-b1288e1f95a5" name="Physical Functions">
         <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
