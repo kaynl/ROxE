@@ -20,10 +20,7 @@
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/5.0.0"
     id="3b2ee3bd-62e1-4fa7-b407-395625c19f06"
     name="RegolithO2ExtractionDemonstrator">
-  <ownedExtensions xsi:type="libraries:ModelInformation" id="8b931718-8fa8-4017-8aa7-32d33b9aa77d">
-    <ownedReferences xsi:type="libraries:LibraryReference" id="3448e14e-0585-4aaf-9154-6bcc378521c9"
-        library="libraries:ModelInformation ../RegolithProcessingLib/RegolithProcessingLib.capella#a00feccc-cce0-47dd-bdba-3b370357e5ff"/>
-  </ownedExtensions>
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="8b931718-8fa8-4017-8aa7-32d33b9aa77d"/>
   <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
       id="882e7f8f-ae43-4ff9-9c7d-8df233abf9b1" name="ProgressStatus">
     <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
