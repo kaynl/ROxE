@@ -6,12 +6,11 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 ### Files
 
  * RegolithO2ExtractionDemonstrator : Capella Model for an Oxygen Extractor from Lunar Regolith
- * RegolithProcessingLib : Library for interface elements for any Oxygen Processing Plant
 
 
 ## Capella add-ons
 
-* Requirements Viewpoint add-on (not used for now)
+* Requirements Viewpoint add-on
 
 ## Logical Architecture Blank Preview 
 <img src="./LAB-Logical System.svg">
