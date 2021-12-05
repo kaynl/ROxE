@@ -16,13 +16,19 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 
 ### Operational Analysis
 #### Operational Context
+<img src="./Model-SVG/OA/OAB.svg">
 
 ### Functional Analysis
-#### Functional Breakdown
+#### High-level functions
+<img src="./Model-SVG/SA/SAB_HLF.svg">
+
+#### Low-level functions
+<img src="./Model-SVG/SA/SAB_LLF.svg">
 
 ### Logical Architecture
 #### Whole System - Logical Architecture Blank
-<img src="./LAB-Logical System.svg">
+<img src="./Model-SVG/LA/LAB-Logical System.svg">
+
 
 
 ### Physical Architecture
