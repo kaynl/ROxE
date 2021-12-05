@@ -6,7 +6,7 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 ### Files
 
  * RegolithO2ExtractionDemonstrator : Capella Model for an Oxygen Extractor from Lunar Regolith
-
+ * Model-SVG : File regrouping all the .svg documents that are displayed in this README file
 
 ## Capella add-ons
 
