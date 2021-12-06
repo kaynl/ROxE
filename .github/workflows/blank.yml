@@ -29,8 +29,8 @@ jobs:
       - name: Install py-capellambse package
         run: |
           cd py-capellambse
-          #python3 -m venv .venv
-          #source .venv/bin/activate
+          python3 -m venv .venv
+          source .venv/bin/activate
           pip install -e .
       - name: Create local changes
         run: python ./Model-SVG/generate-capella-docs.py
