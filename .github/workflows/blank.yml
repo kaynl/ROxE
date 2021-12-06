@@ -25,14 +25,15 @@ jobs:
       # Download py-capellambse package, go to file, create venv, activate it
       - uses: actions/checkout@v1
       - name: Download py-capellambse
+        run: git clone https://github.com/DSD-DBS/py-capellambse.git
+      -name: Install py-capellambse package
         run: |
-          git clone https://github.com/DSD-DBS/py-capellambse.git
           cd py-capellambse
-          python3 -m venv .venv
-          source .venv/bin/activate
+          #python3 -m venv .venv
+          #source .venv/bin/activate
           pip install -e .
       - name: Create local changes
-        run: python3 ./Model-SVG/generate-capella-docs.py
+        run: python ./Model-SVG/generate-capella-docs.py
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
