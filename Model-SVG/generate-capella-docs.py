@@ -4,7 +4,7 @@
 import capellambse
 #import pandas as pd
 
-path_to_model = "../RegolithO2ExtractionDemonstrator/RegolithO2ExtractionDemonstrator.aird"
+path_to_model = "~/RegolithO2ExtractionDemonstrator/RegolithO2ExtractionDemonstrator.aird"
 model = capellambse.MelodyModel(path_to_model)
 model
 
