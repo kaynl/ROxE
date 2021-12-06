@@ -33,7 +33,7 @@ jobs:
           source .venv/bin/activate
           pip install -e .
       - name: Create local changes
-        run: python3 ./Model-SVG/generate-capella-docs.py
+        run: python generate-capella-docs.py
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
