@@ -29,11 +29,12 @@ jobs:
       - name: Install py-capellambse package and run 
         run: |
           ls
-          cd Model-SVG/py-capellambse
+          cd py-capellambse
           ls
           python -m venv .venv
           source .venv/bin/activate
           pip install -e
+          cd ..
           ls
           python Model-SVG/generate-capella-docs.py
       - name: Commit files
