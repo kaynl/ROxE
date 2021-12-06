@@ -30,12 +30,13 @@ jobs:
         run: |
           ls
           cd py-capellambse
-          ls
+          echo "$PATH"
           python -m venv .venv
           source .venv/bin/activate
-          pip install -e
+          pip install -e .
           cd ..
           ls
+          echo "$PATH"
           python Model-SVG/generate-capella-docs.py
       - name: Commit files
         run: |
