@@ -4,12 +4,10 @@ name: CI for model documents on Github
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+  # Triggers the workflow every day at 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+  
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
