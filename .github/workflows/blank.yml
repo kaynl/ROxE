@@ -36,11 +36,12 @@ jobs:
           ls
           echo "$PATH"
           python Model-SVG/generate-capella-docs.py
-      - name: Commit files
+      - if: 
+        name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Auto updating Model-SVG" -a
+          git commit -m "Auto updating Model-SVG" -a --allow-empty
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
