@@ -1420,7 +1420,7 @@
             </ownedFunctionalExchanges>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="9de9342c-38dc-4bfe-8531-a7f82cc408be" name="Operate from Ground">
+              id="9de9342c-38dc-4bfe-8531-a7f82cc408be" name="Operate from Ground / Gateway">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
                 id="600cc4d0-67eb-4147-8a8c-2dcc2263203d" name="Operate Spacecraft from Ground">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
