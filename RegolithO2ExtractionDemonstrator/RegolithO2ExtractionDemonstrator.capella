@@ -1420,7 +1420,7 @@
             </ownedFunctionalExchanges>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="9de9342c-38dc-4bfe-8531-a7f82cc408be" name="Operate from Ground">
+              id="9de9342c-38dc-4bfe-8531-a7f82cc408be" name="Operate from Ground / Gateway">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
                 id="600cc4d0-67eb-4147-8a8c-2dcc2263203d" name="Operate Spacecraft from Ground">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -9092,7 +9092,7 @@
                 source="#28c9bc8a-5a4a-434d-bc3c-36f7ce5e12f7" target="#55d5093f-2ced-40a4-b8a6-926158f752da"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8301c4d0-cba7-4660-8c25-27fe99dde5ab"
-              name="Computer Logical System" abstractType="#9520f7c3-3b68-4d03-b4f3-1f7c0fd49018"/>
+              name="Data Handling Logical System" abstractType="#9520f7c3-3b68-4d03-b4f3-1f7c0fd49018"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3a25397d-c15b-48b4-b76a-bf31022f7dc7"
               name="Oxygen Storage Logical System" abstractType="#0d378b09-3152-45a1-88c7-084ba3a94fb6">
             <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
@@ -9222,7 +9222,7 @@
             </ownedLogicalComponents>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="9520f7c3-3b68-4d03-b4f3-1f7c0fd49018" name="Computer Logical System">
+              id="9520f7c3-3b68-4d03-b4f3-1f7c0fd49018" name="Data Handling Logical System">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a0bdfa05-29ac-45e8-8f0f-0f3394e5d24d"
                 name="Autonomous Decisionmaking Logical System" abstractType="#141f936e-3847-4c38-86a9-3b1048a1dfe4"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="446239b0-5fc8-4388-8575-6c47e752cd78"
