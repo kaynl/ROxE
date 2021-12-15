@@ -4,12 +4,10 @@ name: CI for model documents on Github
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+  # Triggers the workflow every day at 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+  
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -38,11 +36,12 @@ jobs:
           ls
           echo "$PATH"
           python Model-SVG/generate-capella-docs.py
-      - name: Commit files
+      - if: 
+        name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Auto updating Model-SVG" -a
+          git commit -m "Auto updating Model-SVG" -a --allow-empty
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
