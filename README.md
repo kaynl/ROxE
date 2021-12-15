@@ -29,7 +29,11 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 #### Whole System - Logical Architecture Blank
 <img src="./Model-SVG/LA/LAB-Logical System.svg">
 
+#### Whole System - Logical Component Breakdown
+<img src="./Model-SVG/LA/LCBD-Logical System.svg">
 
+#### Whole System - Logical Functional Breakdown
+<img src="./Model-SVG/LA/LFBD-Logical System.svg">
 
 ### Physical Architecture
 #### Physical Architecture Blank
