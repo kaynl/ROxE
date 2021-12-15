@@ -8968,7 +8968,7 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a0bdfa05-29ac-45e8-8f0f-0f3394e5d24d"
                 name="Decisionmaking Logical System" abstractType="#141f936e-3847-4c38-86a9-3b1048a1dfe4"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="51c3433b-7363-4e24-aed5-c556b393ea52"
-                name="Control Logical System" abstractType="#be015707-a005-449b-b1d9-6a5c8b593b80"/>
+                name="Control Subsystem" abstractType="#be015707-a005-449b-b1d9-6a5c8b593b80"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="a90c129a-4229-47b2-aeb3-d0f4e4f5b9e5" name="CP 1" orientation="OUT"
                 kind="FLOW">
@@ -8993,7 +8993,7 @@
                   sourceElement="#141f936e-3847-4c38-86a9-3b1048a1dfe4"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="be015707-a005-449b-b1d9-6a5c8b593b80" name="Control Logical System">
+                id="be015707-a005-449b-b1d9-6a5c8b593b80" name="Control Subsystem">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="2549d99a-0e86-4ebe-8af5-06bd79ba7446" targetElement="#9e80abf4-1df1-4131-a614-8651718ee04c"
                   sourceElement="#be015707-a005-449b-b1d9-6a5c8b593b80"/>
@@ -9204,7 +9204,7 @@
                     source="#9596e0fc-60f3-4713-82f8-f4c0128bfa21" target="#9f34d6ec-892b-4498-a57e-b983edf73e67"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4ac5c239-2237-428d-bf64-02974808a29a"
-                  name="Oxygen Trap and Purity Monitoring" abstractType="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878">
+                  name="Oxygen Trap and Purification Monitoring" abstractType="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878">
                 <ownedExtensions xsi:type="CapellaRequirements:CapellaOutgoingRelation"
                     id="2b80c523-87d2-4b32-a9af-79864065ff54" ReqIFLongName="satisfies"
                     source="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878" target="#fdebd78d-9b54-4110-b87c-3594b430997c"/>
@@ -9355,7 +9355,7 @@
                 </ownedFeatures>
               </ownedLogicalComponents>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                  id="4b22fa0b-85b2-423b-a3ab-87bdf24d7878" name="Oxygen Trap and Purity Monitoring">
+                  id="4b22fa0b-85b2-423b-a3ab-87bdf24d7878" name="Oxygen Trap and Purification Monitoring">
                 <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                     id="f0c4af10-c2a8-4758-bf41-71e0e21a666e" targetElement="#6baf3ebf-1e6f-468a-b8ef-5a0057c559d9"
                     sourceElement="#4b22fa0b-85b2-423b-a3ab-87bdf24d7878"/>
