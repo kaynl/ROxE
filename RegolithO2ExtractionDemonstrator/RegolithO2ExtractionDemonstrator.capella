@@ -7808,6 +7808,9 @@
                   id="991267b6-500c-4d03-bc2b-fb93b33d54a4" targetElement="#2a203ab3-cd29-44d5-9e26-e339e2767ab6"
                   sourceElement="#0fd6641a-b894-4a86-b1d5-22b62b5b2ce1"/>
             </ownedFunctions>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="a899c1c1-4213-4c66-be71-71d73c058f4f" targetElement="#42b62f5a-0c12-46bb-9f3a-99faed0ffcdd"
+                sourceElement="#36bc31d5-cfc9-4bbf-9c73-a8cd49d98035"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="bb52b298-a05e-4205-aac6-2836e4cd919c" targetElement="#cd70852e-b771-469a-91c7-346d9f9bf3a6"
