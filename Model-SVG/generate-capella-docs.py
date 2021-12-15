@@ -27,7 +27,7 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/SA/SAB_LLF.svg', 'w').write(SAB2.as_
 
 LAB = model.diagrams.by_name('[LAB] Logical System')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LAB-Logical System.svg', 'w').write(LAB.as_svg)
-LFBD = model.diagram.by_name('[LFBD] Root Logical Function')
+LFBD = model.diagrams.by_name('[LFBD] Root Logical Function')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LFBD-Logical System.svg', 'w').write(LFBD.as_svg)
-LCBD = model.diagram.by_name('[LCBD] Logical System')
+LCBD = model.diagrams.by_name('[LCBD] Logical System')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').write(LCBD.as_svg)
