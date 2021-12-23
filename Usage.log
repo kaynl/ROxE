@@ -326,3 +326,13 @@
 2021-12-21 10:24:44,038;Capella;5.1.0.202106150755;Create+Representation;Physical+Function+Breakdown;;283cd20e-5c8e-4288-88ca-5bc26852e28c
 2021-12-21 10:24:44,368;Capella;5.1.0.202106150755;Create+Representation;Physical+Function+Breakdown;OK;283cd20e-5c8e-4288-88ca-5bc26852e28c
 2021-12-21 10:24:46,115;Capella;5.1.0.202106150755;Create+Representation;Physical+Function+Breakdown;OK;283cd20e-5c8e-4288-88ca-5bc26852e28c
+2021-12-22 11:36:41,183;Capella;5.1.0.202106150755;Transition;Functional+Transition;;
+2021-12-22 11:38:24,384;Capella;5.1.0.202106150755;Transition;Functional+Transition;ERROR;
+2021-12-22 11:40:20,496;Capella;5.1.0.202106150755;Transition;Functional+Transition;;
+2021-12-22 11:43:31,159;Capella;5.1.0.202106150755;Transition;Functional+Transition;OK;
+2021-12-22 12:15:32,487;Capella;5.1.0.202106150755;Open+Representation;;;
+2021-12-22 12:15:33,045;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2021-12-23 11:00:08,629;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;;7641ed52-f73f-406e-92ed-ec6970d9ccf8
+2021-12-23 11:00:14,289;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;;7641ed52-f73f-406e-92ed-ec6970d9ccf8
+2021-12-23 11:00:14,399;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;OK;7641ed52-f73f-406e-92ed-ec6970d9ccf8
+2021-12-23 11:00:15,181;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;OK;7641ed52-f73f-406e-92ed-ec6970d9ccf8
