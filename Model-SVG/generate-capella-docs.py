@@ -35,11 +35,11 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').wr
 ## Creation of Physical Architecture Document
 
 PAB_RPORS = model.diagrams.by_name('[PAB] RPORS')
-open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/PAB-RPORS.svg', 'w').write(PAB_RPORS.as_svg)
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RPORS.svg', 'w').write(PAB_RPORS.as_svg)
 PAB_OSS = model.diagrams.by_name('[PAB] OSS')
-open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/PAB-OSS.svg', 'w').write(PAB_OSS.as_svg)
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-OSS.svg', 'w').write(PAB_OSS.as_svg)
 PAB_RPORS = model.diagrams.by_name('[PAB] RIS')
-open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/PAB-RIS.svg', 'w').write(PAB_RIS.as_svg)
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RIS.svg', 'w').write(PAB_RIS.as_svg)
 PAB_PCM = model.diagrams.by_name('[PAB] PCM')
-open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/PAB-PCM.svg', 'w').write(PAB_PCM.as_svg)
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-PCM.svg', 'w').write(PAB_PCM.as_svg)
 
