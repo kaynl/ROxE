@@ -10619,6 +10619,8 @@
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
         id="4c55b6a2-6ebc-4fe1-9a28-583581f73e69" name="Physical Architecture">
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="d336a900-4088-4847-9063-16177ad52659"/>
+      <ownedPropertyValuePkgs xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValuePkg"
+          id="3a7b3aa1-956b-4b45-b687-5213dbcb3b5c" name="PropertyValuePkg 1"/>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
           id="6337bc84-5fb0-42e3-bc77-b1288e1f95a5" name="Physical Functions">
         <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
@@ -10757,12 +10759,6 @@
                 </ownedFunctions>
                 <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
                     id="f9d52609-a991-4b5f-8b14-46c47683f2b8" name="Mitigate Dust Abrasion">
-                  <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                      id="c8da0fe9-e7af-4660-aee7-0e75e3fa6389" name="Mitigate Dust Sandblasting in O2 Transfer">
-                    <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                        id="234a4930-d7c2-4a4b-ac79-74b987431852" targetElement="#d51e8925-7130-4a49-9dcf-2a6bfb9fb420"
-                        sourceElement="#c8da0fe9-e7af-4660-aee7-0e75e3fa6389"/>
-                  </ownedFunctions>
                   <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                       id="3ad2929d-169d-4af2-81df-8e347d88b70e" targetElement="#00cc0673-949a-48e4-be19-49efd813a330"
                       sourceElement="#f9d52609-a991-4b5f-8b14-46c47683f2b8"/>
@@ -15169,6 +15165,8 @@
         <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
             id="7e606a95-b8d3-43a2-8973-da032d5525c1" targetElement="#f73516f5-2acc-488c-ac9f-226ce6ba289e"
             sourceElement="#12efcf3f-d206-4ab3-9834-88bf6ae6d487"/>
+        <ownedPropertyValuePkgs xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValuePkg"
+            id="9444be7f-5d0a-47c3-bca9-f0ed818deb7a" name="PropertyValuePkg 1"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="e0f93e46-f760-4480-8a74-98120492d0ae"
             name="Physical System" abstractType="#91ecd34a-2688-4d2e-8684-d6d62990f463"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="794447cb-795c-4593-9534-513051b41a68"
@@ -15653,7 +15651,7 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7f3161ed-dce7-4fc5-8362-a29f87084f3c"
               name="Scrapping Motor" abstractType="#6f81aff3-7142-46ba-aa62-e67ceab19ed6"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b9d7fa87-2874-4d50-a6ac-672f651694a2"
-              name="Waste Outlet Motor" abstractType="#30bdf061-4e7e-4bf3-b2fc-660ae8c16743"/>
+              name="Waste Outlet Seal Motor" abstractType="#30bdf061-4e7e-4bf3-b2fc-660ae8c16743"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1e46373d-5539-44c3-9013-d326fc8a4d37"
               name="Regolith Inlet System" abstractType="#83113b6c-7495-4474-bd64-d605194c1319"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="02251642-c852-43ce-b5b1-f59314e92cb8"
@@ -16806,9 +16804,6 @@
                     id="3b455301-4077-487a-8ce2-0fbc08694fd7" targetElement="#18b2d959-3c76-4433-bd0a-f21b028721b0"
                     sourceElement="#4d9c630d-9aa7-4384-9ff3-2c114f97ab26"/>
                 <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                    id="5f8f39ca-7de3-484e-86f8-4224bfca880b" targetElement="#c8da0fe9-e7af-4660-aee7-0e75e3fa6389"
-                    sourceElement="#4d9c630d-9aa7-4384-9ff3-2c114f97ab26"/>
-                <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                     id="4df3ebc7-1349-4967-b8a7-c7a7fdcec40f" targetElement="#68e979f7-936c-4514-bf56-92747f84eaa9"
                     sourceElement="#4d9c630d-9aa7-4384-9ff3-2c114f97ab26"/>
                 <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
@@ -16826,6 +16821,18 @@
                 name="Condensation System" abstractType="#c2628d81-fc0e-4a44-a094-7da0b8871e32"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0c303ca4-8d65-4ce7-819b-eb83130d3c0b"
                 name="Oxygen Recovery System" abstractType="#04070fde-69c5-4966-bbad-5d4bed455fb9"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5affc9b4-2c56-41ff-b3f2-8762951c4580"
+                name="Process Pressure Regulation System" abstractType="#b767202e-a5cb-42cd-b078-e5223abed70b">
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="50d65c38-9b0a-4cfa-8aeb-228959a79956" deployedElement="#86f01b0c-1d34-45cc-ad7d-60df89d103e2"
+                  location="#5affc9b4-2c56-41ff-b3f2-8762951c4580"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="95054b41-cfb2-4067-8742-ff7ae55d9874" deployedElement="#17ab1375-379b-4ea1-8034-55bf474ea883"
+                  location="#5affc9b4-2c56-41ff-b3f2-8762951c4580"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="8a0639d3-9893-42fe-8df3-377226514938" deployedElement="#3086c589-03b6-44a8-a74e-04dd3863ce25"
+                  location="#5affc9b4-2c56-41ff-b3f2-8762951c4580"/>
+            </ownedFeatures>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="e83ee1c1-cd0e-4b6d-9f45-21dd194afcc4" name="Vaporisation System"
                 nature="NODE">
@@ -16833,12 +16840,6 @@
                   name="Vaporisation Chamber" abstractType="#6522b75a-9535-46a2-aaf7-06793f3b0789"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="742e27ae-32c9-446f-86fe-11f2e7d27067"
                   name="Solar Concentrator" abstractType="#77eed06a-19fb-49d1-b188-c70eb1c8beeb"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ffe10b29-c0e4-4fb5-adb0-01d6faacf5c4"
-                  name="Vapourisation Pressure System" abstractType="#affe1235-168a-458e-b4ae-251ca64020cd">
-                <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                    id="8a0639d3-9893-42fe-8df3-377226514938" deployedElement="#3086c589-03b6-44a8-a74e-04dd3863ce25"
-                    location="#ffe10b29-c0e4-4fb5-adb0-01d6faacf5c4"/>
-              </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0ae29aa7-3d98-4191-b665-22cc2e6ebc9c"
                   name="Vaporisation Waste Outlet" abstractType="#20bfde57-87e9-4878-87f0-09c09e1cfdac">
                 <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
@@ -16923,9 +16924,6 @@
                     nature="NODE"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="affe1235-168a-458e-b4ae-251ca64020cd" name="Vapourisation Pressure System"
-                  nature="NODE"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="20bfde57-87e9-4878-87f0-09c09e1cfdac" name="Vaporisation Waste Outlet"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -16940,12 +16938,6 @@
                 <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                     id="716becad-8c09-406a-8bbb-16cfca261672" deployedElement="#ed76b138-a57f-4a77-816c-68f926d5a462"
                     location="#348d98dc-6e6a-4407-b505-557fbed63cba"/>
-              </ownedFeatures>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3eadd00f-c309-47fa-8469-2d417219a83f"
-                  name="Condensation Pressure System" abstractType="#102a920f-e219-463e-9e17-fb72a99a7c7f">
-                <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                    id="95054b41-cfb2-4067-8742-ff7ae55d9874" deployedElement="#17ab1375-379b-4ea1-8034-55bf474ea883"
-                    location="#3eadd00f-c309-47fa-8469-2d417219a83f"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="23a172d3-8a6b-4cfb-88e6-80284a3e6f94"
                   name="Condensation Chamber Cooling System" abstractType="#05d57ba3-febb-47cd-9fb4-4a2bcf6d9b81">
@@ -16966,9 +16958,6 @@
               </ownedFeatures>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="ca25e765-7efa-4f4a-8c8c-4f9934d748ce" name="Condensation Chamber"
-                  nature="NODE"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="102a920f-e219-463e-9e17-fb72a99a7c7f" name="Condensation Pressure System"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="05d57ba3-febb-47cd-9fb4-4a2bcf6d9b81" name="Condensation Chamber Cooling System"
@@ -17020,12 +17009,6 @@
                     id="baa3b9c9-c5da-4cbd-8bff-9c1c2d2cbf95" deployedElement="#c3860060-0a77-4119-bc62-c2cacafe6db6"
                     location="#e953af01-4077-461f-919c-23ca1d816847"/>
               </ownedFeatures>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5affc9b4-2c56-41ff-b3f2-8762951c4580"
-                  name="Oxygen Recovery System" abstractType="#b767202e-a5cb-42cd-b078-e5223abed70b">
-                <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                    id="50d65c38-9b0a-4cfa-8aeb-228959a79956" deployedElement="#86f01b0c-1d34-45cc-ad7d-60df89d103e2"
-                    location="#5affc9b4-2c56-41ff-b3f2-8762951c4580"/>
-              </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="108d6bb9-94e5-4a3b-b5ef-44bd143fbffd"
                   name="Waste Outlet" abstractType="#260ac86f-4d1d-4789-bf19-1146d513ef1f">
                 <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
@@ -17039,11 +17022,11 @@
                   id="f6615dac-b02b-479f-9460-58badecc355e" name="Oxygen Filtration System"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="b767202e-a5cb-42cd-b078-e5223abed70b" name="Oxygen Recovery System"
-                  nature="NODE"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="260ac86f-4d1d-4789-bf19-1146d513ef1f" name="Waste Outlet" nature="NODE"/>
             </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="b767202e-a5cb-42cd-b078-e5223abed70b" name="Process Pressure Regulation System"
+                nature="NODE"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="bd0151c2-6981-4b26-a468-944187e2d2bd" name="Fresnel Lens" nature="BEHAVIOR">
@@ -17769,7 +17752,7 @@
                 sourceElement="#6f81aff3-7142-46ba-aa62-e67ceab19ed6"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="30bdf061-4e7e-4bf3-b2fc-660ae8c16743" name="Waste Outlet Motor"
+              id="30bdf061-4e7e-4bf3-b2fc-660ae8c16743" name="Waste Outlet Seal Motor"
               nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="85dede89-945a-48f4-a978-5e087e113912" targetElement="#99c9c9eb-426f-4a01-8fce-7e31c6191940"
