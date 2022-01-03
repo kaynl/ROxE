@@ -10,7 +10,10 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 
 ## Capella add-ons
 
-* Requirements Viewpoint add-on
+* Requirements Viewpoint
+* BasicMass
+* Property Values Management Tool
+* Diagram Styler
 
 ## Model Diagrams
 
@@ -32,8 +35,16 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 #### Whole System - Logical Component Breakdown
 <img src="./Model-SVG/LA/LCBD-Logical System.svg">
 
-#### Whole System - Logical Functional Breakdown
-<img src="./Model-SVG/LA/LFBD-Logical System.svg">
-
 ### Physical Architecture
-#### Physical Architecture Blank
+#### Physical Architecture - Regolith Pyrolysis and Oxygen Recovery System
+<img src="./Model-SVG/LA/PAB-RPORS.svg">
+
+#### Physical Architecture - Regolith Intake System
+<img src="./Model-SVG/LA/PAB-RIS.svg">
+
+
+#### Physical Architecture - Oxygen Storage System
+<img src="./Model-SVG/LA/PAB-OSS.svg">
+
+#### Physical Architecture - Process Monitoring and Control
+<img src="./Model-SVG/LA/PAB-PMC.svg">
