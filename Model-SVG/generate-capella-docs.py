@@ -34,12 +34,12 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').wr
 
 ## Creation of Physical Architecture Document
 
-PAB_RPORS = model.diagrams.by_name('[PAB] RPORS')
+PAB-RPORS = model.diagrams.by_name('[PAB] RPORS')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RPORS.svg', 'w').write(PAB-RPORS.as_svg)
-PAB_OSS = model.diagrams.by_name('[PAB] OSS')
+PAB-OSS = model.diagrams.by_name('[PAB] OSS')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-OSS.svg', 'w').write(PAB-OSS.as_svg)
-PAB_RPORS = model.diagrams.by_name('[PAB] RIS')
+PAB-RPORS = model.diagrams.by_name('[PAB] RIS')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RIS.svg', 'w').write(PAB-RIS.as_svg)
-PAB_PCM = model.diagrams.by_name('[PAB] PCM')
+PAB-PCM = model.diagrams.by_name('[PAB] PCM')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-PCM.svg', 'w').write(PAB-PCM.as_svg)
 
