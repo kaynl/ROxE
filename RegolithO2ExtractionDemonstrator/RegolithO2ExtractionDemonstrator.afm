@@ -3,4 +3,5 @@
   <viewpointReferences id="_IS86QCs_Eeyh-_ZJrIkXLg" vpId="org.polarsys.capella.core.viewpoint" version="5.1.0"/>
   <viewpointReferences id="_7ovycFNUEeyTEt0r3E2z6Q" vpId="org.polarsys.kitalpha.vp.requirements" version="0.12.1"/>
   <viewpointReferences id="_7uoYAFNUEeyTEt0r3E2z6Q" vpId="org.polarsys.capella.vp.requirements" version="0.12.1"/>
+  <viewpointReferences id="_yUNsIGynEeyRjfOdCbdjKA" vpId="org.polarsys.capella.vp.mass" version="5.0.0.qualifier"/>
 </metadata:Metadata>
