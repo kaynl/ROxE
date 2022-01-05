@@ -31,3 +31,15 @@ LFBD = model.diagrams.by_name('[LFBD] Root Logical Function')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LFBD-Logical System.svg', 'w').write(LFBD.as_svg)
 LCBD = model.diagrams.by_name('[LCBD] Logical System')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').write(LCBD.as_svg)
+
+## Creation of Physical Architecture Document
+
+PABRPORS = model.diagrams.by_name('[PAB] RPORS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RPORS.svg', 'w').write(PABRPORS.as_svg)
+PABOSS = model.diagrams.by_name('[PAB] OSS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-OSS.svg', 'w').write(PABOSS.as_svg)
+PABRIS = model.diagrams.by_name('[PAB] RIS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RIS.svg', 'w').write(PABRIS.as_svg)
+PABPCM = model.diagrams.by_name('[PAB] PCM')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-PCM.svg', 'w').write(PABPCM.as_svg)
+
