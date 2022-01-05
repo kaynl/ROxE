@@ -11818,6 +11818,8 @@
                     id="43f23e42-b10e-4c8d-a8e8-0c0c2f927625" targetElement="#f245cdcf-e1e0-4250-9868-792377a8ccd1"
                     sourceElement="#4c573320-19d5-4089-a7e7-8c03086b64bf"/>
               </inputs>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="32e63520-a737-4543-bca7-930b3cce8e9f" name="FIP 2"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="9d72a664-4c06-4d9b-a617-d695955c7b37" name="FOP 2">
                 <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -13927,6 +13929,13 @@
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="03054e86-9e74-4b7c-8dd9-22e935974e19" name="FOP 1"/>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="8f3f30bb-b0f7-4790-8875-614075970c60" name="Preheat Regolith Powder">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="ffcbadbf-4fa3-4ac9-b110-43697d637038" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="e139f491-f211-4f40-b5a6-039f3ff7b648" name="Measure Regolith Pre-heat Temperature"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="8a0f2418-5b7c-40ac-a7c7-66f392eb66db" targetElement="#dfd33c2e-e671-49b9-b5ff-0ba4db0afa2e"
               sourceElement="#283cd20e-5c8e-4288-88ca-5bc26852e28c"/>
@@ -14941,6 +14950,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="aa836a49-a491-4300-901f-51d3da5e4881" name="HeatToRadiator" target="#07bf9cc3-d8b4-48d5-9e17-7b32dd288764"
               source="#03054e86-9e74-4b7c-8dd9-22e935974e19"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="62c9fb5a-a439-4080-99f6-0ac4ee3223af" name="PreheatRegolithPowder"
+              target="#32e63520-a737-4543-bca7-930b3cce8e9f" source="#ffcbadbf-4fa3-4ac9-b110-43697d637038"/>
         </ownedPhysicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -15433,37 +15445,37 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cf872f01-ded6-40f0-99f7-b448c75bf257"
               name="Emergency Valve" abstractType="#6947dd8b-399d-4426-99da-fd0228ba444f"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c3f0122a-e628-4ac9-ad0c-9212b4ac5926"
-              name="Pressure Gauge" abstractType="#18499de4-d7d8-4d70-9097-dd56cc44a22c"/>
+              name="External Pressure Sensor" abstractType="#18499de4-d7d8-4d70-9097-dd56cc44a22c"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7f677eb1-b0ee-4756-bbde-35b2d41cac02"
-              name="Thermocouple" abstractType="#e4e3aaca-d10e-4dee-a464-e8ce82061c42"/>
+              name="External Temperature Sensor" abstractType="#e4e3aaca-d10e-4dee-a464-e8ce82061c42"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4ae17611-e25e-40a3-a8d2-26d5c69abf1e"
-              name="RABAN/LIBS Spectrometer" abstractType="#783a7586-fa14-4060-8980-a62c26cd062c"/>
+              name="Regolith Intake Characterisation Sensor" abstractType="#783a7586-fa14-4060-8980-a62c26cd062c"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6a6c9951-78e2-4731-8d6b-23e5218e6a50"
-              name="Gas Analyser" abstractType="#be9077cb-8d8f-4492-89d9-50c71d01f143"/>
+              name="Vaporisation Gas Analyser" abstractType="#be9077cb-8d8f-4492-89d9-50c71d01f143"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1b1598e4-b1df-4d5a-937e-b3529b76c58c"
-              name="Pressure Gauge" abstractType="#cef705f0-9bd6-4a8b-815f-ebdaf472aa74"/>
+              name="Vaporisation Pressure Sensor" abstractType="#cef705f0-9bd6-4a8b-815f-ebdaf472aa74"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="116cb77a-15f6-495a-99d0-222feb7347d2"
-              name="IR Camera - Vaporisation Temperature Sensor" abstractType="#4857ac5c-f2fe-4b33-9a7f-54382db1ec61"/>
+              name="Vaporisation Temperature Sensor" abstractType="#4857ac5c-f2fe-4b33-9a7f-54382db1ec61"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a605c1cb-8d28-42f3-9c12-b7595a4b49c9"
-              name="Thermocouple" abstractType="#4b00db40-9022-44c5-bc6e-f18d54573932"/>
+              name="Vaporisation Chamber Temperature Sensor" abstractType="#4b00db40-9022-44c5-bc6e-f18d54573932"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d87984b7-1850-4734-92c1-e4e830b7717e"
-              name="Thermocouple" abstractType="#952b3272-a625-49f4-943c-5b21a16a2512"/>
+              name="Condensation Chamber Temperature Sensor" abstractType="#952b3272-a625-49f4-943c-5b21a16a2512"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="122f0aac-145a-42f3-a7a4-3e3b0ae9a700"
-              name="IR Camera" abstractType="#6ac71901-bd77-4d4d-aa4f-bf8055c0b6cd"/>
+              name="Condensation Plates Temperature Sensor" abstractType="#6ac71901-bd77-4d4d-aa4f-bf8055c0b6cd"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="79ff3990-496d-4ebc-8005-1dbc691bf685"
-              name="Quartz Crystal Microbalance - QCM" abstractType="#93a6d7d5-5277-4b7e-9d10-a09ad7c2f802"/>
+              name="Condensation Deposit Sensor" abstractType="#93a6d7d5-5277-4b7e-9d10-a09ad7c2f802"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3f2e70ec-044c-4f6d-9ed0-ffdf46c99b1b"
-              name="Pressure Gauge" abstractType="#bd38a8ce-5fcc-4e23-92a3-7b363391fb24"/>
+              name="Condensation Pressure Sensor" abstractType="#bd38a8ce-5fcc-4e23-92a3-7b363391fb24"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c87648ae-c28a-4cee-9294-78e38c609b2a"
-              name="Gas Analyser - Oxygen Recovery Gas Sensor" abstractType="#f12b5519-2797-422c-8c60-e6df947e882a"/>
+              name="Recovery Gas Sensor" abstractType="#f12b5519-2797-422c-8c60-e6df947e882a"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e0d63d51-9b4e-444d-a644-372bc9ea3764"
               name="Pressure Gauge" abstractType="#60a5523a-6fe2-4819-976d-ed5c2e9902b2"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="29293709-2ae2-4231-8495-632964f3a497"
-              name="Pressure Gauge" abstractType="#a7c909ff-0aaa-4ff4-b825-41283d7dfb8c"/>
+              name="Storage Pressure Sensor" abstractType="#a7c909ff-0aaa-4ff4-b825-41283d7dfb8c"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="bb332e68-5258-4ae2-9af5-4159da8a2792"
-              name="Thermocouple" abstractType="#10de1ab0-e374-490a-adcf-f18436f45869"/>
+              name="Storage Temperature Sensor" abstractType="#10de1ab0-e374-490a-adcf-f18436f45869"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f434d9dc-a7c9-4911-823d-46bbec625090"
-              name="Solar pyranometer" abstractType="#2f0c651d-920b-4a97-9066-6c35c27ea378"/>
+              name="External Sunlight Sensor" abstractType="#2f0c651d-920b-4a97-9066-6c35c27ea378"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1df5f9a7-fac2-4c9d-b0db-0c0e9d4308d1"
               name="Process Monitoring and Control" abstractType="#86432260-a9af-431d-860f-341f8983e10a"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="223216b4-0296-438a-8b23-9f5171d24420"
@@ -15496,6 +15508,10 @@
               name="Inlet Valve" abstractType="#5dc7f8ef-7063-4f96-8c74-1e1a4e47435a"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fbc10d70-4c33-4b53-821e-114ca425bc0c"
               name="Storage Pressure Control System" abstractType="#4733f9cb-93df-45d0-9aad-0e9a96815370"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d3d054d2-c925-4bf0-8a2e-54f85fb7f371"
+              name="Regolith Powder Preheater" abstractType="#b0556569-6317-45e4-bbd1-238fed0d37c7"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a6a8fa20-feac-498d-9368-47db496b31e0"
+              name="Regolith Inlet Temperature Sensor" abstractType="#0e36be67-5eb3-4e69-a74a-e83504e1277d"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="37d3fe9e-db11-4997-8772-107388a0bca8" targetElement="#73e437f1-6cc3-4820-8f7d-813ccc237b93"
               sourceElement="#91ecd34a-2688-4d2e-8684-d6d62990f463"/>
@@ -16011,14 +16027,14 @@
                     sourceElement="#012dcae4-15bb-481f-a5e5-e615e5293c96"/>
               </ownedComponentExchanges>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d8cf2c1b-203c-48b2-adf6-ffea123f63d7"
-                  name="Weighing Scale" abstractType="#52144155-d1d2-42e5-bd86-c2b9c5ac34c8"/>
+                  name="Regolith Intake Sensor" abstractType="#52144155-d1d2-42e5-bd86-c2b9c5ac34c8"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="25ae8182-6f87-4a0b-b729-a2235d28669b"
                   name="Input Interface" abstractType="#4353650b-138e-4228-8e4b-a67f2777fd20"/>
               <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
                   id="a2e6d071-186f-4b3b-8cfb-b42a805b2d80" targetElement="#5259007c-4bcf-41ea-ba1f-523de7d42307"
                   sourceElement="#9d8b4a37-c5c4-47ae-97d5-63367d64169a"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="52144155-d1d2-42e5-bd86-c2b9c5ac34c8" name="Weighing Scale"
+                  id="52144155-d1d2-42e5-bd86-c2b9c5ac34c8" name="Regolith Intake Sensor"
                   nature="BEHAVIOR">
                 <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
                     id="c0ac9b26-558f-4bc9-acfc-dba28e802739" targetElement="#dc8b3bb7-885e-48ce-a236-8eff79b1cb59"
@@ -16776,7 +16792,7 @@
                 id="b767202e-a5cb-42cd-b078-e5223abed70b" name="Process Pressure Regulation System"
                 nature="NODE">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c85e47c0-22e7-44ff-ae4d-c66dc4e8f75d"
-                  name="Compressor" abstractType="#8901e813-c1d8-4183-a339-4df459677199">
+                  name="Cryogenic compressor" abstractType="#8901e813-c1d8-4183-a339-4df459677199">
                 <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                     id="50d65c38-9b0a-4cfa-8aeb-228959a79956" deployedElement="#86f01b0c-1d34-45cc-ad7d-60df89d103e2"
                     location="#c85e47c0-22e7-44ff-ae4d-c66dc4e8f75d"/>
@@ -16788,7 +16804,7 @@
                     location="#c85e47c0-22e7-44ff-ae4d-c66dc4e8f75d"/>
               </ownedFeatures>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="8901e813-c1d8-4183-a339-4df459677199" summary="" name="Compressor"
+                  id="8901e813-c1d8-4183-a339-4df459677199" summary="" name="Cryogenic compressor"
                   nature="NODE"/>
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -17016,7 +17032,8 @@
                 sourceElement="#6947dd8b-399d-4426-99da-fd0228ba444f"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="18499de4-d7d8-4d70-9097-dd56cc44a22c" name="Pressure Gauge" nature="BEHAVIOR">
+              id="18499de4-d7d8-4d70-9097-dd56cc44a22c" name="External Pressure Sensor"
+              kind="HARDWARE" nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="745a43c0-faa0-401c-9380-c96f1562489e" targetElement="#f8bb682a-207d-444b-96d6-85e669f12a99"
                 sourceElement="#18499de4-d7d8-4d70-9097-dd56cc44a22c"/>
@@ -17032,7 +17049,8 @@
                 sourceElement="#18499de4-d7d8-4d70-9097-dd56cc44a22c"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="e4e3aaca-d10e-4dee-a464-e8ce82061c42" name="Thermocouple" nature="BEHAVIOR">
+              id="e4e3aaca-d10e-4dee-a464-e8ce82061c42" name="External Temperature Sensor"
+              kind="HARDWARE" nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="626aa1f8-ba9c-47b6-9e51-ba929367545c" targetElement="#1e2def54-db1d-440e-ba5b-2d87ddfabcb0"
                 sourceElement="#e4e3aaca-d10e-4dee-a464-e8ce82061c42"/>
@@ -17048,7 +17066,7 @@
                 sourceElement="#e4e3aaca-d10e-4dee-a464-e8ce82061c42"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="783a7586-fa14-4060-8980-a62c26cd062c" name="RABAN/LIBS Spectrometer"
+              id="783a7586-fa14-4060-8980-a62c26cd062c" name="Regolith Intake Characterisation Sensor"
               nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="ff1384e8-7655-44b8-96ef-9714cf41ce82" targetElement="#1749f219-371d-4919-a646-c8c6288ed20f"
@@ -17075,7 +17093,8 @@
                 sourceElement="#783a7586-fa14-4060-8980-a62c26cd062c"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="be9077cb-8d8f-4492-89d9-50c71d01f143" name="Gas Analyser" nature="BEHAVIOR">
+              id="be9077cb-8d8f-4492-89d9-50c71d01f143" name="Vaporisation Gas Analyser"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="f72ef452-26d8-4796-8cfa-74a3054c6f1f" targetElement="#5a34051e-94ef-4d77-88f1-8072f013ab9b"
                 sourceElement="#be9077cb-8d8f-4492-89d9-50c71d01f143"/>
@@ -17098,7 +17117,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="cef705f0-9bd6-4a8b-815f-ebdaf472aa74" name="Pressure Gauge" nature="BEHAVIOR">
+              id="cef705f0-9bd6-4a8b-815f-ebdaf472aa74" name="Vaporisation Pressure Sensor"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="03bb28a3-cdb3-4430-b5bc-ac6959931fe5" targetElement="#eb5120d9-9012-4033-ad80-3c5c45ee9d00"
                 sourceElement="#cef705f0-9bd6-4a8b-815f-ebdaf472aa74"/>
@@ -17111,7 +17131,7 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="4857ac5c-f2fe-4b33-9a7f-54382db1ec61" name="IR Camera - Vaporisation Temperature Sensor"
+              id="4857ac5c-f2fe-4b33-9a7f-54382db1ec61" name="Vaporisation Temperature Sensor"
               nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="4b5ea732-4610-407d-8037-cf8442f8e1c0" targetElement="#95874bf9-195e-4451-a43b-233cf1190ef2"
@@ -17141,7 +17161,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="4b00db40-9022-44c5-bc6e-f18d54573932" name="Thermocouple" nature="BEHAVIOR">
+              id="4b00db40-9022-44c5-bc6e-f18d54573932" name="Vaporisation Chamber Temperature Sensor"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="badf09c4-a116-4694-9484-b467f8ad858d" targetElement="#255eee0b-80b7-4fc9-849d-f9a0cf55d710"
                 sourceElement="#4b00db40-9022-44c5-bc6e-f18d54573932"/>
@@ -17154,7 +17175,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="952b3272-a625-49f4-943c-5b21a16a2512" name="Thermocouple" nature="BEHAVIOR">
+              id="952b3272-a625-49f4-943c-5b21a16a2512" name="Condensation Chamber Temperature Sensor"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="b732a2f2-d89d-45c6-8432-efe7f6e89826" targetElement="#10921024-2407-4ee8-9d61-79fd7a21d882"
                 sourceElement="#952b3272-a625-49f4-943c-5b21a16a2512"/>
@@ -17167,7 +17189,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="6ac71901-bd77-4d4d-aa4f-bf8055c0b6cd" name="IR Camera" nature="BEHAVIOR">
+              id="6ac71901-bd77-4d4d-aa4f-bf8055c0b6cd" name="Condensation Plates Temperature Sensor"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="ba015b09-499c-4a18-bf57-452f39ec8ce7" targetElement="#fa5ed57d-d099-4b11-baf6-1ae9040daf0d"
                 sourceElement="#6ac71901-bd77-4d4d-aa4f-bf8055c0b6cd"/>
@@ -17190,7 +17213,7 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="93a6d7d5-5277-4b7e-9d10-a09ad7c2f802" name="Quartz Crystal Microbalance - QCM"
+              id="93a6d7d5-5277-4b7e-9d10-a09ad7c2f802" name="Condensation Deposit Sensor"
               nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="d67bb977-533a-4ab0-b6bd-d0d15d2d6be9" targetElement="#737b452a-596f-4eb2-8354-d211dd7aa2ea"
@@ -17214,7 +17237,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="bd38a8ce-5fcc-4e23-92a3-7b363391fb24" name="Pressure Gauge" nature="BEHAVIOR">
+              id="bd38a8ce-5fcc-4e23-92a3-7b363391fb24" name="Condensation Pressure Sensor"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="b21cf986-b78e-4da7-a1ca-e521ea6124bc" targetElement="#38108d5f-8a43-4c8d-8950-0bcc0bdf6cb4"
                 sourceElement="#bd38a8ce-5fcc-4e23-92a3-7b363391fb24"/>
@@ -17227,7 +17251,7 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="f12b5519-2797-422c-8c60-e6df947e882a" name="Gas Analyser - Oxygen Recovery Gas Sensor"
+              id="f12b5519-2797-422c-8c60-e6df947e882a" name="Recovery Gas Sensor"
               nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="420060f7-74e0-4243-8d73-40c1d78947c1" targetElement="#51317fc3-95f0-432e-9547-f90fb595e7d0"
@@ -17264,7 +17288,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="a7c909ff-0aaa-4ff4-b825-41283d7dfb8c" name="Pressure Gauge" nature="BEHAVIOR">
+              id="a7c909ff-0aaa-4ff4-b825-41283d7dfb8c" name="Storage Pressure Sensor"
+              nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="f314e802-21a8-42a2-8512-a160020e834b" targetElement="#f33e9141-792f-4455-9e35-f4e977f29a5a"
                 sourceElement="#a7c909ff-0aaa-4ff4-b825-41283d7dfb8c"/>
@@ -17277,7 +17302,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="10de1ab0-e374-490a-adcf-f18436f45869" name="Thermocouple" nature="BEHAVIOR">
+              id="10de1ab0-e374-490a-adcf-f18436f45869" name="Storage Temperature Sensor"
+              kind="HARDWARE" nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="c4843806-ee9a-4152-997f-54a1b7084ff2" targetElement="#f32a6423-f8c6-4139-ab3d-07555345ad07"
                 sourceElement="#10de1ab0-e374-490a-adcf-f18436f45869"/>
@@ -17290,7 +17316,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="2f0c651d-920b-4a97-9066-6c35c27ea378" name="Solar pyranometer" nature="BEHAVIOR">
+              id="2f0c651d-920b-4a97-9066-6c35c27ea378" name="External Sunlight Sensor"
+              kind="HARDWARE" nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="04362437-b1e7-4301-9ba3-cf2b0df0dec8" targetElement="#a9f891ed-f01a-4620-9332-34097a17127e"
                 sourceElement="#2f0c651d-920b-4a97-9066-6c35c27ea378"/>
@@ -17341,53 +17368,62 @@
                   id="df4cd02e-729a-4b44-a30e-ae859a33a6a1" name="External Monitoring System"
                   nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="892e2da1-5902-477a-a911-9a9c334eb5aa"
-                    name="External Temperature Sensor" abstractType="#60d08f1c-aabd-4d5e-a279-b9d14d7f0a63">
+                    name="Thermocouples on external cover" abstractType="#60d08f1c-aabd-4d5e-a279-b9d14d7f0a63">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="5253a1f3-d376-42c0-8bf4-163747b20e9d" deployedElement="#7f677eb1-b0ee-4756-bbde-35b2d41cac02"
                       location="#892e2da1-5902-477a-a911-9a9c334eb5aa"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4f88ecd3-c6ef-4a7c-a37d-d72fbb594d91"
-                    name="External Pressure Sensor" abstractType="#440e2bc7-697a-41eb-98b8-b0c8ac343322">
+                    name="Pressure Gauge" abstractType="#440e2bc7-697a-41eb-98b8-b0c8ac343322">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="f01e9368-4aee-45b2-813f-8b5e3ea1fdf6" deployedElement="#c3f0122a-e628-4ac9-ad0c-9212b4ac5926"
                       location="#4f88ecd3-c6ef-4a7c-a37d-d72fbb594d91"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7c5468bf-1a68-440e-9cbf-cd4a12edd822"
-                    name="External Sunlight Sensor" abstractType="#4cfbe2e7-4a14-4062-a664-dae21c196905">
+                    name="Solar pyranometer" abstractType="#4cfbe2e7-4a14-4062-a664-dae21c196905">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="4393c2ff-c862-4074-9702-64105a85ca58" deployedElement="#f434d9dc-a7c9-4911-823d-46bbec625090"
                       location="#7c5468bf-1a68-440e-9cbf-cd4a12edd822"/>
                 </ownedFeatures>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="60d08f1c-aabd-4d5e-a279-b9d14d7f0a63" name="External Temperature Sensor"
-                    nature="NODE"/>
+                    id="60d08f1c-aabd-4d5e-a279-b9d14d7f0a63" name="Thermocouples on external cover"
+                    kind="HARDWARE" nature="NODE"/>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="440e2bc7-697a-41eb-98b8-b0c8ac343322" name="External Pressure Sensor"
-                    nature="NODE"/>
+                    id="440e2bc7-697a-41eb-98b8-b0c8ac343322" name="Pressure Gauge"
+                    kind="HARDWARE" nature="NODE"/>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="4cfbe2e7-4a14-4062-a664-dae21c196905" name="External Sunlight Sensor"
-                    nature="NODE"/>
+                    id="4cfbe2e7-4a14-4062-a664-dae21c196905" name="Solar pyranometer"
+                    kind="HARDWARE" nature="NODE"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="0f4cd8fa-f2f0-47fb-a5b6-58c031cf8798" name="Regolith Feed Monitoring System"
                   nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b6a9bb37-1622-436f-9dee-1689c6cc05ea"
-                    name="Regolith Intake Sensor" abstractType="#305233bc-6033-446d-afe1-116dc48076cf">
+                    name="Weighing Scale" abstractType="#305233bc-6033-446d-afe1-116dc48076cf">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="70e52bb2-ba40-49df-8cf7-a9171656beaa" deployedElement="#d8cf2c1b-203c-48b2-adf6-ffea123f63d7"
                       location="#b6a9bb37-1622-436f-9dee-1689c6cc05ea"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="21c9e030-64a6-459f-8cb9-fb0177e9a0f7"
-                    name="Regolith Intake Characterisation Sensor" abstractType="#814f46b4-85aa-4baf-8c24-0bc7f0df34a9">
+                    name="RAMAN/LIBS Spectrometer" abstractType="#814f46b4-85aa-4baf-8c24-0bc7f0df34a9">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="63dc3ed4-0b45-4e9e-be58-a715cfef7f96" deployedElement="#4ae17611-e25e-40a3-a8d2-26d5c69abf1e"
                       location="#21c9e030-64a6-459f-8cb9-fb0177e9a0f7"/>
                 </ownedFeatures>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="82b0e978-1817-4a0e-977a-7d9a795f693f"
+                    name="Regolith Inlet Thermocouple" abstractType="#74a4bac8-a9c7-4413-bc6c-929bcfcbed11">
+                  <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                      id="a7559661-6a1f-41ad-b1f3-e959f65f73a7" deployedElement="#a6a8fa20-feac-498d-9368-47db496b31e0"
+                      location="#82b0e978-1817-4a0e-977a-7d9a795f693f"/>
+                </ownedFeatures>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="305233bc-6033-446d-afe1-116dc48076cf" name="Regolith Intake Sensor"
+                    id="305233bc-6033-446d-afe1-116dc48076cf" name="Weighing Scale"
                     nature="NODE"/>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="814f46b4-85aa-4baf-8c24-0bc7f0df34a9" name="Regolith Intake Characterisation Sensor"
+                    id="814f46b4-85aa-4baf-8c24-0bc7f0df34a9" name="RAMAN/LIBS Spectrometer"
+                    kind="HARDWARE" nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="74a4bac8-a9c7-4413-bc6c-929bcfcbed11" name="Regolith Inlet Thermocouple"
                     nature="NODE"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -17410,21 +17446,21 @@
                         location="#1bac66a5-95ef-4f80-9eae-b7daddf286ae"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="cabd72f2-780d-491a-8dd5-a9c0a2048a73" name="Vaporisation Pressure Sensor"
+                      id="cabd72f2-780d-491a-8dd5-a9c0a2048a73" name="Vaporisation Pressure Gauge"
                       abstractType="#ecdf75ed-a128-4cea-8181-012b020a7f29">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="03df99a0-48bd-45df-9cd7-956809f5b801" deployedElement="#1b1598e4-b1df-4d5a-937e-b3529b76c58c"
                         location="#cabd72f2-780d-491a-8dd5-a9c0a2048a73"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="571027bc-54b8-4b5a-8a10-b61447428bb8" name="Vaporisaiton Chamber Temperature Sensor"
+                      id="571027bc-54b8-4b5a-8a10-b61447428bb8" name="Thermocouple Vaporisaiton Chamber"
                       abstractType="#dd14c2ca-f182-4f85-b3ec-879b77df1634">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="8645ffd0-52c4-4bfc-acc9-0f6ee1107b79" deployedElement="#a605c1cb-8d28-42f3-9c12-b7595a4b49c9"
                         location="#571027bc-54b8-4b5a-8a10-b61447428bb8"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="155301c0-3b0c-4a90-98d6-49a5b67c06d1" name="Vapourisation Regolith Temperature Sensor"
+                      id="155301c0-3b0c-4a90-98d6-49a5b67c06d1" name="IR Camera - Vapourisation Regolith Temperature Sensor"
                       abstractType="#c7fbc1e7-7791-4835-b9d1-366c099cf069">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="5229986f-2114-4783-b7e9-f8a971bc3c78" deployedElement="#116cb77a-15f6-495a-99d0-222feb7347d2"
@@ -17434,57 +17470,57 @@
                       id="3c145e9d-e8f7-4d97-ada9-08314393e42b" name="Vaporisation Gas Analyser"
                       nature="NODE"/>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="ecdf75ed-a128-4cea-8181-012b020a7f29" name="Vaporisation Pressure Sensor"
+                      id="ecdf75ed-a128-4cea-8181-012b020a7f29" name="Vaporisation Pressure Gauge"
                       nature="NODE"/>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="dd14c2ca-f182-4f85-b3ec-879b77df1634" name="Vaporisaiton Chamber Temperature Sensor"
+                      id="dd14c2ca-f182-4f85-b3ec-879b77df1634" name="Thermocouple Vaporisaiton Chamber"
                       nature="NODE"/>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="c7fbc1e7-7791-4835-b9d1-366c099cf069" name="Vapourisation Regolith Temperature Sensor"
+                      id="c7fbc1e7-7791-4835-b9d1-366c099cf069" name="IR Camera - Vapourisation Regolith Temperature Sensor"
                       nature="NODE"/>
                 </ownedPhysicalComponents>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                     id="d3f6f7da-93d0-49e6-b6f9-8409a2bd4203" name="Condensation Monitoring"
                     nature="NODE">
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="eb40892c-86ed-481c-91e9-dce2cbc1c02b" name="Condensation Pressure Sensor"
+                      id="eb40892c-86ed-481c-91e9-dce2cbc1c02b" name="Condensation Pressure Gauge"
                       abstractType="#bd729004-74a4-4388-8569-9fa3d18b2136">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="6f98e378-201d-43e7-9c4e-181435f6601d" deployedElement="#3f2e70ec-044c-4f6d-9ed0-ffdf46c99b1b"
                         location="#eb40892c-86ed-481c-91e9-dce2cbc1c02b"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="4e5a8bf3-11d0-4f1b-ade8-32a51ffa0690" name="Condensation Deposit Sensor"
+                      id="4e5a8bf3-11d0-4f1b-ade8-32a51ffa0690" name="Quartz Crystal Microbalance - QCM"
                       abstractType="#9f7d9179-71f9-4b37-9958-d769cf6ed7f0">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="16cd2241-2bf1-4af6-8963-e20f0faf5446" deployedElement="#79ff3990-496d-4ebc-8005-1dbc691bf685"
                         location="#4e5a8bf3-11d0-4f1b-ade8-32a51ffa0690"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="600a494e-5233-46cf-9ab2-3298fa12ae10" name="Condensation Plates Temperature Sensor"
+                      id="600a494e-5233-46cf-9ab2-3298fa12ae10" name="Condensation Chamber IR Camera"
                       abstractType="#1b86e35a-c215-4b9c-9279-407ff2dbcb1f">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="40ce3f92-eca1-4b85-aec3-e8ee95387219" deployedElement="#122f0aac-145a-42f3-a7a4-3e3b0ae9a700"
                         location="#600a494e-5233-46cf-9ab2-3298fa12ae10"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
-                      id="b2ccf362-dcce-42bd-98b6-51eb5256af57" name="Condensation Chamber Temperature Sensor"
+                      id="b2ccf362-dcce-42bd-98b6-51eb5256af57" name="Condensation Chamber Thermocouple"
                       abstractType="#ac76f988-131f-492a-a927-eb9421c3bf93">
                     <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                         id="b5d28ccb-44a7-41d4-a44f-c94c048f49fc" deployedElement="#d87984b7-1850-4734-92c1-e4e830b7717e"
                         location="#b2ccf362-dcce-42bd-98b6-51eb5256af57"/>
                   </ownedFeatures>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="bd729004-74a4-4388-8569-9fa3d18b2136" name="Condensation Pressure Sensor"
+                      id="bd729004-74a4-4388-8569-9fa3d18b2136" name="Condensation Pressure Gauge"
                       nature="NODE"/>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="9f7d9179-71f9-4b37-9958-d769cf6ed7f0" name="Condensation Deposit Sensor"
+                      id="9f7d9179-71f9-4b37-9958-d769cf6ed7f0" name="Quartz Crystal Microbalance - QCM"
                       nature="NODE"/>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="1b86e35a-c215-4b9c-9279-407ff2dbcb1f" name="Condensation Plates Temperature Sensor"
+                      id="1b86e35a-c215-4b9c-9279-407ff2dbcb1f" name="Condensation Chamber IR Camera"
                       nature="NODE"/>
                   <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                      id="ac76f988-131f-492a-a927-eb9421c3bf93" name="Condensation Chamber Temperature Sensor"
+                      id="ac76f988-131f-492a-a927-eb9421c3bf93" name="Condensation Chamber Thermocouple"
                       nature="NODE"/>
                 </ownedPhysicalComponents>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -17516,22 +17552,22 @@
                   id="a03f2def-f190-4bb6-b4f9-b179ed67ac08" name="Oxygen Storage Monitoring"
                   nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="11a471e7-1da4-45c6-9ead-d9d72d5336e5"
-                    name="Storage Temperature Sensor" abstractType="#17be1736-745f-42c2-9864-1fac3d7a9fd7">
+                    name="Storage Thermocouple" abstractType="#17be1736-745f-42c2-9864-1fac3d7a9fd7">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="2b257260-43e0-4e55-bc29-025076793e9f" deployedElement="#bb332e68-5258-4ae2-9af5-4159da8a2792"
                       location="#11a471e7-1da4-45c6-9ead-d9d72d5336e5"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="60314871-a0ec-486d-a22b-7e21d8eaa13a"
-                    name="Storage Pressure Sensor" abstractType="#246a6aa9-bc9e-4c17-9f10-4fc036b2bf39">
+                    name="Storage Pressure Gauge" abstractType="#246a6aa9-bc9e-4c17-9f10-4fc036b2bf39">
                   <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                       id="63054f9f-cdee-4e82-a73a-a14da8c6e538" deployedElement="#29293709-2ae2-4231-8495-632964f3a497"
                       location="#60314871-a0ec-486d-a22b-7e21d8eaa13a"/>
                 </ownedFeatures>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="17be1736-745f-42c2-9864-1fac3d7a9fd7" name="Storage Temperature Sensor"
+                    id="17be1736-745f-42c2-9864-1fac3d7a9fd7" name="Storage Thermocouple"
                     nature="NODE"/>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                    id="246a6aa9-bc9e-4c17-9f10-4fc036b2bf39" name="Storage Pressure Sensor"
+                    id="246a6aa9-bc9e-4c17-9f10-4fc036b2bf39" name="Storage Pressure Gauge"
                     nature="NODE">
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                       id="6fc04835-12dc-46da-a9dc-f92907d432cf" name="PP 1">
@@ -17690,6 +17726,12 @@
                     id="38512d06-6214-4404-b8da-06aa7d1bd8e5" deployedElement="#5cd61902-a785-492e-9126-e79e2e1d433b"
                     location="#59fcec69-fc17-44f1-8f19-71e9bac4484b"/>
               </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f38bad25-e95b-4348-9314-afdbe27d92ca"
+                  name="Preheater" abstractType="#e984d558-c8b4-4039-9389-9e654a78a3f3">
+                <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                    id="5419c7c8-5a03-4d91-b423-f0ee354c0450" deployedElement="#d3d054d2-c925-4bf0-8a2e-54f85fb7f371"
+                    location="#f38bad25-e95b-4348-9314-afdbe27d92ca"/>
+              </ownedFeatures>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="93adb23b-dcea-4b90-b51d-8cab8c360025" name="Hatch Electrical Engine"
                   nature="NODE"/>
@@ -17699,6 +17741,8 @@
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="ac9c5be9-0292-43a9-aae7-bdf910de56c4" name="Regolith Tube to Vaporisation Chamber"
                   nature="NODE"/>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="e984d558-c8b4-4039-9389-9e654a78a3f3" name="Preheater" nature="NODE"/>
             </ownedPhysicalComponents>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -17809,6 +17853,20 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="e29b205c-280e-4a4f-85d4-e5be079ac49d" targetElement="#7b54678d-c753-48ac-affe-be7a856b697c"
                 sourceElement="#4733f9cb-93df-45d0-9aad-0e9a96815370"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="b0556569-6317-45e4-bbd1-238fed0d37c7" name="Regolith Powder Preheater"
+              nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="6ac8a21c-0601-49b9-b204-73eb3d6c768c" targetElement="#8f3f30bb-b0f7-4790-8875-614075970c60"
+                sourceElement="#b0556569-6317-45e4-bbd1-238fed0d37c7"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="0e36be67-5eb3-4e69-a74a-e83504e1277d" name="Regolith Inlet Temperature Sensor"
+              nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="943661ad-b69b-48e6-b6cb-77e9b265f105" targetElement="#e139f491-f211-4f40-b5a6-039f3ff7b648"
+                sourceElement="#0e36be67-5eb3-4e69-a74a-e83504e1277d"/>
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
