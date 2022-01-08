@@ -38,7 +38,7 @@ from openpyxl import *
 
 # change this path to execute the script on your model (here is the IFE sample). 
 # comment it if you want to use the "Run configuration" instead
-aird_path = '/In-Flight Entertainment System/In-Flight Entertainment System.aird'
+aird_path = '/RegolithO2ExtractionDemonstrator/RegolithO2ExtractionDemonstrator.aird'
 
 '''
 #Here is the "Run Configuration" part to uncomment if you want to use this functionality :
