@@ -34,6 +34,8 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').wr
 
 ## Creation of Physical Architecture Document
 
+PAB = model.diagrams.by_name('[PAB] Physical System')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB.svg', 'w').write(PAB.as_svg)
 PABRPORS = model.diagrams.by_name('[PAB] RPORS')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RPORS.svg', 'w').write(PABRPORS.as_svg)
 PABOSS = model.diagrams.by_name('[PAB] OSS')
