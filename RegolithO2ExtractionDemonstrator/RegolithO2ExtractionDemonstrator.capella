@@ -12651,7 +12651,7 @@
                     sourceElement="#eef2457a-898e-497e-bc37-45206668943c"/>
               </ownedFunctions>
               <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                  id="ab61561c-61ee-4bb1-8935-7e10d928d9a2" name="Control Condensation Vacuum Pump">
+                  id="ab61561c-61ee-4bb1-8935-7e10d928d9a2" name="Control Condensation Outlet Flow">
                 <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                     id="96b6e5fa-801a-4ad5-9ead-a274b4c0d616" name="FIP 1">
                   <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -13880,6 +13880,8 @@
               id="e509e2d1-01cd-41c7-933f-51ac5ede93f6" name="Remove Excess Heat">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="07bf9cc3-d8b4-48d5-9e17-7b32dd288764" name="FIP 1"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="ac41daa5-3c63-47c8-b9c3-a5f60001d031" name="PhysicalFunction 29"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="fc553f21-de84-4f4b-9e5b-ef37545f7e04" name="Transfer Heat from Liquid to Radiator">
@@ -16842,7 +16844,7 @@
                     location="#8291c6ce-1943-44a7-8dda-ccce7e4fe50c"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="16be1db8-53b8-4041-9725-614492536c2d"
-                  name="Solar Window" abstractType="#a974aa19-f2ae-4780-a62a-e412e632be62">
+                  name="Fused Quartz Window" abstractType="#a974aa19-f2ae-4780-a62a-e412e632be62">
                 <ownedExtensions xsi:type="mass:PartMass" id="_GIHUcGyoEeyRjfOdCbdjKA"
                     value="1000" maxValue="10000"/>
                 <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
@@ -16893,7 +16895,8 @@
                   id="f65c5df6-f6fc-4b80-8a4d-f8623c8373d7" name="Vaporisation Chamber Walls"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="a974aa19-f2ae-4780-a62a-e412e632be62" name="Solar Window" nature="NODE"/>
+                  id="a974aa19-f2ae-4780-a62a-e412e632be62" summary="harder than general glass with a high temperature stability to 1050°C and resistance to thermal shock."
+                  name="Fused Quartz Window" nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="20bfde57-87e9-4878-87f0-09c09e1cfdac" name="Vaporisation Waste Outlet"
                   nature="NODE"/>
@@ -17034,7 +17037,7 @@
                     location="#428e47af-6663-46ad-ae0c-da9dc1bb20f9"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e05b39cb-b64e-4992-959c-a1f8160e09b6"
-                  name="Cold Plate Heat Remover" abstractType="#60ce7cc5-a21d-4cd7-bab2-1f3868b5d254">
+                  name="Cold Plate Heat Pipes" abstractType="#60ce7cc5-a21d-4cd7-bab2-1f3868b5d254">
                 <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                     id="c0c69644-1f17-4dba-839e-cdc407b54363" deployedElement="#a0ab263e-a1da-46df-a346-f82836b0a72e"
                     location="#e05b39cb-b64e-4992-959c-a1f8160e09b6"/>
@@ -17081,7 +17084,7 @@
                   id="2cb49714-1aee-4d42-a311-ba2b716cca48" name="Sunlight Heat Shield"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="60ce7cc5-a21d-4cd7-bab2-1f3868b5d254" name="Cold Plate Heat Remover"
+                  id="60ce7cc5-a21d-4cd7-bab2-1f3868b5d254" name="Cold Plate Heat Pipes"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="915e377a-6298-472a-a73f-a14907237447" name="Heat Exchanger"
@@ -17901,6 +17904,9 @@
               id="79007ee8-2d61-49ba-a9b7-1ab6a0ef0ae5" name="Radiator" nature="BEHAVIOR">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="23276a33-881d-45c2-ab5b-cf94bff381b3" targetElement="#e509e2d1-01cd-41c7-933f-51ac5ede93f6"
+                sourceElement="#79007ee8-2d61-49ba-a9b7-1ab6a0ef0ae5"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="605d9bab-7664-4d3d-9196-6af4417b5c6f" targetElement="#ac41daa5-3c63-47c8-b9c3-a5f60001d031"
                 sourceElement="#79007ee8-2d61-49ba-a9b7-1ab6a0ef0ae5"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
