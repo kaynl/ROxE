@@ -15477,8 +15477,6 @@
               name="Plate Temperature Control" abstractType="#7e9de618-2e48-4992-8020-8004999573c7"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c3860060-0a77-4119-bc62-c2cacafe6db6"
               name="Oxygen Permeable - Dust Filter" abstractType="#1cf21469-a967-4bed-9d17-3c5af0c57354"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="26a70383-d180-4b98-8cdf-a340f94eb0dd"
-              name="Oxygen Storage System" abstractType="#0fc28921-3910-4513-9a1b-6b002513eeb5"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="626ce220-f229-4a26-a95c-7f206be07d30"
               name="Storage Tank" abstractType="#b97f4703-941b-45fc-9d6b-ab87f358745c"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4629288b-d34c-4683-87e1-24c78a7a906e"
@@ -17012,12 +17010,80 @@
                     id="e4729bb6-0a5f-41dc-898c-c81d5acc09ec" deployedElement="#e2379898-85e1-463c-9980-2f5df0db9f61"
                     location="#5affc9b4-2c56-41ff-b3f2-8762951c4580"/>
               </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="26a70383-d180-4b98-8cdf-a340f94eb0dd"
+                  name="Oxygen Storage System" abstractType="#0fc28921-3910-4513-9a1b-6b002513eeb5"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="f6615dac-b02b-479f-9460-58badecc355e" name="Dust Filtration System"
                   nature="NODE"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="b767202e-a5cb-42cd-b078-e5223abed70b" name="Cryogenic compressor"
                   nature="NODE"/>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="0fc28921-3910-4513-9a1b-6b002513eeb5" name="Oxygen Storage System"
+                  nature="NODE">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a0bb32e3-9922-4d47-a874-7502d3049af4"
+                    name="Emergency Exit Valve" abstractType="#10e40aed-0aef-497a-8f92-3e78fb033cf8">
+                  <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                      id="b4b36ac6-6de0-4b7a-8c94-b559dbbbc257" deployedElement="#cf872f01-ded6-40f0-99f7-b448c75bf257"
+                      location="#a0bb32e3-9922-4d47-a874-7502d3049af4"/>
+                </ownedFeatures>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="49451ffc-2348-457e-b0f8-37907aba5c29"
+                    name="Storage Tank" abstractType="#3a5db13a-dc45-4bbb-b3d9-3706073393c1">
+                  <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                      id="cdf858df-9c1a-4d08-87e9-7989889edca4" deployedElement="#626ce220-f229-4a26-a95c-7f206be07d30"
+                      location="#49451ffc-2348-457e-b0f8-37907aba5c29"/>
+                </ownedFeatures>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1b6f1762-b2a1-48bf-b429-ab910283946a"
+                    name="Storage Thermal Control System" abstractType="#b170e1d9-4301-4529-bf74-7f1e65e723d8">
+                  <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                      id="27bd3e83-d706-4353-8baf-1ee7bb100c1a" deployedElement="#4629288b-d34c-4683-87e1-24c78a7a906e"
+                      location="#1b6f1762-b2a1-48bf-b429-ab910283946a"/>
+                </ownedFeatures>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a8263620-ce86-4cba-8805-06476e9c87b0"
+                    name="Storage Pressure Control System" abstractType="#891195c5-e31f-41f1-b2c8-99a031235142">
+                  <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                      id="50e9556c-33d4-4112-bdf6-fdddd38fc4fa" deployedElement="#fbc10d70-4c33-4b53-821e-114ca425bc0c"
+                      location="#a8263620-ce86-4cba-8805-06476e9c87b0"/>
+                </ownedFeatures>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="264b11c7-69d8-4d83-bed5-2c65c9a8efa1"
+                    name="Storage Inlet System" abstractType="#e2a2aa63-5109-4687-9897-61abf722c00e"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="10e40aed-0aef-497a-8f92-3e78fb033cf8" name="Emergency Exit Valve"
+                    nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="3a5db13a-dc45-4bbb-b3d9-3706073393c1" name="Storage Tank"
+                    nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="b170e1d9-4301-4529-bf74-7f1e65e723d8" name="Storage Thermal Control System"
+                    nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="891195c5-e31f-41f1-b2c8-99a031235142" name="Storage Pressure Control System"
+                    nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="e2a2aa63-5109-4687-9897-61abf722c00e" name="Storage Inlet System"
+                    nature="NODE">
+                  <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
+                      id="6f830c59-a8f5-4f11-8d9b-44cfc40eb47d" name="Valve Electrical Motor"
+                      abstractType="#91a9ddae-209a-49cf-89f4-bdb3fe692396">
+                    <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                        id="a33ebcca-b4fb-417d-a4ba-3b03a51c192e" deployedElement="#633456c4-c7b6-4549-a372-d632174dfd90"
+                        location="#6f830c59-a8f5-4f11-8d9b-44cfc40eb47d"/>
+                  </ownedFeatures>
+                  <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part"
+                      id="6b31befc-a1c1-4078-bb3e-44ecfc333690" name="Inlet Valve"
+                      abstractType="#6dfe8473-e93e-4266-a1b8-d45a22cefce3">
+                    <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                        id="05644a64-0152-44b6-8683-1724221de404" deployedElement="#ae5ef3aa-019d-41f7-981b-6a909b334484"
+                        location="#6b31befc-a1c1-4078-bb3e-44ecfc333690"/>
+                  </ownedFeatures>
+                  <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                      id="91a9ddae-209a-49cf-89f4-bdb3fe692396" name="Valve Electrical Motor"
+                      nature="NODE"/>
+                  <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                      id="6dfe8473-e93e-4266-a1b8-d45a22cefce3" name="Inlet Valve"
+                      nature="NODE"/>
+                </ownedPhysicalComponents>
+              </ownedPhysicalComponents>
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="ed845104-987a-4ad7-aba2-3622b22a39c5" name="Process Thermal Control System"
@@ -17107,68 +17173,6 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="2693a9bb-5deb-4d15-a7ef-172ceee70d45" targetElement="#b120bd22-9308-4f6d-a095-4a3f6099e268"
                 sourceElement="#1cf21469-a967-4bed-9d17-3c5af0c57354"/>
-          </ownedPhysicalComponents>
-          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="0fc28921-3910-4513-9a1b-6b002513eeb5" name="Oxygen Storage System"
-              nature="NODE">
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a0bb32e3-9922-4d47-a874-7502d3049af4"
-                name="Emergency Exit Valve" abstractType="#10e40aed-0aef-497a-8f92-3e78fb033cf8">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="b4b36ac6-6de0-4b7a-8c94-b559dbbbc257" deployedElement="#cf872f01-ded6-40f0-99f7-b448c75bf257"
-                  location="#a0bb32e3-9922-4d47-a874-7502d3049af4"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="49451ffc-2348-457e-b0f8-37907aba5c29"
-                name="Storage Tank" abstractType="#3a5db13a-dc45-4bbb-b3d9-3706073393c1">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="cdf858df-9c1a-4d08-87e9-7989889edca4" deployedElement="#626ce220-f229-4a26-a95c-7f206be07d30"
-                  location="#49451ffc-2348-457e-b0f8-37907aba5c29"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1b6f1762-b2a1-48bf-b429-ab910283946a"
-                name="Storage Thermal Control System" abstractType="#b170e1d9-4301-4529-bf74-7f1e65e723d8">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="27bd3e83-d706-4353-8baf-1ee7bb100c1a" deployedElement="#4629288b-d34c-4683-87e1-24c78a7a906e"
-                  location="#1b6f1762-b2a1-48bf-b429-ab910283946a"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a8263620-ce86-4cba-8805-06476e9c87b0"
-                name="Storage Pressure Control System" abstractType="#891195c5-e31f-41f1-b2c8-99a031235142">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="50e9556c-33d4-4112-bdf6-fdddd38fc4fa" deployedElement="#fbc10d70-4c33-4b53-821e-114ca425bc0c"
-                  location="#a8263620-ce86-4cba-8805-06476e9c87b0"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="264b11c7-69d8-4d83-bed5-2c65c9a8efa1"
-                name="Storage Inlet System" abstractType="#e2a2aa63-5109-4687-9897-61abf722c00e"/>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="10e40aed-0aef-497a-8f92-3e78fb033cf8" name="Emergency Exit Valve"
-                nature="NODE"/>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="3a5db13a-dc45-4bbb-b3d9-3706073393c1" name="Storage Tank" nature="NODE"/>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="b170e1d9-4301-4529-bf74-7f1e65e723d8" name="Storage Thermal Control System"
-                nature="NODE"/>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="891195c5-e31f-41f1-b2c8-99a031235142" name="Storage Pressure Control System"
-                nature="NODE"/>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="e2a2aa63-5109-4687-9897-61abf722c00e" name="Storage Inlet System"
-                nature="NODE">
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6f830c59-a8f5-4f11-8d9b-44cfc40eb47d"
-                  name="Valve Electrical Motor" abstractType="#91a9ddae-209a-49cf-89f4-bdb3fe692396">
-                <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                    id="a33ebcca-b4fb-417d-a4ba-3b03a51c192e" deployedElement="#633456c4-c7b6-4549-a372-d632174dfd90"
-                    location="#6f830c59-a8f5-4f11-8d9b-44cfc40eb47d"/>
-              </ownedFeatures>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6b31befc-a1c1-4078-bb3e-44ecfc333690"
-                  name="Inlet Valve" abstractType="#6dfe8473-e93e-4266-a1b8-d45a22cefce3">
-                <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                    id="05644a64-0152-44b6-8683-1724221de404" deployedElement="#ae5ef3aa-019d-41f7-981b-6a909b334484"
-                    location="#6b31befc-a1c1-4078-bb3e-44ecfc333690"/>
-              </ownedFeatures>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="91a9ddae-209a-49cf-89f4-bdb3fe692396" name="Valve Electrical Motor"
-                  nature="NODE"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="6dfe8473-e93e-4266-a1b8-d45a22cefce3" name="Inlet Valve" nature="NODE"/>
-            </ownedPhysicalComponents>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="b97f4703-941b-45fc-9d6b-ab87f358745c" name="Storage Tank" nature="BEHAVIOR">
