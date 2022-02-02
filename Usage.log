@@ -340,3 +340,11 @@
 2022-01-04 15:25:07,503;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;;7641ed52-f73f-406e-92ed-ec6970d9ccf8
 2022-01-04 15:25:07,618;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;OK;7641ed52-f73f-406e-92ed-ec6970d9ccf8
 2022-01-04 15:25:09,930;Capella;5.1.0.202106150755;Create+Representation;Physical+Architecture+Blank;OK;7641ed52-f73f-406e-92ed-ec6970d9ccf8
+2022-02-01 16:31:41,953;Capella;5.1.0.202106150755;Validation;;;
+2022-02-01 16:31:48,161;Capella;5.1.0.202106150755;Validation;;OK;
+2022-02-02 16:25:25,376;Capella;5.1.0.202106150755;Open+Representation;;;
+2022-02-02 16:25:26,756;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2022-02-02 16:26:28,558;Capella;5.1.0.202106150755;Open+Representation;;;
+2022-02-02 16:26:28,992;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2022-02-02 16:27:04,281;Capella;5.1.0.202106150755;Open+Representation;;;
+2022-02-02 16:27:05,282;Capella;5.1.0.202106150755;Open+Representation;;OK;
