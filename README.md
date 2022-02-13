@@ -41,8 +41,8 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 #### Physical Architecture - Physical System
 <img src="./Model-SVG/PA/PAB.svg">
 
-#### Physical Architecture - Regolith Pyrolysis and Oxygen Recovery System
-<img src="./Model-SVG/PA/PAB-RPORS.svg">
+#### Physical Architecture - Vaporisation and Condensation System
+<img src="./Model-SVG/PA/PAB-VCS.svg">
 
 #### Physical Architecture - Regolith Intake System
 <img src="./Model-SVG/PA/PAB-RIS.svg">
