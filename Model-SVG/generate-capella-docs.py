@@ -36,8 +36,8 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').wr
 
 PAB = model.diagrams.by_name('[PAB] Physical System')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB.svg', 'w').write(PAB.as_svg)
-PABRPORS = model.diagrams.by_name('[PAB] RPORS')
-open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RPORS.svg', 'w').write(PABRPORS.as_svg)
+PABVCS = model.diagrams.by_name('[PAB] VCS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-VCS.svg', 'w').write(PABVCS.as_svg)
 PABOSS = model.diagrams.by_name('[PAB] OSS')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-OSS.svg', 'w').write(PABOSS.as_svg)
 PABRIS = model.diagrams.by_name('[PAB] RIS')
