@@ -376,3 +376,9 @@
 2022-02-23 20:30:10,409;Capella;5.1.0.202106150755;Create+Representation;Mode+State+Machine;OK;e3996edc-6379-4f67-a725-05c4cc45622f
 2022-02-27 17:06:06,020;Capella;5.1.0.202106150755;Open+Representation;;;
 2022-02-27 17:06:06,608;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2022-02-27 17:27:22,878;Capella;5.1.0.202106150755;Open+Representation;;;
+2022-02-27 17:27:23,801;Capella;5.1.0.202106150755;Open+Representation;;OK;
+2022-02-27 17:33:26,122;Capella;5.1.0.202106150755;Create+Representation;Physical+Component+Breakdown;;e83ee1c1-cd0e-4b6d-9f45-21dd194afcc4
+2022-02-27 17:33:26,230;Capella;5.1.0.202106150755;Create+Representation;Physical+Component+Breakdown;OK;e83ee1c1-cd0e-4b6d-9f45-21dd194afcc4
+2022-02-27 17:34:28,694;Capella;5.1.0.202106150755;Create+Representation;Physical+Component+Breakdown;;04070fde-69c5-4966-bbad-5d4bed455fb9
+2022-02-27 17:34:28,771;Capella;5.1.0.202106150755;Create+Representation;Physical+Component+Breakdown;OK;04070fde-69c5-4966-bbad-5d4bed455fb9
