@@ -14,7 +14,7 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 * BasicMass
 * Property Values Management Tool (not used yet)
 * Diagram Styler
-* Python4Capella (not used yet)
+* Python4Capella
 
 ## Model Diagrams
 
@@ -28,6 +28,9 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 
 #### Low-level functions
 <img src="./Model-SVG/SA/SAB_LLF.svg">
+
+#### Root Physical Functional Breakdown
+<img src="./Model-SVG/PA/PHYFUNC.svg">
 
 ### Logical Architecture
 #### Whole System - Logical Architecture Blank
@@ -47,9 +50,23 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 #### Physical Architecture - Regolith Intake System
 <img src="./Model-SVG/PA/PAB-RIS.svg">
 
-
 #### Physical Architecture - Oxygen Storage System
 <img src="./Model-SVG/PA/PAB-OSS.svg">
 
 #### Physical Architecture - Process Control and Monitoring
 <img src="./Model-SVG/PA/PAB-PCM.svg">
+
+#### Physical Component Breakdown - RIS
+<img src="./Model-SVG/PA/CBD_RIS.svg">
+
+#### Physical Component Breakdown - VCS
+<img src="./Model-SVG/PA/CBD_VCS.svg">
+
+#### Physical Component Breakdown - ORSS
+<img src="./Model-SVG/PA/CBD_ORSS.svg">
+
+#### Physical Component Breakdown - PMC
+<img src="./Model-SVG/PA/CBD_PMC.svg">
+
+### Process Description
+<img src="./Model-SVG/PA/MSM.svg">
