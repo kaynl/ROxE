@@ -31,22 +31,22 @@ Regolith Oxygen Lunar Extractor Model by Kim Lamboley
 
 #### Physical Functions
 ##### F1 - Produce Oxygen from Regolith
-<img src="./Model-SVG/PA/F1.jpg">
+<img src="./Model-SVG/PA/F1.JPG">
 
 ##### F2 - Support Oxygen Production and Storage
-<img src="./Model-SVG/PA/F2.jpg">
+<img src="./Model-SVG/PA/F2.JPG">
 
 ##### F3 - Control Process
-<img src="./Model-SVG/PA/F3.jpg">
+<img src="./Model-SVG/PA/F3.JPG">
 
 ##### F4 - Monitor Process
-<img src="./Model-SVG/PA/F4.jpg">
+<img src="./Model-SVG/PA/F4.JPG">
 
 ##### F5 - Handle Electrical Power
 <img src="./Model-SVG/PA/F5.png">
 
 ##### F6 - Survive Environmental Conditions
-<img src="./Model-SVG/PA/F6.jpg">
+<img src="./Model-SVG/PA/F6.JPG">
 
 ### Logical Architecture
 #### Whole System - Logical Architecture Blank
