@@ -33,8 +33,8 @@ LCBD = model.diagrams.by_name('[LCBD] Logical System')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/LA/LCBD-Logical System.svg', 'w').write(LCBD.as_svg)
 
 ## Creation of Physical Architecture Document
-
-PAB = model.diagrams.by_name('[PAB] Physical System')
+## Physical Architecture Blanks
+PAB = model.diagrams.by_name('[PAB] ROLEX')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB.svg', 'w').write(PAB.as_svg)
 PABVCS = model.diagrams.by_name('[PAB] VCS')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-VCS.svg', 'w').write(PABVCS.as_svg)
@@ -45,3 +45,20 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-RIS.svg', 'w').write(PABRIS.a
 PABPCM = model.diagrams.by_name('[PAB] PCM')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PAB-PCM.svg', 'w').write(PABPCM.as_svg)
 
+## Component Breakdown
+CBD_RIS = model.diagrams.by_name('[PCBD] RIS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/CBD_RIS.svg', 'w').write(CBD_RIS.as_svg)
+CBD_VCS = model.diagrams.by_name('[PCBD] VCS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/CBD_VCS.svg', 'w').write(CBD_VCS.as_svg)
+CBD_ORSS = model.diagrams.by_name('[PCBD] ORSS')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/CBD_ORSS.svg', 'w').write(CBD_ORSS.as_svg)
+CBD_PMC = model.diagrams.by_name('[PCBD] PMC')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/CBD_PMC.svg', 'w').write(CBD_PMC.as_svg)
+
+## Root Physical Functions
+PHYFUNC = model.diagrams.by_name('[PFBD] Root Physical Function')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PHYFUNC.svg', 'w').write(PHYFUNC.as_svg)
+
+## State Machines
+MSM = model.diagrams.by_name('[MSM] Operational State')
+openopen('/home/runner/work/ROxE/ROxE/Model-SVG/PA/MSM.svg', 'w').write(MSM.as_svg)
