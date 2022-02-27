@@ -61,4 +61,4 @@ open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PHYFUNC.svg', 'w').write(PHYFUNC.
 
 ## State Machines
 MSM = model.diagrams.by_name('[MSM] Operational State')
-openopen('/home/runner/work/ROxE/ROxE/Model-SVG/PA/MSM.svg', 'w').write(MSM.as_svg)
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/MSM.svg', 'w').write(MSM.as_svg)
