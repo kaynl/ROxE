@@ -63,13 +63,13 @@
       <ownedRequirements xsi:type="Requirements:Folder" id="88b08b4c-1035-4d32-8e81-6755fb1a4e56"
           ReqIFIdentifier="MOR-1" ReqIFName="Mission Objective Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="c4479e97-ccfe-46fc-b777-a15a1de4c827"
-            ReqIFIdentifier="MOR-PROD01" ReqIFDescription="" ReqIFLongName="" ReqIFName="The System should be able to extract 1kg of Oxygen per day from Lunar Regolith"
+            ReqIFIdentifier="MOR-PROD01" ReqIFDescription="" ReqIFLongName="" ReqIFName="The System should be able to extract 100g of Oxygen per day from Lunar Regolith"
             ReqIFPrefix="" ReqIFChapterName="HLR-MOR01" ReqIFText="" requirementTypeProxy=""/>
       </ownedRequirements>
       <ownedRequirements xsi:type="Requirements:Folder" id="30b7e90c-0aa4-4d95-8efd-7ab6d9d11f48"
           ReqIFName="Mission Constraints Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="5c91ddfa-4973-4139-b437-7828409687c4"
-            ReqIFName="The System should be capable of operating during 1year" ReqIFPrefix=""
+            ReqIFName="The System should be capable of operating during 14 days" ReqIFPrefix=""
             ReqIFChapterName="HLR-MCR01"/>
         <ownedRequirements xsi:type="Requirements:Requirement" id="c1cc3367-ae7c-414a-9445-e20e1386e88b"
             ReqIFName="The System shall be placed in the Lunar South Pole" ReqIFChapterName="HLR-MCR02"/>
@@ -115,7 +115,7 @@
       <ownedRequirements xsi:type="Requirements:Folder" id="2f2a75d8-0837-4da5-8a48-80bb1755fc8c"
           ReqIFName="Physical Requirements">
         <ownedRequirements xsi:type="Requirements:Requirement" id="1b556e25-c296-4e6e-a7a9-eb505583db03"
-            ReqIFName="The System shall be have a mass of no more than 1.3t " ReqIFChapterName="HLR-PR05"/>
+            ReqIFName="The System shall be have a mass of no more than 300kg" ReqIFChapterName="HLR-PR05"/>
       </ownedRequirements>
     </ownedExtensions>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
@@ -426,8 +426,6 @@
               id="8787910a-7167-4c8d-a3ba-3322f9583994" involved="#65e9e45a-a501-4f4b-a1ec-7e96eb4ebae4"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="9e9fa8b6-0e39-4fab-9c73-deeef56003b3" involved="#51768132-1404-4f8e-9150-7a3cb1530f63"/>
-          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
-              id="44125f2b-9712-49ea-993c-3dca91a6aa66" involved="#7d271e0a-318c-4d4f-9501-6263a0c1a68d"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="079ed3ff-8ad4-4b54-bd9a-a5cb3285114c" name="Transport to the Moon">
@@ -598,8 +596,6 @@
               id="809ab938-55b0-498a-9234-8fe11c57c083" involved="#721be2a8-9246-4eec-8062-d7a0a9ffbcba"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="6af0e683-ee47-4d6f-93e9-413ffff08f3c" involved="#92ca09f0-a9ea-4b47-a063-b4f05e8223a5"/>
-          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
-              id="ec175840-3783-478b-a831-eb8b86e22fd1" involved="#86a61bee-9267-46d2-8682-49bc99ee4fea"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="a41d5fe0-f7c1-4ee1-9d19-373930741e05" involved="#51768132-1404-4f8e-9150-7a3cb1530f63"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
@@ -1082,7 +1078,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="78ce82b0-11d9-4395-9561-ef48ec5edcb5"
             name="Excavation System" abstractType="#d2db0d09-51b9-4ebe-84f3-b38efdb898d0"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="49e8ad1d-4de1-4b0e-94bd-3fe911d672dd"
-            name="Spacecraft" abstractType="#5d0f2e6d-5dc6-405e-bf61-af1ff628e08c"/>
+            name="Lunar Lander" abstractType="#5d0f2e6d-5dc6-405e-bf61-af1ff628e08c"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="34348fe5-b945-4094-9b87-a4434a8eb4e9"
             name="External Control" abstractType="#65e9e45a-a501-4f4b-a1ec-7e96eb4ebae4"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="1e5ca6b2-75c6-4fa2-85f1-aa4745756811"
@@ -1097,7 +1093,7 @@
               sourceElement="#d2db0d09-51b9-4ebe-84f3-b38efdb898d0"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="5d0f2e6d-5dc6-405e-bf61-af1ff628e08c"
-            name="Spacecraft" summary="Plateform that brings our payload to the moon">
+            name="Lunar Lander" summary="Plateform that brings our payload to the moon">
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="2197624d-8620-487e-a889-56bc7be7a8f2" name="StateMachine 1">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
@@ -2720,9 +2716,6 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="7d04342c-a29e-4ff9-b3f9-fa1eae9c5dfa" targetElement="#e153b733-d4b8-4d5b-9395-f49941ea70d9"
               sourceElement="#744510c0-c5cd-47c3-8d67-566a7a378010"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="dd48afe0-487c-4032-8e35-ce803d5f9375" targetElement="#44125f2b-9712-49ea-993c-3dca91a6aa66"
-              sourceElement="#439e0fb2-551d-4329-922b-ad5ec501ea8d"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="bb1c6f19-136e-470e-b288-487ee7febef8" involved="#ab5b6b7e-2d63-4f35-b697-6f2e885646f0"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
@@ -2869,9 +2862,6 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="25aad2f0-d569-4fa6-a238-0ccfc6ce00fb" targetElement="#6af0e683-ee47-4d6f-93e9-413ffff08f3c"
               sourceElement="#7f0cd808-70ad-48a3-aef7-b6aa40ef0930"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="eedbbb26-36d4-4cdb-a520-e1a982e75c14" targetElement="#ec175840-3783-478b-a831-eb8b86e22fd1"
-              sourceElement="#36f30a60-86ec-4c84-a97d-01d19cc41554"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="d0ceb5d6-88c3-4473-8ea5-980cabac60ce" targetElement="#a41d5fe0-f7c1-4ee1-9d19-373930741e05"
               sourceElement="#b6300419-a1dd-4402-981c-7f4ec64bdd46"/>
@@ -11298,7 +11288,7 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="c05ea7c1-f3c6-4690-95ef-7dc04e631100" name="Monitor System">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="35da6038-c549-4415-aa8e-a758d114fd03" name="Interface to Extraction Monitoring ">
+                id="35da6038-c549-4415-aa8e-a758d114fd03" name="Interface Monitoring to Extraction">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="48879709-3a51-4c52-85b9-a1962f26fd3c" name="FIP 1">
                 <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -11792,38 +11782,6 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="5e181b7e-68b0-44af-aa3f-66e0b4588c72" name="Produce Oxygen from Regolith">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="317149e7-a4cd-4879-9e73-462114a2b8b2" name="Sift Unprocessed Regolith">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="332e245a-c4ba-402e-b60d-dd27271ae3af" name="FIP 1">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="aa6e620d-b51e-495e-9d81-ea8ef68e3079" targetElement="#cd29ccf1-182e-466d-9715-97e016efcd75"
-                    sourceElement="#332e245a-c4ba-402e-b60d-dd27271ae3af"/>
-              </inputs>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="091c74c4-2834-45da-ab47-aaadc315ee2c" name="FIP 2">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="e32628c5-80f5-47fb-afd9-f4cd3b783831" targetElement="#12fbe81d-d59f-4fb1-b20e-8d45f53f6c4a"
-                    sourceElement="#091c74c4-2834-45da-ab47-aaadc315ee2c"/>
-              </inputs>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="b34a7c0e-0467-4f20-84b2-557f4669629c" name="FOP 1">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="d5f3a4da-7eac-43cb-9988-c918fc5d4af1" targetElement="#45264433-ef8e-495d-b3d5-5d1bf8a010fd"
-                    sourceElement="#b34a7c0e-0467-4f20-84b2-557f4669629c"/>
-              </outputs>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="3743668e-e348-4a14-8f15-da8f13a4fa5e" name="FOP 2">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="26c15ea3-249c-4f30-a21a-30ab4b0cbe54" targetElement="#ef2385fb-2cb0-4eaa-adf5-53a7c663aed3"
-                    sourceElement="#3743668e-e348-4a14-8f15-da8f13a4fa5e"/>
-              </outputs>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="1858d4d2-3fe7-4bf1-9e0c-85cbea8e0a7a" name="FOP 3"/>
-              <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                  id="fd236927-15c7-4b52-9185-fb4c902ecfe0" targetElement="#30c4e41a-9207-4f80-a816-656470810a36"
-                  sourceElement="#317149e7-a4cd-4879-9e73-462114a2b8b2"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
                 id="649906bd-7ea2-42b3-8315-f693bc83fb32" name="Store Regolith Powder">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="4c573320-19d5-4089-a7e7-8c03086b64bf" name="FIP 1">
@@ -12167,7 +12125,7 @@
                   target="#4442ebef-969b-4969-bf6c-cd398cc6cf87" source="#c954ae58-cc1f-41c3-9491-5637041addf2"/>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="573dcd68-068d-49a0-b405-0761c096b262" name="Store Unprocessed Regolith">
+                id="573dcd68-068d-49a0-b405-0761c096b262" name="Store Bulk Regolith">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="c7cf503f-f7dd-402b-9699-1e46ec498870" name="FIP 1">
                 <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -12250,11 +12208,46 @@
                   id="b1c3fe0c-5290-44bc-a11c-a1a96de3ff21" name="FOP 1"/>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="0d71783e-7f1b-44e3-ba44-dfcc23dd8cbc" name="Remove too fine dust">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="bc2ca0a5-8ae2-4618-a64f-65b4b037bbef" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="a951d4f5-77cf-46c9-b41d-8530af9d764d" name="FOP 1"/>
+                id="10d0653a-fe74-4cba-a244-48ee89d9293e" name="Beneficiate Regolith">
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                  id="317149e7-a4cd-4879-9e73-462114a2b8b2" name="Remove big rocks">
+                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                    id="332e245a-c4ba-402e-b60d-dd27271ae3af" name="FIP 1">
+                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                      id="aa6e620d-b51e-495e-9d81-ea8ef68e3079" targetElement="#cd29ccf1-182e-466d-9715-97e016efcd75"
+                      sourceElement="#332e245a-c4ba-402e-b60d-dd27271ae3af"/>
+                </inputs>
+                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                    id="091c74c4-2834-45da-ab47-aaadc315ee2c" name="FIP 2">
+                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                      id="e32628c5-80f5-47fb-afd9-f4cd3b783831" targetElement="#12fbe81d-d59f-4fb1-b20e-8d45f53f6c4a"
+                      sourceElement="#091c74c4-2834-45da-ab47-aaadc315ee2c"/>
+                </inputs>
+                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                    id="b34a7c0e-0467-4f20-84b2-557f4669629c" name="FOP 1">
+                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                      id="d5f3a4da-7eac-43cb-9988-c918fc5d4af1" targetElement="#45264433-ef8e-495d-b3d5-5d1bf8a010fd"
+                      sourceElement="#b34a7c0e-0467-4f20-84b2-557f4669629c"/>
+                </outputs>
+                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                    id="3743668e-e348-4a14-8f15-da8f13a4fa5e" name="FOP 2">
+                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                      id="26c15ea3-249c-4f30-a21a-30ab4b0cbe54" targetElement="#ef2385fb-2cb0-4eaa-adf5-53a7c663aed3"
+                      sourceElement="#3743668e-e348-4a14-8f15-da8f13a4fa5e"/>
+                </outputs>
+                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                    id="1858d4d2-3fe7-4bf1-9e0c-85cbea8e0a7a" name="FOP 3"/>
+                <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                    id="fd236927-15c7-4b52-9185-fb4c902ecfe0" targetElement="#30c4e41a-9207-4f80-a816-656470810a36"
+                    sourceElement="#317149e7-a4cd-4879-9e73-462114a2b8b2"/>
+              </ownedFunctions>
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                  id="0d71783e-7f1b-44e3-ba44-dfcc23dd8cbc" name="Remove too fine dust">
+                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                    id="bc2ca0a5-8ae2-4618-a64f-65b4b037bbef" name="FIP 1"/>
+                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                    id="a951d4f5-77cf-46c9-b41d-8530af9d764d" name="FOP 1"/>
+              </ownedFunctions>
             </ownedFunctions>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="9636662a-0c93-43fc-8082-5d955dabd132" targetElement="#cbdbbc90-e4a9-4a84-acc0-6fcf6eb791c8"
@@ -12292,30 +12285,12 @@
                     sourceElement="#45b8ba5d-1d2f-438d-b5ba-bd878b21e91e"/>
               </ownedFunctions>
               <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                  id="d193f958-6236-4911-957a-252439d5df81" name="Transfer Oxygen from Extraction to Purifier">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="7723abb8-ab64-46f9-89a2-adf75329f728" name="FIP 1">
-                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                      id="432bdb99-74a3-4717-b039-c08abe0b2d90" targetElement="#a4746d5f-7d32-4f5d-ae18-e6d89b8f8dfe"
-                      sourceElement="#7723abb8-ab64-46f9-89a2-adf75329f728"/>
-                </inputs>
-                <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                    id="f690627d-c2e7-4cc4-9238-f57de367fd89" targetElement="#257d6e59-50d5-4e12-a091-04aa3cd6e30e"
-                    sourceElement="#d193f958-6236-4911-957a-252439d5df81"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
                   id="7e40af4d-1e8b-4732-ad64-e4d06e852fa9" name="Transfer Oxygen from Purification to Storage">
                 <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                     id="72a97608-7665-4af7-a7aa-97493803b2d8" name="FIP 1">
                   <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
                       id="616ad486-4c48-43ab-87a9-902351e5e2d7" targetElement="#ee6622d0-9004-4dc1-bf3c-777ad1a7a311"
                       sourceElement="#72a97608-7665-4af7-a7aa-97493803b2d8"/>
-                </inputs>
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="ad383064-4f32-4c50-97c5-468abfe0a77f" name="FIP 5">
-                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                      id="d33dd6af-a67c-4ddf-a78f-d7956f5045cf" targetElement="#95987c76-b887-4fb6-a978-ce70ed3b027a"
-                      sourceElement="#ad383064-4f32-4c50-97c5-468abfe0a77f"/>
                 </inputs>
                 <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                     id="11c614d5-14dc-459c-a29b-d635c6890cc3" name="FOP 1">
@@ -12433,33 +12408,54 @@
                       id="ed517fca-b7dd-4ab8-88a1-f9a224a5cf58" targetElement="#41eed464-4bc2-4ab1-8860-b833cf6963b1"
                       sourceElement="#c6df9cc7-5e92-4572-8b64-a0ac559c3373"/>
                 </ownedFunctions>
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                    id="a1d39c0a-2807-4cc7-b549-2635250afc52" name="Remove Condensated Metals from Plates">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="99df913e-36c3-4906-b2a9-b635a31fe76f" name="FIP 1">
+                    <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                        id="42fbf249-7bb9-4dc3-847e-7e091366f6d9" targetElement="#81eb144e-4cbe-466b-8b2f-2ea8ade652b5"
+                        sourceElement="#99df913e-36c3-4906-b2a9-b635a31fe76f"/>
+                  </inputs>
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="f49ed7dc-861e-4529-bb4d-c6265d60e902" name="FIP 2">
+                    <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                        id="65653c60-c858-4039-bbc8-2b0dd3bbeec2" targetElement="#0002d785-8711-4ff9-8833-5d92705c866f"
+                        sourceElement="#f49ed7dc-861e-4529-bb4d-c6265d60e902"/>
+                  </inputs>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="3831319c-2173-481a-891e-7dec5796b465" name="FOP 1">
+                    <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
+                        id="9ac54094-f5c2-4aef-af12-bde7f7af1dce" targetElement="#a283e921-2c81-44b9-ad05-a33608dfe46d"
+                        sourceElement="#3831319c-2173-481a-891e-7dec5796b465"/>
+                  </outputs>
+                  <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                      id="a31e16cb-1129-47d0-bd05-7a9a2fb700e3" targetElement="#a7248af0-1311-4050-a879-c785817e7e47"
+                      sourceElement="#a1d39c0a-2807-4cc7-b549-2635250afc52"/>
+                </ownedFunctions>
                 <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                     id="8a76aad5-bb3b-4a12-b707-1363f9f435b9" targetElement="#f9704ea5-0eb5-4a9b-88b4-bc8c22e0058f"
                     sourceElement="#e643c6df-4600-4c5c-ab74-336cf25c7c3c"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                  id="a1d39c0a-2807-4cc7-b549-2635250afc52" name="Remove Condensated Metals from Plates">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="99df913e-36c3-4906-b2a9-b635a31fe76f" name="FIP 1">
-                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                      id="42fbf249-7bb9-4dc3-847e-7e091366f6d9" targetElement="#81eb144e-4cbe-466b-8b2f-2ea8ade652b5"
-                      sourceElement="#99df913e-36c3-4906-b2a9-b635a31fe76f"/>
-                </inputs>
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="f49ed7dc-861e-4529-bb4d-c6265d60e902" name="FIP 2">
-                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                      id="65653c60-c858-4039-bbc8-2b0dd3bbeec2" targetElement="#0002d785-8711-4ff9-8833-5d92705c866f"
-                      sourceElement="#f49ed7dc-861e-4529-bb4d-c6265d60e902"/>
-                </inputs>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="3831319c-2173-481a-891e-7dec5796b465" name="FOP 1">
-                  <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                      id="9ac54094-f5c2-4aef-af12-bde7f7af1dce" targetElement="#a283e921-2c81-44b9-ad05-a33608dfe46d"
-                      sourceElement="#3831319c-2173-481a-891e-7dec5796b465"/>
-                </outputs>
-                <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                    id="a31e16cb-1129-47d0-bd05-7a9a2fb700e3" targetElement="#a7248af0-1311-4050-a879-c785817e7e47"
-                    sourceElement="#a1d39c0a-2807-4cc7-b549-2635250afc52"/>
+                <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                    id="5367862e-50b6-47bb-a484-d7e24e5bbb18" name="CondensedMetals"
+                    target="#99df913e-36c3-4906-b2a9-b635a31fe76f" source="#f9f4ab35-e63d-4a89-82c5-3ca50423306a">
+                  <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                      id="1e9b3500-1acc-4a02-88d3-bfad9ae852b3" targetElement="#b957c6c9-17a6-4445-a0aa-65157c5c418c"
+                      sourceElement="#5367862e-50b6-47bb-a484-d7e24e5bbb18"/>
+                </ownedFunctionalExchanges>
+                <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                    id="d2ee63dc-3433-41df-b0e4-759984bb73f6" name="Waste" target="#99df913e-36c3-4906-b2a9-b635a31fe76f"
+                    source="#8e798784-2030-4774-90da-36cbfe84f97e">
+                  <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                      id="18ce5fc2-5385-439a-b06d-bc31c5778ec7" targetElement="#bcc033ef-30b6-4c58-9515-8320d6ec22d0"
+                      sourceElement="#d2ee63dc-3433-41df-b0e4-759984bb73f6"/>
+                </ownedFunctionalExchanges>
+                <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                    id="aabbf651-1f49-477c-b5d0-9107aee75929" name="CondensedMetals"
+                    target="#52b326b9-2223-4461-a2b2-212a59a9c503" source="#3831319c-2173-481a-891e-7dec5796b465">
+                  <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                      id="b7bb653c-3df3-4906-b898-66545587f0ae" targetElement="#b5b01af6-fbef-4e6f-97f1-90dfa71add90"
+                      sourceElement="#aabbf651-1f49-477c-b5d0-9107aee75929"/>
+                </ownedFunctionalExchanges>
               </ownedFunctions>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="d5e720aa-bb4d-4d0f-b568-fbad2eba702c" targetElement="#d9aaec86-ef7a-4ce6-ac99-55aa09cc0345"
@@ -12657,8 +12653,8 @@
                 id="6bd9fdb7-aad1-43bd-83ae-74373e847838" targetElement="#afa77530-365f-4606-a940-c163ef23c629"
                 sourceElement="#4f601db2-4583-490e-a189-7c96abb9e712"/>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="c5836d9d-c487-4417-8400-976411116475" name="PureOxygen" target="#72a97608-7665-4af7-a7aa-97493803b2d8"
-                source="#12380f12-6858-43ea-bfd8-248788d1534d">
+                id="c5836d9d-c487-4417-8400-976411116475" name="PureLiquidOxygen"
+                target="#72a97608-7665-4af7-a7aa-97493803b2d8" source="#12380f12-6858-43ea-bfd8-248788d1534d">
               <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                   id="000dfba6-03ed-4b0f-b072-eae5b7497c94" targetElement="#7f55fe0e-110b-4ad8-a09f-7f195b7477ad"
                   sourceElement="#c5836d9d-c487-4417-8400-976411116475"/>
@@ -12766,7 +12762,7 @@
                   sourceElement="#72a78cfd-f8ff-447c-975d-7239a34f8fca"/>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="d5137708-b5f7-4d87-8081-dc51d9f970cf" name="Power Control Orders">
+                id="d5137708-b5f7-4d87-8081-dc51d9f970cf" name="Convert Control Orders into Power Orders">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="d92e3d76-b49b-4385-abed-0c7a873b9bde" name="FIP 1">
                 <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -13453,7 +13449,7 @@
               </ownedFunctionalExchanges>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="98d7e2a6-05fd-4b13-8b2f-b000bbd5b3a9" name="Power Extraction Control">
+                id="98d7e2a6-05fd-4b13-8b2f-b000bbd5b3a9" name="Power Extraction">
               <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
                   id="4fb70bb6-5b54-48f3-91d2-4bdc25b8eafc" name="Power Thermal Functions">
                 <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
@@ -13505,7 +13501,7 @@
                 <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
                     id="2e6a7ad4-d3ae-4bf0-8612-19b0271290da" name="Convert Sunlight into Heat for Vapourisation">
                   <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                      id="f784941e-4922-48f4-8ab6-3ef61a18f72c" name="ConcentrateSolarEnergy">
+                      id="f784941e-4922-48f4-8ab6-3ef61a18f72c" name="Concentrate Solar Energy">
                     <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                         id="52ec2a09-5292-4001-9794-a2a03c1a9807" name="FIP 1"/>
                     <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -14333,7 +14329,7 @@
                 sourceElement="#c8771677-2cd1-414e-b019-9bc09ee56cdb"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="8f3e32c9-b3d0-4837-91e6-99516d4d6e21" name="PureOxygen" target="#e1fc3af6-4839-4617-8c17-6109295808be"
+              id="8f3e32c9-b3d0-4837-91e6-99516d4d6e21" name="PureLiquidOxygen" target="#e1fc3af6-4839-4617-8c17-6109295808be"
               source="#11c614d5-14dc-459c-a29b-d635c6890cc3">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="915d91ea-8991-40cb-ba64-27f2dc80fc47" targetElement="#9672281d-3f18-426a-96f8-5646a06e68f3"
@@ -14366,13 +14362,6 @@
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="b879fe76-e630-463d-a874-1f5ec50eada0" targetElement="#ef96061f-951c-4dc1-a702-1c7227015294"
                 sourceElement="#720002ba-2877-491c-a7c4-b7e2dfdaa701"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="57fc9fd2-9f9a-4ff4-a7a4-68f127834c48" name="PowerForOxTransferToStorage"
-              target="#ad383064-4f32-4c50-97c5-468abfe0a77f" source="#7314b629-0536-491e-b134-b9ccd5e36d8d">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="3bb912dc-19cc-42f4-8c20-b89d662774aa" targetElement="#b566d72a-d225-4719-a3e2-24ced0b93219"
-                sourceElement="#57fc9fd2-9f9a-4ff4-a7a4-68f127834c48"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="5a52af79-cd0b-4d0b-873b-0f1181f9211f" name="PowerForUnpyrolisedRegTransfer"
@@ -14478,27 +14467,6 @@
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="c3960f83-f112-44b1-99f9-7ac3828b0ec8" targetElement="#832f89c4-0506-421d-90eb-2194e66b391b"
                 sourceElement="#2dd04899-4e09-46ac-975b-5c29089a1ee3"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="5367862e-50b6-47bb-a484-d7e24e5bbb18" name="CondensedMetals" target="#99df913e-36c3-4906-b2a9-b635a31fe76f"
-              source="#f9f4ab35-e63d-4a89-82c5-3ca50423306a">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="1e9b3500-1acc-4a02-88d3-bfad9ae852b3" targetElement="#b957c6c9-17a6-4445-a0aa-65157c5c418c"
-                sourceElement="#5367862e-50b6-47bb-a484-d7e24e5bbb18"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="d2ee63dc-3433-41df-b0e4-759984bb73f6" name="Waste" target="#99df913e-36c3-4906-b2a9-b635a31fe76f"
-              source="#8e798784-2030-4774-90da-36cbfe84f97e">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="18ce5fc2-5385-439a-b06d-bc31c5778ec7" targetElement="#bcc033ef-30b6-4c58-9515-8320d6ec22d0"
-                sourceElement="#d2ee63dc-3433-41df-b0e4-759984bb73f6"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="aabbf651-1f49-477c-b5d0-9107aee75929" name="CondensedMetals" target="#52b326b9-2223-4461-a2b2-212a59a9c503"
-              source="#3831319c-2173-481a-891e-7dec5796b465">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="b7bb653c-3df3-4906-b898-66545587f0ae" targetElement="#b5b01af6-fbef-4e6f-97f1-90dfa71add90"
-                sourceElement="#aabbf651-1f49-477c-b5d0-9107aee75929"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="bc823679-83e7-4f93-94a5-1b21132d442c" name="PowerForMonitoring"
@@ -14626,9 +14594,6 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="02561923-4848-4504-ba7d-fb3095312c5a" name="CompressedOxygenGas"
               target="#af824951-c6b8-4255-8aad-0474db468fac" source="#67eb1cd3-0913-4f9b-a565-0b094b730f2e"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="81ae0940-1777-4862-afe7-c789f0bc3f49" name="LiquidOxygen" target="#e1fc3af6-4839-4617-8c17-6109295808be"
-              source="#12380f12-6858-43ea-bfd8-248788d1534d"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="ff288fa5-f7d8-48df-8ef9-996eab3c95a9" name="DustToLunarGround" target="#55dd3469-4002-4b0e-b3ab-f701f0ce7d5c"
               source="#a951d4f5-77cf-46c9-b41d-8530af9d764d"/>
@@ -15209,6 +15174,52 @@
                 id="48bd169d-2d75-42c2-84f0-d51ed1baa892" targetElement="#018dd79a-023e-4282-b216-fa7b80b096b3"
                 sourceElement="#1f42c81d-31b3-4289-95fb-b06936e70b1f"/>
           </ownedComponentExchanges>
+          <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+              id="9472f312-8132-4e9b-b620-a6fbed38ab37" name="StateMachine 1">
+            <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                id="e3996edc-6379-4f67-a725-05c4cc45622f" name="Default Region" involvedStates="#489160ea-79bc-439f-9f14-b2ae27233852 #2598a36b-9cfd-4a3b-a627-4d444114c160 #e5bb6f85-4cda-4024-9a4c-fd4b9ed1de94 #33fd49ed-3ff2-4067-bf84-2c3c55caad7d #3d0ba24e-c89a-4850-a966-d5d471f3c69e">
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
+                  id="489160ea-79bc-439f-9f14-b2ae27233852" name="Chamber Filling"
+                  entry="#cf10a902-751d-4ee0-ac24-1dc2b4063311" doActivity="#53b93d1b-fa67-4fdc-9a69-84baf886c942 #a19fdfd6-707a-4007-8325-94da5923a4d9 #25fbfa9f-d0bf-4961-ae34-e069fb989a50 #c186050f-46df-491d-81ed-270e71e7fa09 #6ef2b7e5-0fe5-4846-82d4-4a143e6c4d7c #d870b213-f2fe-447e-a126-00a3875f6452 #53493bc5-3f49-4b64-8c74-57ef7052f790 #099cb0d8-a083-4ba0-99a7-be19be4d07e8 #93833639-1549-41a9-8ca1-b7ea20c4f8ef #1749f219-371d-4919-a646-c8c6288ed20f #f8bb682a-207d-444b-96d6-85e669f12a99 #1e2def54-db1d-440e-ba5b-2d87ddfabcb0 #0d71783e-7f1b-44e3-ba44-dfcc23dd8cbc #317149e7-a4cd-4879-9e73-462114a2b8b2 #573dcd68-068d-49a0-b405-0761c096b262 #649906bd-7ea2-42b3-8315-f693bc83fb32"
+                  exit="#c2a346eb-2406-4935-8ed3-e01faf336be4 #d1e06c82-63ac-4150-bc20-a340f8a31039 #4ad9b42a-c8aa-47fd-947b-cb65a54d8854">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="36278389-2d84-45d7-95f8-fb5344ff6f63" name="region"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
+                  id="2598a36b-9cfd-4a3b-a627-4d444114c160" name="Regolith Processing"
+                  entry="#4ad9b42a-c8aa-47fd-947b-cb65a54d8854" doActivity="#26affacd-d950-4cf8-9e44-3110a724a0fb #eef2457a-898e-497e-bc37-45206668943c #136a5cb6-15a4-4b7b-918a-12ed96634df6 #84eb2b7f-faf3-422c-9186-128d817797d6 #8aa19ad9-aba2-4843-b8f5-e22734144541 #4e5b6076-5053-474c-bb57-4628e6660615 #25fbfa9f-d0bf-4961-ae34-e069fb989a50 #c1a632d8-6085-48a6-bcd3-7814c06b1e37 #205a2690-5b03-428d-b97e-56be971f7d01 #ee1e5469-5cf6-432b-b66c-ff06bd9ae891 #1b6a6a40-d868-455c-9f7c-7fb160796dd8 #b2a5e591-2bf7-4b01-aa71-33612ed56eb7 #dcdefcc1-6dfa-4aab-81c1-5098ca5a32b7 #a9f891ed-f01a-4620-9332-34097a17127e #18b2d959-3c76-4433-bd0a-f21b028721b0 #e737773a-2498-4ccf-80ee-8f14b2772f76 #0a78d8dc-c0ec-484a-baf8-0385b24a320c #f784941e-4922-48f4-8ab6-3ef61a18f72c #82b29c83-9378-422d-b8a0-a91369eabc6a #d7badf52-7ef3-4db9-b3d3-638b37e99715 #12a656c0-3d3d-47b7-a976-8b0bd3c1b546 #80d0a59f-2605-4589-b4eb-8393191c2eb0 #5a34051e-94ef-4d77-88f1-8072f013ab9b #eb5120d9-9012-4033-ad80-3c5c45ee9d00 #858d2dfd-a1c1-47e2-b4c9-8be116431990 #95874bf9-195e-4451-a43b-233cf1190ef2 #255eee0b-80b7-4fc9-849d-f9a0cf55d710 #10921024-2407-4ee8-9d61-79fd7a21d882 #737b452a-596f-4eb2-8354-d211dd7aa2ea #fa5ed57d-d099-4b11-baf6-1ae9040daf0d #38108d5f-8a43-4c8d-8950-0bcc0bdf6cb4 #51317fc3-95f0-432e-9547-f90fb595e7d0 #af9994da-8b67-458b-b3cb-3ac5a4984f84 #46b82868-9f16-4764-a442-1da4f8a55db2 #a6d076a1-9f84-481e-89b6-50037fb537a7 #f33e9141-792f-4455-9e35-f4e977f29a5a #f32a6423-f8c6-4139-ab3d-07555345ad07 #2cfeb742-37e4-43f9-8607-68bb400d52c5 #74265222-87b6-4a41-9ccf-e8b23bc9cb3f #68e979f7-936c-4514-bf56-92747f84eaa9 #7ce71e63-4c61-48ef-9311-dee83889da39 #4e7b7470-34e0-408d-b146-84bf10e79a2d #c4989f92-c1a0-461f-9cf8-d0643b0c127b #ee2270a5-c393-41d5-b8ee-9d5c0078d6aa #7e40af4d-1e8b-4732-ad64-e4d06e852fa9 #0abaf58f-045b-44ed-8dee-dcc2c6050aed #06b3780e-c68f-41c1-88d5-df9d4b3c90a0 #e509e2d1-01cd-41c7-933f-51ac5ede93f6 #1d9031e5-f748-4e3c-9ce2-c84b085a39b1 #fc553f21-de84-4f4b-9e5b-ef37545f7e04 #f74bad37-138d-4f65-9532-25e2b17ceec3 #455bf970-4629-4606-b409-d8a615ad3581 #1889c15e-4167-4282-b907-cea23d6f795b #70021fc2-3039-4bb5-9947-ef4fbecfe6d9 #284bbd23-1578-4ade-858e-686e3dddb214 #cb561f8c-ecb4-4ad1-9dce-1e74e5f14f38 #b9b91b0d-1165-415d-8f7f-b8337179f83a #c3ce4e97-3695-4980-9587-4bb8c11080ef #fb87c2ca-c504-4bbf-862f-0ee5c42e47bd #b120bd22-9308-4f6d-a095-4a3f6099e268"
+                  exit="#4a654eaf-0428-4b10-8497-74e79ac8014d">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="6919ea81-5b8c-4146-a507-c34f2a1742c1" name="region"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
+                  id="e5bb6f85-4cda-4024-9a4c-fd4b9ed1de94" name="Chamber Emptying"
+                  entry="#4a654eaf-0428-4b10-8497-74e79ac8014d" doActivity="#aec918b7-6dde-4618-a3ab-33006d3c4158 #d47a2685-24fb-4049-98b8-abf6b913210a #d5137708-b5f7-4d87-8081-dc51d9f970cf #099cb0d8-a083-4ba0-99a7-be19be4d07e8"
+                  exit="#cf10a902-751d-4ee0-ac24-1dc2b4063311">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="1fc08beb-d7f5-48fd-bb7c-a840dc4cbeb9" name="region"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
+                  id="33fd49ed-3ff2-4067-bf84-2c3c55caad7d" name="Initial 4"/>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:FinalState"
+                  id="3d0ba24e-c89a-4850-a966-d5d471f3c69e" name="Final  5"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="172a5ccf-f44c-4478-be55-e08ba66c55f3" triggerDescription=""
+                  source="#33fd49ed-3ff2-4067-bf84-2c3c55caad7d" target="#489160ea-79bc-439f-9f14-b2ae27233852"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="e2fe0a36-8cad-4f4a-93cb-11423b7f1b88" triggerDescription=""
+                  source="#489160ea-79bc-439f-9f14-b2ae27233852" target="#2598a36b-9cfd-4a3b-a627-4d444114c160"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="4764c877-ea1a-467e-a277-dfbeb8cf053b" triggerDescription=""
+                  source="#2598a36b-9cfd-4a3b-a627-4d444114c160" target="#e5bb6f85-4cda-4024-9a4c-fd4b9ed1de94"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="0143bc04-8193-41e0-bf14-ba298e73f528" triggerDescription=""
+                  source="#e5bb6f85-4cda-4024-9a4c-fd4b9ed1de94" target="#489160ea-79bc-439f-9f14-b2ae27233852"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="89b5f94b-15f3-4988-8037-a8bcd4d62d79" triggerDescription=""
+                  source="#e5bb6f85-4cda-4024-9a4c-fd4b9ed1de94" target="#3d0ba24e-c89a-4850-a966-d5d471f3c69e"/>
+            </ownedRegions>
+          </ownedStateMachines>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0a4508bf-a6eb-4da7-9888-96d02e710685"
               name="Process Control and Monitoring - Logical System" abstractType="#cf79605d-fadd-4a80-8a88-7dd45b4beb7f"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="106e68e9-e100-4b15-9a96-ead1d1bf700f"
@@ -15291,8 +15302,6 @@
               name="Heat Exchanger" abstractType="#c5c6bcfc-a308-4e7b-a731-55d25025650b"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="633456c4-c7b6-4549-a372-d632174dfd90"
               name="Storage Inlet Valve Motor" abstractType="#417c9f8e-d36c-4bec-ae46-a6d4c1a9fb21"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ae5ef3aa-019d-41f7-981b-6a909b334484"
-              name="Inlet Valve" abstractType="#5dc7f8ef-7063-4f96-8c74-1e1a4e47435a"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5ce21153-e0db-4368-b0e6-0d9f61a75bbe"
               name="Cryoliquefaction Thermal Sensor" abstractType="#1e04120f-5fcd-4423-af6d-534395a0021a"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e2379898-85e1-463c-9980-2f5df0db9f61"
@@ -16764,6 +16773,9 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="6953f415-7ce2-43c5-8e53-8c1aff63ecfe" targetElement="#ee2270a5-c393-41d5-b8ee-9d5c0078d6aa"
                 sourceElement="#b97f4703-941b-45fc-9d6b-ab87f358745c"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="2522b0b2-9c79-4f71-bf0b-381db89b09b1" targetElement="#7e40af4d-1e8b-4732-ad64-e4d06e852fa9"
+                sourceElement="#b97f4703-941b-45fc-9d6b-ab87f358745c"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="6947dd8b-399d-4426-99da-fd0228ba444f" name="Emergency Valve" nature="BEHAVIOR">
@@ -17566,12 +17578,6 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="7dc28207-3d6f-41a4-be6a-8db86642b2d2" targetElement="#0a78d8dc-c0ec-484a-baf8-0385b24a320c"
                 sourceElement="#417c9f8e-d36c-4bec-ae46-a6d4c1a9fb21"/>
-          </ownedPhysicalComponents>
-          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="5dc7f8ef-7063-4f96-8c74-1e1a4e47435a" name="Inlet Valve" nature="BEHAVIOR">
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="34eda679-a36b-479a-a703-81c6aa3e4087" targetElement="#7e40af4d-1e8b-4732-ad64-e4d06e852fa9"
-                sourceElement="#5dc7f8ef-7063-4f96-8c74-1e1a4e47435a"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="1e04120f-5fcd-4423-af6d-534395a0021a" name="Cryoliquefaction Thermal Sensor"
