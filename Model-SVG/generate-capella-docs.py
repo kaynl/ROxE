@@ -56,8 +56,18 @@ CBD_PMC = model.diagrams.by_name('[PCBD] PMC')
 open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/CBD_PMC.svg', 'w').write(CBD_PMC.as_svg)
 
 ## Root Physical Functions
-PHYFUNC = model.diagrams.by_name('[PFBD] Root Physical Function')
-open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/PHYFUNC.svg', 'w').write(PHYFUNC.as_svg)
+FBD_F1 = model.diagrams.by_name('[PFBD] F1 - Produce Oxygen from Regolith')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/FBD_F1.svg', 'w').write(FBD_F1.as_svg)
+FBD_F2 = model.diagrams.by_name('[PFBD] F2 - Support Oxygen Production and Storage')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/FBD_F2.svg', 'w').write(FBD_F2.as_svg)
+FBD_F3 = model.diagrams.by_name('[PFBD] F3 - Control Process')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/FBD_F3.svg', 'w').write(FBD_F3.as_svg)
+FBD_F4 = model.diagrams.by_name('[PFBD] F4 - Monitor Process')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/FBD_F4.svg', 'w').write(FBD_F4.as_svg)
+FBD_F5 = model.diagrams.by_name('[PFBD] F5 - Handle Electrical Power')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/FBD_F5.svg', 'w').write(FBD_F5.as_svg)
+FBD_F6 = model.diagrams.by_name('[PFBD] F6 - Survive Environmental Conditions')
+open('/home/runner/work/ROxE/ROxE/Model-SVG/PA/FBD_F6.svg', 'w').write(FBD_F6.as_svg)
 
 ## State Machines
 MSM = model.diagrams.by_name('[MSM] Operational State')
