@@ -1,5 +1,5 @@
-# ROxE - Dum Spiro, Spero
-Regolith Oxygen Extractor Model by Kim Lamboley
+# ROLEx - Dum Spiro, Spero
+Regolith Oxygen Lunar Extractor Model by Kim Lamboley
 
 ## Capella Model
 
@@ -29,8 +29,24 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 #### Low-level functions
 <img src="./Model-SVG/SA/SAB_LLF.svg">
 
-#### Root Physical Functional Breakdown
-<img src="./Model-SVG/PA/PHYFUNC.svg">
+#### Physical Functions
+##### F1 - Produce Oxygen from Regolith
+<img src="./Model-SVG/PA/FBD_F1.svg">
+
+##### F2 - Support Oxygen Production and Storage
+<img src="./Model-SVG/PA/FBD_F2.svg">
+
+##### F3 - Control Process
+<img src="./Model-SVG/PA/FBD_F3.svg">
+
+##### F4 - Monitor Process
+<img src="./Model-SVG/PA/FBD_F4.svg">
+
+##### F5 - Handle Electrical Power
+<img src="./Model-SVG/PA/FBD_F5.svg">
+
+##### F6 - Survive Environmental Conditions
+<img src="./Model-SVG/PA/FBD_F6.svg">
 
 ### Logical Architecture
 #### Whole System - Logical Architecture Blank
