@@ -40,17 +40,13 @@ Regolith Oxygen Extractor Model by Kim Lamboley
 <img src="./Model-SVG/LA/LCBD-Logical System.svg">
 
 ### Physical Architecture
-
-#### Physical Architecture - Physical System
-<img src="./Model-SVG/PA/PAB.svg">
-
 #### Physical Architecture - Vaporisation and Condensation System
 <img src="./Model-SVG/PA/PAB-VCS.svg">
 
 #### Physical Architecture - Regolith Intake System
 <img src="./Model-SVG/PA/PAB-RIS.svg">
 
-#### Physical Architecture - Oxygen Storage System
+#### Physical Architecture - Oxygen Recovery and Storage System
 <img src="./Model-SVG/PA/PAB-OSS.svg">
 
 #### Physical Architecture - Process Control and Monitoring
