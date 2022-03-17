@@ -1,36 +1,36 @@
-<svg baseProfile="full" class="Error" height="290" version="1.1" viewBox="-10 -10 770 290" width="770" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>.Error * { shape-rendering: geometricPrecision; }
-.Error text { font-family: "Segoe UI"; font-size: 8pt; }
-.Error g { cursor: pointer; }
-.Error g.Edge &gt; path { fill: none; stroke: rgb(0, 0, 0); }
-.Error g.Box &gt; line { stroke: #000000; }
-.Error g.Box &gt; rect, .Error g.Box &gt; use { fill: transparent; stroke: #000000; stroke-width: 1; }
-.Error g.Box.Annotation &gt; line { stroke: none; }
-.Error g.Box.Annotation &gt; rect, .Error g.Box.Annotation &gt; use { fill: none; stroke: none; }
-.Error g.Box.Constraint &gt; line { stroke: #888888; }
-.Error g.Box.Constraint &gt; rect, .Error g.Box.Constraint &gt; use { fill: #FFF5B5; stroke: #888888; }
-.Error g.Box.Constraint &gt; text { fill: #000000; }
-.Error g.Box.Note &gt; line { stroke: #FFCC66; }
-.Error g.Box.Note &gt; rect, .Error g.Box.Note &gt; use { fill: #FFFFCB; stroke: #FFCC66; }
-.Error g.Box.Note &gt; text { fill: #000000; }
-.Error g.Box.Requirement &gt; line { stroke: #72496E; }
-.Error g.Box.Requirement &gt; rect, .Error g.Box.Requirement &gt; use { fill: #D9C4D7; stroke: #72496E; }
-.Error g.Box.Requirement &gt; text { fill: #000000; }
-.Error g.Box.Text &gt; line { stroke: transparent; }
-.Error g.Box.Text &gt; rect, .Error g.Box.Text &gt; use { stroke: transparent; }
-.Error g.Edge &gt; rect { fill: none; stroke: none; }
-.Error g.Circle &gt; circle { fill: #000000; stroke: none; }
-.Error g.Edge &gt; path { stroke-width: 1; }
-.Error g.Edge.Connector &gt; rect { fill: none; stroke: none; }
-.Error g.Circle.Connector &gt; circle { fill: #B0B0B0; stroke: none; }
-.Error g.Edge.Connector &gt; path { stroke: #B0B0B0; stroke-dasharray: 1; }
-.Error g.Edge.Constraint &gt; rect { fill: none; stroke: none; }
-.Error g.Circle.Constraint &gt; circle { fill: #000000; stroke: none; }
-.Error g.Edge.Constraint &gt; path { stroke: #000000; stroke-dasharray: 1, 3; marker-end: url(#FineArrowMark_000000); stroke-linecap: round; }
-.Error g.Edge.Note &gt; rect { fill: none; stroke: none; }
-.Error g.Circle.Note &gt; circle { fill: #000000; stroke: none; }
-.Error g.Edge.Note &gt; path { stroke: #000000; stroke-dasharray: 1, 3; }
-.Error g.Edge.RequirementRelation &gt; rect { fill: none; stroke: none; }
-.Error g.Circle.RequirementRelation &gt; circle { fill: #72496E; stroke: none; }
-.Error g.Edge.RequirementRelation &gt; path { stroke: #72496E; stroke-width: 2; marker-end: url(#FineArrowMark_72496E); stroke-dasharray: 5; }
-.Error g.Edge.RequirementRelation &gt; text { fill: #72496E; }
-</style><symbol id="ErrorSymbol" viewBox="0 0 2.6458 2.6458"><path d="M 0,0 2.6458333,2.6458333 M 0,2.6458333 2.6458333,0" style="fill: none; stroke: red; stroke-width: 0.5;" /></symbol><symbol id="RequirementSymbol" style="stroke: none;" viewBox="0 0 50 50"><path d="M 12.806813,6.5702324 A 6.244379,5.8113241 0 0 1 6.5624342,12.381557 6.244379,5.8113241 0 0 1 0.31805515,6.5702324 6.244379,5.8113241 0 0 1 6.5624342,0.75890827 6.244379,5.8113241 0 0 1 12.806813,6.5702324 Z" style="fill: #431964" /><path d="m 4.3228658,5.8752475 h 2.9514721 q 0.2945581,0 0.5184223,-0.1413879 Q 8.0225155,5.5865806 8.1462299,5.3214783 8.2699443,5.056376 8.2758355,4.7029063 v 0 q 0,-0.3475786 -0.1237144,-0.6126808 Q 8.0284067,3.8251232 7.7986513,3.6837353 7.5747872,3.5364562 7.2743379,3.5364562 H 4.3228658 V 2.1873801 h 2.9927103 q 0.7246129,0 1.2724909,0.3122316 0.5478781,0.3122316 0.8483274,0.8836743 0.3063404,0.5714427 0.3063404,1.3196203 v 0 q 0,0.7540687 -0.3063404,1.3255114 Q 9.1359451,6.5998605 8.5821759,6.912092 8.0342978,7.2243236 7.3155761,7.2243236 H 4.3228658 Z M 3.7396407,2.1873801 H 5.1476285 V 10.759021 H 3.7396407 Z M 6.3906636,6.9592213 7.8516718,6.6882279 10.102096,10.759021 H 8.4113322 Z" style="fill:#ffffff;" /></symbol></defs><rect fill="white" height="290" stroke="none" width="770" x="-10" y="-10" /><g class="Box Note" id="error"><rect class="Note" height="49" style="fill: #FF0000" width="350" x="200.5" y="0.5" /><text class="Note" dominant-baseline="middle" style="fill: #FFFFFF" text-anchor="middle" x="200" y="0"><tspan x="375.0" xml:space="preserve" y="11.428571428571429">An error occured while rendering diagram</tspan><tspan x="375.0" xml:space="preserve" y="24.285714285714285">'[PFBD] F3 - Control Process'</tspan><tspan x="375.0" xml:space="preserve" y="37.14285714285714">(in stage 'parse')</tspan></text></g><g class="Box Note" id="info"><rect class="Note" height="36" width="350" x="200.5" y="59.5" /><text class="Note" dominant-baseline="middle" text-anchor="middle" x="200" y="59"><tspan x="375.0" xml:space="preserve" y="70.42857142857143">Please report this error to your tools and methods team, and</tspan><tspan x="375.0" xml:space="preserve" y="83.28571428571429">attach the following information:</tspan></text></g><g class="Box Note" id="trace"><rect class="Note" height="165" width="750" x="0.5" y="105.5" /><text class="Note" dominant-baseline="middle" text-anchor="middle" x="0" y="105"><tspan x="375.0" xml:space="preserve" y="115.71428571428571">Traceback (most recent call last):</tspan><tspan x="375.0" xml:space="preserve" y="128.57142857142856">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/model/diagram.py", line 230, in __render_fresh</tspan><tspan x="375.0" xml:space="preserve" y="141.42857142857142">    self._render = self._create_diagram()</tspan><tspan x="375.0" xml:space="preserve" y="154.28571428571428">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/model/diagram.py", line 295, in _create_diagram</tspan><tspan x="375.0" xml:space="preserve" y="167.14285714285714">    return aird.parse_diagram(self._model._loader, self._element)</tspan><tspan x="375.0" xml:space="preserve" y="180.0">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/aird/parser/__init__.py", line 198, in parse_diagram</tspan><tspan x="375.0" xml:space="preserve" y="192.85714285714286">    elm = _element_from_xml(</tspan><tspan x="375.0" xml:space="preserve" y="205.71428571428572">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/aird/parser/__init__.py", line 228, in _element_from_xml</tspan><tspan x="375.0" xml:space="preserve" y="218.57142857142858">    return factory(ebd)</tspan><tspan x="375.0" xml:space="preserve" y="231.42857142857144">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/aird/parser/_semantic.py", line 90, in from_xml</tspan><tspan x="375.0" xml:space="preserve" y="244.2857142857143">    assert melodyobjs, "No valid semantic element references could be found"</tspan><tspan x="375.0" xml:space="preserve" y="257.14285714285717">AssertionError: No valid semantic element references could be found</tspan></text></g></svg>
+<svg baseProfile="full" height="290" version="1.1" viewBox="-10 -10 770 290" width="770" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>* { shape-rendering: geometricPrecision; }
+text { font-family: "Segoe UI"; font-size: 8pt; }
+g { cursor: pointer; }
+g.Edge &gt; path { fill: none; stroke: rgb(0, 0, 0); }
+. g.Box &gt; line { stroke: #000000; }
+. g.Box &gt; rect, . g.Box &gt; use { fill: transparent; stroke: #000000; stroke-width: 1; }
+. g.Box.Annotation &gt; line { stroke: none; }
+. g.Box.Annotation &gt; rect, . g.Box.Annotation &gt; use { fill: none; stroke: none; }
+. g.Box.Constraint &gt; line { stroke: #888888; }
+. g.Box.Constraint &gt; rect, . g.Box.Constraint &gt; use { fill: #FFF5B5; stroke: #888888; }
+. g.Box.Constraint &gt; text { fill: #000000; }
+. g.Box.Note &gt; line { stroke: #FFCC66; }
+. g.Box.Note &gt; rect, . g.Box.Note &gt; use { fill: #FFFFCB; stroke: #FFCC66; }
+. g.Box.Note &gt; text { fill: #000000; }
+. g.Box.Requirement &gt; line { stroke: #72496E; }
+. g.Box.Requirement &gt; rect, . g.Box.Requirement &gt; use { fill: #D9C4D7; stroke: #72496E; }
+. g.Box.Requirement &gt; text { fill: #000000; }
+. g.Box.Text &gt; line { stroke: transparent; }
+. g.Box.Text &gt; rect, . g.Box.Text &gt; use { stroke: transparent; }
+. g.Edge &gt; rect { fill: none; stroke: none; }
+. g.Circle &gt; circle { fill: #000000; stroke: none; }
+. g.Edge &gt; path { stroke-width: 1; }
+. g.Edge.Connector &gt; rect { fill: none; stroke: none; }
+. g.Circle.Connector &gt; circle { fill: #B0B0B0; stroke: none; }
+. g.Edge.Connector &gt; path { stroke: #B0B0B0; stroke-dasharray: 1; }
+. g.Edge.Constraint &gt; rect { fill: none; stroke: none; }
+. g.Circle.Constraint &gt; circle { fill: #000000; stroke: none; }
+. g.Edge.Constraint &gt; path { stroke: #000000; stroke-dasharray: 1, 3; marker-end: url(#FineArrowMark_000000); stroke-linecap: round; }
+. g.Edge.Note &gt; rect { fill: none; stroke: none; }
+. g.Circle.Note &gt; circle { fill: #000000; stroke: none; }
+. g.Edge.Note &gt; path { stroke: #000000; stroke-dasharray: 1, 3; }
+. g.Edge.RequirementRelation &gt; rect { fill: none; stroke: none; }
+. g.Circle.RequirementRelation &gt; circle { fill: #72496E; stroke: none; }
+. g.Edge.RequirementRelation &gt; path { stroke: #72496E; stroke-width: 2; marker-end: url(#FineArrowMark_72496E); stroke-dasharray: 5; }
+. g.Edge.RequirementRelation &gt; text { fill: #72496E; }
+</style><symbol id="ErrorSymbol" viewBox="0 0 2.6458 2.6458"><path d="M 0,0 2.6458333,2.6458333 M 0,2.6458333 2.6458333,0" style="fill: none; stroke: red; stroke-width: 0.5;" /></symbol><symbol id="RequirementSymbol" style="stroke: none;" viewBox="0 0 50 50"><path d="M 12.806813,6.5702324 A 6.244379,5.8113241 0 0 1 6.5624342,12.381557 6.244379,5.8113241 0 0 1 0.31805515,6.5702324 6.244379,5.8113241 0 0 1 6.5624342,0.75890827 6.244379,5.8113241 0 0 1 12.806813,6.5702324 Z" style="fill: #431964" /><path d="m 4.3228658,5.8752475 h 2.9514721 q 0.2945581,0 0.5184223,-0.1413879 Q 8.0225155,5.5865806 8.1462299,5.3214783 8.2699443,5.056376 8.2758355,4.7029063 v 0 q 0,-0.3475786 -0.1237144,-0.6126808 Q 8.0284067,3.8251232 7.7986513,3.6837353 7.5747872,3.5364562 7.2743379,3.5364562 H 4.3228658 V 2.1873801 h 2.9927103 q 0.7246129,0 1.2724909,0.3122316 0.5478781,0.3122316 0.8483274,0.8836743 0.3063404,0.5714427 0.3063404,1.3196203 v 0 q 0,0.7540687 -0.3063404,1.3255114 Q 9.1359451,6.5998605 8.5821759,6.912092 8.0342978,7.2243236 7.3155761,7.2243236 H 4.3228658 Z M 3.7396407,2.1873801 H 5.1476285 V 10.759021 H 3.7396407 Z M 6.3906636,6.9592213 7.8516718,6.6882279 10.102096,10.759021 H 8.4113322 Z" style="fill:#ffffff;" /></symbol></defs><rect fill="white" height="290" stroke="none" width="770" x="-10" y="-10" /><g class="Box Note" id="error"><rect class="Note" height="49" style="fill: #FF0000" width="350" x="200.5" y="0.5" /><text class="Note" dominant-baseline="middle" style="fill: #FFFFFF" text-anchor="middle" x="200" y="0"><tspan x="375.0" xml:space="preserve" y="11.428571428571429">An error occured while rendering diagram</tspan><tspan x="375.0" xml:space="preserve" y="24.285714285714285">'[PFBD] F3 - Control Process'</tspan><tspan x="375.0" xml:space="preserve" y="37.14285714285714">(in stage 'parse')</tspan></text></g><g class="Box Note" id="info"><rect class="Note" height="36" width="350" x="200.5" y="59.5" /><text class="Note" dominant-baseline="middle" text-anchor="middle" x="200" y="59"><tspan x="375.0" xml:space="preserve" y="70.42857142857143">Please report this error to your tools and methods team, and</tspan><tspan x="375.0" xml:space="preserve" y="83.28571428571429">attach the following information:</tspan></text></g><g class="Box Note" id="trace"><rect class="Note" height="165" width="750" x="0.5" y="105.5" /><text class="Note" dominant-baseline="middle" text-anchor="middle" x="0" y="105"><tspan x="375.0" xml:space="preserve" y="115.71428571428571">Traceback (most recent call last):</tspan><tspan x="375.0" xml:space="preserve" y="128.57142857142856">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/model/diagram.py", line 236, in __render_fresh</tspan><tspan x="375.0" xml:space="preserve" y="141.42857142857142">    self._render = self._create_diagram()</tspan><tspan x="375.0" xml:space="preserve" y="154.28571428571428">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/model/diagram.py", line 301, in _create_diagram</tspan><tspan x="375.0" xml:space="preserve" y="167.14285714285714">    return aird.parse_diagram(self._model._loader, self._element)</tspan><tspan x="375.0" xml:space="preserve" y="180.0">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/aird/parser/__init__.py", line 198, in parse_diagram</tspan><tspan x="375.0" xml:space="preserve" y="192.85714285714286">    elm = _element_from_xml(</tspan><tspan x="375.0" xml:space="preserve" y="205.71428571428572">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/aird/parser/__init__.py", line 228, in _element_from_xml</tspan><tspan x="375.0" xml:space="preserve" y="218.57142857142858">    return factory(ebd)</tspan><tspan x="375.0" xml:space="preserve" y="231.42857142857144">  File "/home/runner/work/ROxE/ROxE/py-capellambse/capellambse/aird/parser/_semantic.py", line 90, in from_xml</tspan><tspan x="375.0" xml:space="preserve" y="244.2857142857143">    assert melodyobjs, "No valid semantic element references could be found"</tspan><tspan x="375.0" xml:space="preserve" y="257.14285714285717">AssertionError: No valid semantic element references could be found</tspan></text></g></svg>
