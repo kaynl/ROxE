@@ -1,4 +1,4 @@
-# ROLEx - Dum Spiro, Spero
+# ROAST - Dum Spiro, Spero
 Regolith Oxygen Lunar Extractor Model by Kim Lamboley
 
 ## Capella Model
